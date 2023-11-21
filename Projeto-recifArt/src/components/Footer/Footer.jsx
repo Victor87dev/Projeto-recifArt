@@ -9,17 +9,17 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div class="footer_media">
-          <div class="footer_media_logo">
+        <div className="footer_media">
+          <div className="footer_media_logo">
             <img src={Logo} alt="" />
           </div>
-          <div class="footer_media_email">
-            <div class="footer_media_email_label">
+          <div className="footer_media_email">
+            <div className="footer_media_email_label">
               <span>Contatos</span>
-              <span class="ponto_verde"></span>
+              <span className="ponto_verde"></span>
             </div>
 
-            <div class="contatos">
+            <div className="contatos">
               <ul>
                 <li>(81) 9-9999-9999</li>
                 <li>Rua da pera, 214 -pina</li>
@@ -27,14 +27,14 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div class="footer_media_socialmedia">
+          <div className="footer_media_socialmedia">
             <p>
               Colaboramos com Empresas e artesãos ambiciosos. vamos nos
               conectar.
             </p>
             <ul>
               <li>
-                <span class="ponto_verde"></span>
+                <span className="ponto_verde"></span>
                 <span>Social</span>
               </li>
 
@@ -53,11 +53,11 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div class="footer_contatos">
+        <div className="footer_contatos">
           <h3>Recifart</h3>
           <button>Entre em contato</button>
         </div>
-        <div class="footer_copyright">
+        <div className="footer_copyright">
           © 2023 Direitos reservados para o RecifArt.
         </div>
       </footer>

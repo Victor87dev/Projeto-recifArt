@@ -54,7 +54,7 @@ const Home = () => {
           </section>
         </header>
         <main>
-          <section class="sessao-coleta">
+          <section className="sessao-coleta">
             <h1>
               Pontos de <span>Coleta.</span>
             </h1>
@@ -66,19 +66,19 @@ const Home = () => {
               interessados em adotar práticas sustentáveis.
             </p>
 
-            <div class="box-coleta">
+            <div className="box-coleta">
               {cardsColeta.map((card) => (
                 <CardColeta bairro={card.bairro} />
               ))}
             </div>
           </section>
 
-          <section class="sessao-coleta">
+          <section className="sessao-coleta">
             <h1>
-              Criatividade com <span class="cor"> Sabedoria</span>
+              Criatividade com <span className="cor"> Sabedoria</span>
             </h1>
-            <div class="flexbox">
-              <div class="item-1">
+            <div className="flexbox">
+              <div className="item-1">
                 <img src={Inspiracao} alt="" />
                 <h2>Inspiração</h2>
                 <p>
@@ -88,7 +88,7 @@ const Home = () => {
                   fronteiras e estimulam a imaginação.
                 </p>
               </div>
-              <div class="item-2">
+              <div className="item-2">
                 <img src={Seguranca} alt="" />
                 <h2>Segurança</h2>
                 <p>
@@ -98,7 +98,7 @@ const Home = () => {
                   plataforma segura e inspiradora.
                 </p>
               </div>
-              <div class="item-3">
+              <div className="item-3">
                 <img src={Sustentabilidade} alt="" />
                 <h2>Sustentabilidade</h2>
                 <p>
@@ -114,8 +114,8 @@ const Home = () => {
           <div id="art">
             <div id="texto">
               <h1>
-                Nasce a Recifart, entrelaçando <span class="cor">arte</span> e{" "}
-                <span class="cor">sustentabilidade.</span>
+                Nasce a Recifart, entrelaçando <span className="cor">arte</span> e{" "}
+                <span className="cor">sustentabilidade.</span>
               </h1>
               <p>
                 A Recifart surge como solução para a baixa visibilidade e
@@ -138,7 +138,7 @@ const Home = () => {
           <div id="parceiros">
             <div id="titulo">
               <h1>
-                Nossos <span class="cor">parceiros.</span>
+                Nossos <span className="cor">parceiros.</span>
               </h1>
             </div>
             <div id="elementos">
