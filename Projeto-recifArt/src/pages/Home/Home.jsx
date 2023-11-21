@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import "./Home.css";
 
 import {
@@ -19,12 +20,16 @@ import {
 const Home = () => {
   return (
     <>
-    <div id="container-home">
-      <header>
-        <nav>
-          <Navbar />
-        </nav>
-      </header>
+      <div id="container-home">
+        <header>
+          <nav>
+            <Navbar />
+          </nav>
+        </header>
+
+        <footer>
+          <Footer />
+        </footer>
       </div>
     </>
   );

@@ -1,0 +1,114 @@
+.footer_media {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 44px;
+}
+
+
+.footer_media_email span {
+    color: #fff;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35.16px;
+    letter-spacing: 0em;
+}
+
+.footer_media_email_form {
+    position: relative;
+}
+
+.footer_media_email_label {
+    display: flex;
+    align-items: center;
+}
+
+.footer_media_email_label span:nth-child(1) {
+    margin: 8px;
+    
+}
+
+.footer_media_socialmedia p {
+    color: #fff;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.13px;
+    width: 355px;
+}
+
+.footer_media_socialmedia ul {
+    display: block;
+    margin-top: 56px;
+}
+
+.footer_media_socialmedia ul li {
+    color: #fff;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.09px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer_media_socialmedia ul li span {
+    margin-left: 8px;
+}
+.ponto_verde {
+    width: 10px;
+    height: 10px;
+    background-color: #53E229;
+    border-radius: 50px;
+    margin-left: 0 !important;
+}
+
+.footer_copyright {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: #030D25;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+ }
+
+ .footer_contatos{
+    color: #fff;
+    font-family: var(--primary-font);
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    background-color: #04143C;
+}
+
+ .footer_contatos button {
+    color: #fff;
+    background-color: #030D25;
+    border: 1px solid #fff;
+    padding: 9px 24px;
+    cursor: pointer;
+ }
+
+ .contatos > ul > li{
+   color: #fff;
+   margin-top: 20px;
+   margin-bottom: -60px;
+   font-size: 20px;
+ }
+
+ .contatos{
+    display: flex;
+    height: 170px;
+ }
+
+ .contatos > ul{
+    display: flex;
+    flex-direction: column;
+ }
