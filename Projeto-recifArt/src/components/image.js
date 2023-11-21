@@ -9,6 +9,7 @@ import Sci from "../assets/img/SCi FI.png";
 import Green from "../assets/img/Green Sun.png";
 import Duck from "../assets/img/Duck Pond.png";
 import Star from "../assets/img/StarFox.png";
+import Logo from "../assets/img/LOGO.svg";
 
 export{
     Gracas,
@@ -22,4 +23,5 @@ export{
     Green,
     Duck,
     Star,
+    Logo,
 };
