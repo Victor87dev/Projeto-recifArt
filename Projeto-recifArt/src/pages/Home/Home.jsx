@@ -22,14 +22,10 @@ const Home = () => {
     <>
       <div id="container-home">
         <header>
-          <nav>
-            <Navbar />
-          </nav>
+          <Navbar />
         </header>
 
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </div>
     </>
   );

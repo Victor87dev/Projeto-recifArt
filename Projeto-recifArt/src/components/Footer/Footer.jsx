@@ -1,5 +1,5 @@
-import React from 'react'
-import { Logo } from '../image';
+import React from "react";
+import { Logo } from "../image";
 import "./Footer.css";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -8,7 +8,8 @@ import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-   <div class="footer_media">
+      <footer>
+        <div class="footer_media">
           <div class="footer_media_logo">
             <img src={Logo} alt="" />
           </div>
@@ -59,8 +60,9 @@ const Footer = () => {
         <div class="footer_copyright">
           © 2023 Direitos reservados para o RecifArt.
         </div>
+      </footer>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

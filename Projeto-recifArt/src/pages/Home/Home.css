@@ -32,17 +32,7 @@ header {
     height: 100vh;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-}
 
-footer {
-    background-color: #030D25;
-    width: 100%;
-}
+
+
 
