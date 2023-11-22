@@ -57,7 +57,7 @@ const Home = () => {
   return (
     <>
       <div id="container-home">
-        <header>
+        <header className="header-home">
           <Navbar />
 
           <section className="sessao-header">
