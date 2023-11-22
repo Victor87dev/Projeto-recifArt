@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#container-sobre{
+    width: 100vw;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-family: var(--primary-font);
+    overflow-x: hidden;
+}
+
+.header-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -15.25%, #1657B9 127.98%), url(../../assets/img/pincel.svg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    height: 100vh;
+}
