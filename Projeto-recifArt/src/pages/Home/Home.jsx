@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import CardColeta from "../../components/CardColeta/CardColeta";
+import CardCriatividade from "../../components/CardCriatividade/CardCriatividade";
 import { Video } from "../../components/video";
 import "./Home.css";
 
@@ -29,6 +30,27 @@ const Home = () => {
     },
     {
       bairro: "Candeias",
+    },
+  ];
+
+  const cardsCriatividade = [
+    {
+      img: Inspiracao,
+      titulo: "Inspiração",
+      descricao:
+        "a inspiração não é exclusiva para os artistas; é para todos que buscam um universo de criatividade. Explore nossa galeria diversificada para descobrir projetos que transcendem fronteiras e estimulam a imaginação.",
+    },
+    {
+      img: Seguranca,
+      titulo: "Segurança",
+      descricao:
+        "Na Recifarte, a segurança é nossa prioridade. Proporcionamos um ambiente digital protegido para artistas compartilharem suas obras. Explore a arte com tranquilidade em nossa plataforma segura e inspiradora.",
+    },
+    {
+      img: Sustentabilidade,
+      titulo: "Sustentabilidade",
+      descricao:
+        "Arte como transformação sustentável. Priorizamos projetos que promovem responsabilidade ambiental, cada criação é um passo para um mundo consciente. Faça parte da mudança explorando projetos que fazem a diferença.",
     },
   ];
 
@@ -77,45 +99,22 @@ const Home = () => {
             <h1>
               Criatividade com <span className="cor"> Sabedoria</span>
             </h1>
-            <div className="flexbox">
-              <div className="item-1">
-                <img src={Inspiracao} alt="" />
-                <h2>Inspiração</h2>
-                <p>
-                  a inspiração não é exclusiva para os artistas; é para todos
-                  que buscam um universo de criatividade. Explore nossa galeria
-                  diversificada para descobrir projetos que transcendem
-                  fronteiras e estimulam a imaginação.
-                </p>
-              </div>
-              <div className="item-2">
-                <img src={Seguranca} alt="" />
-                <h2>Segurança</h2>
-                <p>
-                  Na Recifarte, a segurança é nossa prioridade. Proporcionamos
-                  um ambiente digital protegido para artistas compartilharem
-                  suas obras. Explore a arte com tranquilidade em nossa
-                  plataforma segura e inspiradora.
-                </p>
-              </div>
-              <div className="item-3">
-                <img src={Sustentabilidade} alt="" />
-                <h2>Sustentabilidade</h2>
-                <p>
-                  Arte como transformação sustentável. Priorizamos projetos que
-                  promovem responsabilidade ambiental, cada criação é um passo
-                  para um mundo consciente. Faça parte da mudança explorando
-                  projetos que fazem a diferença.
-                </p>
-              </div>
+            <div className="box-criatividade">
+              {cardsCriatividade.map((card) => (
+                <CardCriatividade
+                  img={card.img}
+                  titulo={card.titulo}
+                  descricao={card.descricao}
+                />
+              ))}
             </div>
           </section>
 
           <div id="art">
             <div id="texto">
               <h1>
-                Nasce a Recifart, entrelaçando <span className="cor">arte</span> e{" "}
-                <span className="cor">sustentabilidade.</span>
+                Nasce a Recifart, entrelaçando <span className="cor">arte</span>{" "}
+                e <span className="cor">sustentabilidade.</span>
               </h1>
               <p>
                 A Recifart surge como solução para a baixa visibilidade e
