@@ -8,14 +8,14 @@ const Navbar = () => {
       <nav>
         <img src={Logo} alt="" />
         <ul>
-          <a href="">
-            <li>Marktplace</li>
-          </a>
-          <a href="">
-            <li>Blog</li>
-          </a>
           <a href="/sobrenos">
             <li>Sobre nós</li>
+          </a>
+          <a href="/blog">
+            <li>Blog</li>
+          </a>
+          <a href="/feirinha">
+            <li>Feirinha</li>
           </a>
         </ul>
         <div className="buttons-header">
