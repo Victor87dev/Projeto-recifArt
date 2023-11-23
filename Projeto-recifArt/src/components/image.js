@@ -15,6 +15,11 @@ import Artesao from "../assets/img/artesao.png";
 import Ideia from "../assets/img/ideia.png";
 import Reciclagem from "../assets/img/reciclagem.png"
 import Conexao from "../assets/img/conexao.png"
+import Joao from "../assets/img/JoaoVitor.jpg"
+import Paulo from "../assets/img/Paulo.png"
+import Leticia from "../assets/img/leticia.jpg"
+import Saulo from "../assets/img/saulo.jpg"
+import Vinicius  from "../assets/img/vinicius.jpg"
 
 export{
     Gracas,
@@ -34,4 +39,9 @@ export{
     Ideia,
     Reciclagem,
     Conexao,
+    Joao,
+    Paulo,
+    Leticia,
+    Saulo,
+    Vinicius,
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import CardMissao from "../../components/CardMissao/CardMissao";
+import Integrantes from "../../components/Integrantes/Integrantes";
 import Footer from "../../components/Footer/Footer";
 import "./Sobre.css";
 
@@ -10,6 +11,11 @@ import{
     Ideia,
     Reciclagem,
     Conexao,
+    Joao,
+    Paulo,
+    Leticia,
+    Saulo,
+    Vinicius,
 } from "../../components/image"
 const Sobre = () => {
 
@@ -31,9 +37,36 @@ const Sobre = () => {
       descricao: "A RecifArt tem como objetivo inspirar usuários, oferecendo ideias criativas para reutilizar seu lixo, e educá-los sobre práticas sustentáveis que contribuem para um futuro mais verde."
     },
  
-
    ]
-
+   
+  const integrantes = [
+     {
+       img: Joao,
+       nome: "João Victor",
+       area: "Desenvolvedor Front-End",
+     },
+     {
+      img: Saulo,
+      nome: "Saulo França",
+      area: "Desenvolvedor Front-End",
+    },
+    {
+      img: Paulo,
+      nome: "Paulo Junior",
+      area: "Desenvolvedor Front-End",
+    },
+    {
+      img: Vinicius,
+      nome: "Vinicius Rodrigues",
+      area: "Desenvolvedor Front-End",
+    },
+    {
+      img: Leticia,
+      nome: "Leticia Moraes",
+      area: "Desenvolvedor Front-End",
+    },
+   
+  ]
 
   return (
     <>
@@ -78,8 +111,8 @@ const Sobre = () => {
       
         </div>
 
-        <div class="tituloequipe">
-          <h1>Nossa equipe</h1>
+        <div className="tituloequipe">
+          <h1>Nossa <span className="azul">equipe</span></h1>
           <p>
             Na RecifArt, nossa força reside na diversidade e talento de nossa
             equipe apaixonada. Cada membro é uma peça fundamental na construção
@@ -89,41 +122,15 @@ const Sobre = () => {
           </p>
         </div>
 
-        <div class="equipe">
-          <div class="integrante">
-            <img src="imgsobrenos/fotosaulo.jpg" alt="" />
-            <h1>Saulo França</h1>
-            <p>Estudante Frontend</p>
-            <img src="imgsobrenos/iconeredesocial.svg" alt="" />
-          </div>
-
-          <div class="integrante">
-            <img src="imgsobrenos/fotopaulo.jpg" alt="" />
-            <h1>Paulo Junior</h1>
-            <p>Estudante Frontend</p>
-            <img src="imgsobrenos/iconeredesocial.svg" alt="" />
-          </div>
-
-          <div class="integrante">
-            <img src="imgsobrenos/fotoleticia.jpg" alt="" />
-            <h1>Leticia Moraes</h1>
-            <p>Estudante Frontend</p>
-            <img src="imgsobrenos/iconeredesocial.svg" alt="" />
-          </div>
-
-          <div class="integrante">
-            <img src="imgsobrenos/fotovinicius.jpg" alt="" />
-            <h1>Vinicius Rodrigues</h1>
-            <p>Estudante Frontend</p>
-            <img src="imgsobrenos/iconeredesocial.svg" alt="" />
-          </div>
-
-          <div class="integrante">
-            <img src="imgsobrenos/fotojoao.jpg" alt="" />
-            <h1>João Victor</h1>
-            <p>Estudante Frontend</p>
-            <img src="imgsobrenos/iconeredesocial.svg" alt="" />
-          </div>
+        <div className="equipe">
+        {integrantes.map((integrantes) => (
+                <Integrantes
+                  img={integrantes.img}
+                  nome={integrantes.nome}
+                  area={integrantes.area}
+                />
+              ))}
+          
         </div>
         
       <Footer />
