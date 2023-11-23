@@ -15,10 +15,11 @@ body {
 }
 
 #container-home{
-    width: 100vw;
+    width: 100%;
+    height: 100%;
 }
 
-header {
+.header-home{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,7 +160,7 @@ h2 {
     font-weight: 1000;
 }
 
-.flexbox{
+.box-criatividade{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -167,41 +168,7 @@ h2 {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
-.flexbox > div{
-    flex: 1;
-    margin: 10px;
-    padding: 20px;
-    max-width: 400px;
-    width: calc(33.33% - 20px);
-    overflow: hidden;
-    
-}
-.flexbox .item-1,
-.flexbox .item-2,
-.flexbox .item-3 {
-    border-radius: 15px;
-    color: white;
-    margin: 10px;
-    padding: 25px;
-}
-.flexbox > div img {
-    width: 41px;
-    height: 50px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-.flexbox > div h2{
-    margin: 25px;
-}
-.flexbox .item-1{
-    background: linear-gradient(58deg, #020A1E 19.59%, #0F3083 105.59%);
-}
-.flexbox .item-2{
-    background: linear-gradient(180deg, #020A1E 7.55%, #0F3083 158.57%);
-}
-.flexbox .item-3{
-    background: linear-gradient(293deg, #020A1E 31.07%, #0F3083 110.93%);
-}
+
 /* criação da tag de artesão*/
 #art {
     margin-top: 10%;
@@ -303,7 +270,3 @@ h2 {
         transform: translateY(0);
     }
 }
-
-
-
-
