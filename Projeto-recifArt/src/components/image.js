@@ -12,6 +12,9 @@ import Star from "../assets/img/StarFox.png";
 import Logo from "../assets/img/LOGO.svg";
 import Recife from "../assets/img/recife.png";
 import Artesao from "../assets/img/artesao.png";
+import Ideia from "../assets/img/ideia.png";
+import Reciclagem from "../assets/img/reciclagem.png"
+import Conexao from "../assets/img/conexao.png"
 
 export{
     Gracas,
@@ -28,4 +31,7 @@ export{
     Logo,
     Recife,
     Artesao,
+    Ideia,
+    Reciclagem,
+    Conexao,
 };

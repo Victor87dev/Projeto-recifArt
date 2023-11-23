@@ -1,0 +1,43 @@
+.icones{
+     display: flex;
+     flex-direction: row;
+     gap: 100px;
+     margin-top: 35px;
+}
+
+.icone img{
+    width: 52px;
+    height: 52px;
+}
+
+
+.icone h3{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+
+    
+}
+
+.icone p {
+    color: #FFF;
+    font-size: 14.8px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.icone {
+    background-color:rgba(0, 0, 0, 0.40);
+    width: 325px;
+    height: 275px;
+    padding: 10px;
+    border: 1px solid var(--B-S80, #0F3FB9);
+    border-radius: 18px;
+    gap: 12px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
