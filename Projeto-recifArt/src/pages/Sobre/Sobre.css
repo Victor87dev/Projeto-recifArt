@@ -51,4 +51,32 @@ body {
     font-size: 26px;
 }
 
+.missaobloco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(178deg, rgba(10, 46, 140, 0.00) -55.24%, #0A2E8C 110.13%),url(../../assets/img/fundo-missao.png) no-repeat;
+    background-size:cover;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    background-position:center;
 
+} 
+.texto-missao h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 65px;
+}
+
+.texto-missao p {
+    color: #FFF;
+    font-size: 18px;
+
+}
+ .imagens{
+        padding: 50px;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+}

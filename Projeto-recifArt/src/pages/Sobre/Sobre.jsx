@@ -2,6 +2,11 @@ import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import "./Sobre.css";
+
+import{
+   Recife,
+   Artesao,
+} from "../../components/image"
 const Sobre = () => {
   return (
     <>
@@ -19,8 +24,8 @@ const Sobre = () => {
           </p>
         </div>
 
-        <div class="missaobloco">
-          <div class="texto">
+        <div className="missaobloco">
+          <div className="texto-missao">
             <h1>Missão</h1>
             <p>
               Conectar, Inspirar e Transformar. Nossa missão é proporcionar uma
@@ -30,11 +35,11 @@ const Sobre = () => {
               comunidade.
             </p>
           </div>
-          <div class="imagens">
-            <img src="imgsobrenos/recifeantigo.png" alt="recifeantigo" />
-            <img src="imgsobrenos/roupa.png" alt="roupa" />
+          <div className="imagens">
+            <img src={Recife} alt="recifeantigo" />
+            <img src={Artesao} alt="Artesão" />
           </div>
-          <div class="icones">
+          <div className="icones">
             <div class="icone">
               <img src="imgsobrenos/conexaovetor.svg" alt="balaofala" />
               <h3>Conexão</h3>
