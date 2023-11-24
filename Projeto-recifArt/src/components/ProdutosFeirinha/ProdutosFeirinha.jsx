@@ -12,8 +12,9 @@ const ProdutosFeirinha = (props) => {
         </div>
 
         <div className="perfil-nome">
-          <img src={props.perfil} alt="Perfil" />
-          <p>{props.nome}</p>
+        <img src={props.perfil} alt="Perfil" />
+        <a href="/perfil"> <p>{props.nome}</p>
+          </a>
         </div>
 
         <button type="button">Comprar</button>

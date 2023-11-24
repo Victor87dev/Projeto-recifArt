@@ -42,3 +42,6 @@ transition: .4s;
 .box-produtos button:hover{
 background-color: #0e2577;
 }
+a{
+    color: black;
+}
