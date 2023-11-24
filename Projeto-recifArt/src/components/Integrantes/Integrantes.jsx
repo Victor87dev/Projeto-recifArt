@@ -12,11 +12,11 @@ const Integrantes = (props) => {
         <img src={props.img} alt="" />
         <h3>{props.nome}</h3>
         <p>{props.area}</p>
-    
-         <FaLinkedin className="icons" />
-        <FaGithub  className="icons"/>
-        <FaInstagram className="icons"/>
-                                   {/* LEMBRAR DE COLOCAR OS LINKS */}
+
+        <a href={props.Likendin} target="_blank" rel="noopener noreferrer"><FaLinkedin className="icons" /></a>
+      <a href={props.github} target="_blank" rel="noopener noreferrer"><FaGithub className="icons" /></a>
+      <a href={props.Instagram} target="_blank" rel="noopener noreferrer"><FaInstagram className="icons" /></a>
+
       </div>
      
     </>

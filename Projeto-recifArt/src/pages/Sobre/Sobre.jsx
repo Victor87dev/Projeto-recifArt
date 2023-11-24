@@ -17,6 +17,7 @@ import{
     Saulo,
     Vinicius,
 } from "../../components/image"
+import { FaGithub } from "react-icons/fa";
 const Sobre = () => {
 
   const cardsMissao = [
@@ -44,26 +45,41 @@ const Sobre = () => {
        img: Joao,
        nome: "João Victor",
        area: "Desenvolvedor Front-End",
+       Likendin: "https://www.linkedin.com/in/victor-dev87/",
+       github: "https://github.com/Victor87dev",
+       Instagram: "https://www.instagram.com/joaov77_/",
      },
      {
       img: Saulo,
       nome: "Saulo França",
       area: "Desenvolvedor Front-End",
+      Likendin: "https://www.linkedin.com/in/saulo-fran%C3%A7a-57a96421a/",
+      github: "https://github.com/saulojlf",
+      Instagram: "https://www.instagram.com/saulotron93/",
     },
     {
       img: Paulo,
       nome: "Paulo Junior",
       area: "Desenvolvedor Front-End",
+      Likendin: "https://www.linkedin.com/in/paulojr-r/",
+      github: "https://github.com/pauloJ-r",
+      Instagram: "https://www.instagram.com/paulojr_r/",
     },
     {
       img: Vinicius,
       nome: "Vinicius Rodrigues",
       area: "Desenvolvedor Front-End",
+      Likendin: "https://www.linkedin.com/in/vinicius-rodrigues-32ab75210/",
+      github: "https://github.com/ViniciusCR7",
+      Instagram: "https://www.instagram.com/viniciusrss_/",
     },
     {
       img: Leticia,
       nome: "Leticia Moraes",
       area: "Desenvolvedor Front-End",
+      Likendin: "http://linkedin.com/in/leticia-moraes-barbosa",
+      github: "https://github.com/Leticia1508",
+      Instagram: "https://instagram.com/leticia_moraes0",
     },
    
   ]
@@ -128,6 +144,9 @@ const Sobre = () => {
                   img={integrantes.img}
                   nome={integrantes.nome}
                   area={integrantes.area}
+                  Likendin={integrantes.Likendin}
+                  github={integrantes.github}
+                  Instagram={integrantes.Instagram}
                 />
               ))}
           

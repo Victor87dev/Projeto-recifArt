@@ -27,6 +27,10 @@
     margin-top: 25px;
     margin-bottom: 20px;
 }
+.integrante a{
+    color: black;
+    cursor: pointer;
+}
 .icons{
     font-size: 25px;
     margin: 24px;
