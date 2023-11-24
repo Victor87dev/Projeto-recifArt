@@ -53,6 +53,7 @@ main {
     display: flex;
     justify-content: start;
     padding: 20px;
+    border-radius: 5px;
   }
   
   .inputPesquisa {
