@@ -20,6 +20,18 @@ import Paulo from "../assets/img/Paulo.png"
 import Leticia from "../assets/img/leticia.jpg"
 import Saulo from "../assets/img/saulo.jpg"
 import Vinicius  from "../assets/img/vinicius.jpg"
+import Tamandua from "../assets/img/Tamandua.png"
+import Ursos from "../assets/img/ursos.png"
+import Porta from "../assets/img/porta.png"
+import Mesa from "../assets/img/mesa.png"
+import Entalhes from "../assets/img/entalhes.png"
+import Suporte from "../assets/img/suporte.png"
+import Luiz from "../assets/img/Luiz.png"
+import Renato from "../assets/img/Renato.png"
+import Fabiana from "../assets/img/Fabiana.png"
+import Fernando from "../assets/img/Fernando.png"
+import Gabriela from "../assets/img/Gabriella.png"
+import Renata from "../assets/img/Renata.png"
 
 export{
     Gracas,
@@ -44,4 +56,16 @@ export{
     Leticia,
     Saulo,
     Vinicius,
+    Tamandua,
+    Ursos,
+    Porta,
+    Mesa,
+    Entalhes,
+    Suporte,
+    Luiz,
+    Renato,
+    Fabiana,
+    Fernando,
+    Gabriela,
+    Renata,
 };
