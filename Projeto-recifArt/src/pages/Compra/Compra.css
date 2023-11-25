@@ -43,3 +43,23 @@ body {
     font-weight: 600;
     padding-top: 165px;
 }
+
+.sessao-compra{
+    width: 65%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-compra{
+    height: 85%;
+    width: 85%;
+    border-radius: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgb(0, 0, 0) 0px 1px 12px;
+}
