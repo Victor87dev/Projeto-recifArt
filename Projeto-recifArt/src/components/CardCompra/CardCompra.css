@@ -1,11 +1,11 @@
-ol{
+.lista-compra{
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: flex-start;
 }
 
-span{
+.ponto-preto{
     padding: 8px;
     font-size: 20px;
 }
@@ -48,12 +48,12 @@ span{
     font-size: 25px;
 }
 
-h2{
+.titulo-compra{
     font-size: 45px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.336);
 }
 
-input{
+.input-compra{
     width: 280px;
     height: 160px;
     padding: 18px;
@@ -64,17 +64,16 @@ input{
     margin-top: 90px;
 }
 
-input::placeholder{
+.input-compra::placeholder{
     font-size: 15px;
     font-family: var(--primary-font);
 }
 
-li{
+.lista-compra li{
     font-size: 18px;
 }
 
-p{
-    font-size: 22px;
+.box-informacoes p{
     font-weight: 600;
 }
 
