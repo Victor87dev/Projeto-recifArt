@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 #container-sobre{
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 body {
     display: flex;
@@ -16,7 +20,7 @@ body {
     overflow-x: hidden;
 }
 
-.header-sobre {
+.header-sobre{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,8 +28,92 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     width: 100%;
-    height: 100vh;
+    height: 65vh;
+}
+
+.header-sobre h1{
+    color: #fff;
+    text-shadow:0px 3px 3px rgba(0, 0, 0, 0.25);
+    font-size: 65px;
+    font-weight: 600;
+    padding-top: 200px;
+}
+
+.sobre-recifart{
+    margin: 100px ;
+    background-color: #fff; 
+    width: 50%;
+} 
+
+.sobre-recifart p {
+    color: #404140;  
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.missaobloco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(178deg, rgba(10, 46, 140, 0.00) -55.24%, #0A2E8C 110.13%),url(../../assets/img/fundo-missao.png) no-repeat;
+    background-size:cover;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    background-position:center;
+
+} 
+.texto-missao h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 65px;
+}
+
+.texto-missao p {
+    color: #FFF;
+    font-size: 20px;
+
+}
+ .imagens{
+        padding: 50px;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+}
+
+.tituloequipe{
+    margin:60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+.tituloequipe h1{        
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.tituloequipe > h1 > span {
+   color: #2057E3 ;
+}
+
+.tituloequipe p{
+    width: 65%;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    justify-content: center;         
+    
+}
+.equipe{
+    display: flex;    
+    justify-content: center;
+    width: 65%;
+    margin-bottom: 65px;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap
+     
 }

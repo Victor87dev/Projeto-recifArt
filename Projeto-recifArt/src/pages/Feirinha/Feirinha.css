@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-family: var(--primary-font);
+    overflow-x: hidden;
+}
+
+#container-feirinha{
+    width: 100vw;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-feirinha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#00000000, #0C2DDB4D), url(../../assets/img/banner-feirinha.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+    height: 65vh;
+}
+
+.header-feirinha h1{
+    color: #fff;
+    text-shadow:0px 3px 3px rgba(0, 0, 0, 0.25);
+    font-size: 90px;
+    font-weight: 600;
+    padding-top: 165px;
+}
+
+.sessao-feirinha{
+    width: 65%;
+    height: 100%;
+}
+
+.box-input{
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.input-pesquisar{
+    padding: 14px 45px 14px 45px;
+    border: none;
+    border: 1px solid #5f5f5f;
+    border-radius: 5px;
+    outline: none;
+}
+
+.produtos-grid{ 
+    margin-top: 50px;
+    padding-bottom: 90px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 65px;
+    justify-content: center;
+    align-items: center;
+    height: 135vh;
+}
+
+.input-pesquisar::placeholder{
+    font-size: 16px;
+}

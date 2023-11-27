@@ -10,6 +10,35 @@ import Green from "../assets/img/Green Sun.png";
 import Duck from "../assets/img/Duck Pond.png";
 import Star from "../assets/img/StarFox.png";
 import Logo from "../assets/img/LOGO.svg";
+import Recife from "../assets/img/recife.png";
+import Artesao from "../assets/img/artesao.png";
+import Ideia from "../assets/img/ideia.png";
+import Reciclagem from "../assets/img/reciclagem.png";
+import Conexao from "../assets/img/conexao.png";
+import Joao from "../assets/img/JoaoVitor.jpg";
+import Paulo from "../assets/img/Paulo.png";
+import Leticia from "../assets/img/leticia.jpg";
+import Saulo from "../assets/img/saulo.jpg";
+import Vinicius  from "../assets/img/vinicius.jpg";
+import Noticia01 from "../assets/img/noticia01.png";
+import Noticia02 from "../assets/img/noticia02.png";
+import Noticia03 from "../assets/img/noticia03.png";
+import Noticia04 from "../assets/img/noticia04.png";
+import Noticia05 from "../assets/img/noticia05.png";
+import Noticia06 from "../assets/img/noticia06.png";
+import Tamandua from "../assets/img/Tamandua.png";
+import Ursos from "../assets/img/ursos.png";
+import Porta from "../assets/img/porta.png";
+import Mesa from "../assets/img/mesa.png";
+import Entalhes from "../assets/img/entalhes.png";
+import Suporte from "../assets/img/suporte.png";
+import Luiz from "../assets/img/Luiz.png";
+import Renato from "../assets/img/Renato.png";
+import Fabiana from "../assets/img/Fabiana.png";
+import Fernando from "../assets/img/Fernando.png";
+import Gabriela from "../assets/img/Gabriella.png";
+import Renata from "../assets/img/Renata.png";
+import UrsoMetade from "../assets/img/ursoMetade.png";
 
 export{
     Gracas,
@@ -24,4 +53,33 @@ export{
     Duck,
     Star,
     Logo,
+    Recife,
+    Artesao,
+    Ideia,
+    Reciclagem,
+    Conexao,
+    Joao,
+    Paulo,
+    Leticia,
+    Saulo,
+    Vinicius,
+    Noticia01,
+    Noticia02,
+    Noticia03,
+    Noticia04,
+    Noticia05,
+    Noticia06,
+    Tamandua,
+    Ursos,
+    Porta,
+    Mesa,
+    Entalhes,
+    Suporte,
+    Luiz,
+    Renato,
+    Fabiana,
+    Fernando,
+    Gabriela,
+    Renata,
+    UrsoMetade,
 };

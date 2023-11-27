@@ -1,0 +1,44 @@
+li{
+    list-style-type: none;
+}
+
+.box-produtos{
+ text-align: center;
+ box-shadow: rgb(0, 0, 0) 0px 1px 12px;
+ border-radius: 53px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 25px;
+ height: 92%;
+}
+
+.nome-preco{
+display: flex;
+flex-direction: row;
+gap: 70px;
+font-size: 18px;
+font-weight: 600;
+}
+
+.perfil-nome{
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 14px;
+}
+
+.box-produtos button{
+padding: 8px 40px 8px 40px;
+border-radius: 20px;
+border: none;
+background-color: #061033;
+color: #fff;
+font-family: var(--primary-font);
+cursor: pointer;
+transition: .4s;
+}
+
+.box-produtos button:hover{
+background-color: #0e2577;
+}

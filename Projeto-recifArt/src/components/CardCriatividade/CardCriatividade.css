@@ -1,0 +1,30 @@
+.box-criatividade > div{
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: calc(33.33% - 20px);
+    overflow: hidden;
+    
+}
+.box-criatividade > .item-1{
+    border-radius: 15px;
+    color: white;
+    margin: 10px;
+    padding: 25px;
+}
+
+.box-criatividade > div img {
+    width: 41px;
+    height: 50px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.box-criatividade > div h2{
+    margin: 25px;
+}
+
+.box-criatividade .item-1{
+    background: linear-gradient(58deg, #020A1E 19.59%, #0F3083 105.59%);
+}
