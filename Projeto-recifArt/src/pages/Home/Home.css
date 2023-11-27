@@ -29,8 +29,8 @@ body {
     position: relative;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    padding-bottom: 30px;
 }
 
 .sessao-header {
@@ -43,15 +43,17 @@ body {
     text-align: center;
 }
 
-.sessao-header>video {
+.sessao-header > video {
+    width: 700px;
     border-radius: 20px;
 }
 
-.sessao-header>p {
+.sessao-header > p {
     color: #fff;
     font-size: 31px;
     font-family: 'Roboto', sans-serif;
     line-height: 45px;
+    padding: 0 30px;
 }
 
 .sessao-header>p>span, .cor {
@@ -122,8 +124,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    height: 590px;
-    margin: 150px;
+    margin: 60px 10px;
 }
 
 .box-coleta {
@@ -132,7 +133,7 @@ main {
     justify-content: center;
     gap: 50px;
     height: 90%;
-    width: 100%;
+    flex-wrap: wrap;
 }
 
 .sessao-coleta>h1,
@@ -150,12 +151,13 @@ h2 {
     color: #2057E3;
 }
 
-.sessao-coleta>p {
+.sessao-coleta > p {
     font-size: 20px;
     font-weight: 700;
+    max-width: 732px;
 }
 
-.sessao-coleta>h1 {
+.sessao-coleta > h1 {
     font-size: 57px;
     font-weight: 1000;
 }
@@ -268,5 +270,39 @@ h2 {
     }
     100%{
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .sessao-coleta > h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .sessao-header > video { 
+        width: 480px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sessao-header > video { 
+        width: 320px;
+    }
+}
+
+@media(max-width: 425px) {
+    .sessao-coleta > h1 {
+        font-size: 30px;
+    }
+
+    .sessao-coleta > p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .sessao-header > video { 
+        width: 290px;
     }
 }

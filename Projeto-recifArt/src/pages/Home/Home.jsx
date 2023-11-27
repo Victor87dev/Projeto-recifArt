@@ -61,7 +61,7 @@ const Home = () => {
           <Navbar />
 
           <section className="sessao-header">
-            <video width="700" controls>
+            <video controls>
               <source src={Video} type="video/mp4" />
             </video>
             <p>
@@ -89,8 +89,8 @@ const Home = () => {
             </p>
 
             <div className="box-coleta">
-              {cardsColeta.map((card) => (
-                <CardColeta bairro={card.bairro} />
+              {cardsColeta.map((card, index) => (
+                <CardColeta key={index} bairro={card.bairro} />
               ))}
             </div>
           </section>
@@ -100,8 +100,9 @@ const Home = () => {
               Criatividade com <span className="cor"> Sabedoria</span>
             </h1>
             <div className="box-criatividade">
-              {cardsCriatividade.map((card) => (
+              {cardsCriatividade.map((card, index) => (
                 <CardCriatividade
+                  key={index}
                   img={card.img}
                   titulo={card.titulo}
                   descricao={card.descricao}
