@@ -24,8 +24,6 @@
     font-size: 18px;
     font-weight: 600;
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 20px;
 }
 .integrante a{
     color: black;
@@ -34,4 +32,79 @@
 .icons{
     font-size: 25px;
     margin: 24px;
+}
+
+@media (max-width: 1024px) {
+
+    .integrante{
+        width: 250px;
+        height: max-content;
+    }
+
+    .integrante img {   
+        width: 100px;
+        height: 100px;
+    }
+
+    .integrante h3{
+        font-size: 20px;
+    }
+
+    .integrante p{
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 426px) {
+    .integrante{
+        width: 150px;
+        height: 240px;
+        margin: 6px;
+        padding: 6px;
+        box-shadow: 0px 0px 3.9px 0px rgba(0, 0, 0, 0.45);
+    }
+
+    .integrante img {   
+        width: 70px;
+        height: 70px;
+    }
+
+    .integrante h3{
+        font-size: 16px;
+    }
+
+    .integrante p{
+        font-size: 10px;
+    }
+
+    .icons {
+        margin: 6px;
+    }
+}
+
+@media (max-width: 325px) {
+    .integrante{
+        width: 200px;
+        margin: 8px;
+        padding-bottom: 4px;
+        box-shadow: 0px 0px 6.9px 0px rgba(0, 0, 0, 0.45);
+    }
+
+    .integrante img {   
+        width: 80px;
+        height: 80px;
+    }
+
+    .integrante h3{
+        font-size: 18px;
+    }
+
+    .integrante p{
+        font-size: 12px;
+    }
+
+    .icons {
+        margin: 8px;
+    }
 }

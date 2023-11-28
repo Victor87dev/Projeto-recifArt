@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
           <div className="footer_media_socialmedia">
             <p>
-              Colaboramos com Empresas e artesãos ambiciosos. vamos nos
+              Colaboramos com Empresas e artesãos ambiciosos. Vamos nos
               conectar.
             </p>
             <ul>
@@ -55,7 +55,6 @@ const Footer = () => {
         </div>
         <div className="footer_contatos">
           <h3>Recifart</h3>
-          <button>Entre em contato</button>
         </div>
         <div className="footer_copyright">
           © 2023 Direitos reservados para o RecifArt.

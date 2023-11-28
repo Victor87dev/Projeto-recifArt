@@ -132,7 +132,7 @@ const Home = () => {
               </div>
             </div>
             <div id="img">
-              <img src={Art} alt="" />
+              <img src={Art} alt="artesao" />
             </div>
           </div>
           <div id="parceiros">
@@ -142,11 +142,11 @@ const Home = () => {
               </h1>
             </div>
             <div id="elementos">
-              <img src={Compose} alt="" />
-              <img src={Sci} alt="" />
-              <img src={Green} alt="" />
-              <img src={Duck} alt="" />
-              <img src={Star} alt="" />
+              <img src={Compose} alt="parceiro componse" />
+              <img src={Sci} alt="parceiro sci" />
+              <img src={Green} alt="parceiro green" />
+              <img src={Duck} alt="parceiro duck" />
+              <img src={Star} alt="parceiro star" />
             </div>
           </div>
         </main>

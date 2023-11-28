@@ -46,6 +46,7 @@ ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    text-wrap: nowrap;
 }
 
 ul a {
@@ -147,7 +148,7 @@ nav .menu span {
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 955px) {
     nav .menu {
         display: flex;
     }

@@ -5,17 +5,17 @@ import Integrantes from "../../components/Integrantes/Integrantes";
 import Footer from "../../components/Footer/Footer";
 import "./Sobre.css";
 
-import{
-   Recife,
-   Artesao,
-    Ideia,
-    Reciclagem,
-    Conexao,
-    Joao,
-    Paulo,
-    Leticia,
-    Saulo,
-    Vinicius,
+import {
+  Recife,
+  Artesao,
+  Ideia,
+  Reciclagem,
+  Conexao,
+  Joao,
+  Paulo,
+  Leticia,
+  Saulo,
+  Vinicius,
 } from "../../components/image"
 import { FaGithub } from "react-icons/fa";
 const Sobre = () => {
@@ -37,19 +37,19 @@ const Sobre = () => {
       titulo: "Inspirar",
       descricao: "A RecifArt tem como objetivo inspirar usuários, oferecendo ideias criativas para reutilizar seu lixo, e educá-los sobre práticas sustentáveis que contribuem para um futuro mais verde."
     },
- 
-   ]
-   
+
+  ]
+
   const integrantes = [
-     {
-       img: Joao,
-       nome: "João Victor",
-       area: "Desenvolvedor Front-End",
-       Likendin: "https://www.linkedin.com/in/victor-dev87/",
-       github: "https://github.com/Victor87dev",
-       Instagram: "https://www.instagram.com/joaov77_/",
-     },
-     {
+    {
+      img: Joao,
+      nome: "João Victor",
+      area: "Desenvolvedor Front-End",
+      Likendin: "https://www.linkedin.com/in/victor-dev87/",
+      github: "https://github.com/Victor87dev",
+      Instagram: "https://www.instagram.com/joaov77_/",
+    },
+    {
       img: Saulo,
       nome: "Saulo França",
       area: "Desenvolvedor Front-End",
@@ -81,7 +81,7 @@ const Sobre = () => {
       github: "https://github.com/Leticia1508",
       Instagram: "https://instagram.com/leticia_moraes0",
     },
-   
+
   ]
 
   return (
@@ -89,7 +89,7 @@ const Sobre = () => {
       <div id="container-sobre">
         <header className="header-sobre">
           <Navbar />
-            <h1>Sobre nós</h1>
+          <h1>Sobre nós</h1>
         </header>
         <div className="sobre-recifart">
           <p>
@@ -115,16 +115,17 @@ const Sobre = () => {
             <img src={Recife} alt="recifeantigo" />
             <img src={Artesao} alt="Artesão" />
           </div>
-     <div className="icones">
-          {cardsMissao.map((card) => (
-                <CardMissao
-                  img={card.img}
-                  titulo={card.titulo}
-                  descricao={card.descricao}
-                />
-              ))}
-              </div>
-      
+          <div className="icones">
+            {cardsMissao.map((card, index) => (
+              <CardMissao
+                key={index}
+                img={card.img}
+                titulo={card.titulo}
+                descricao={card.descricao}
+              />
+            ))}
+          </div>
+
         </div>
 
         <div className="tituloequipe">
@@ -139,8 +140,9 @@ const Sobre = () => {
         </div>
 
         <div className="equipe">
-        {integrantes.map((integrantes) => (
+        {integrantes.map((integrantes, index) => (
                 <Integrantes
+                  key={index}
                   img={integrantes.img}
                   nome={integrantes.nome}
                   area={integrantes.area}
@@ -151,10 +153,10 @@ const Sobre = () => {
               ))}
           
         </div>
-        
-      <Footer />
+
+        <Footer />
       </div>
-      
+
     </>
   );
 };
