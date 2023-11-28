@@ -1,0 +1,25 @@
+.card-artesoes{
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(135deg,#000,rgb(13, 6, 112));
+}
+
+.card-artesoes img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 420px;
+    transition: 0.5;
+}
+
+.card-artesoes:hover img{
+    left: 80%;
+    height: 520px;
+}

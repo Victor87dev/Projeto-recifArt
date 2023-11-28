@@ -39,6 +39,7 @@ import Fernando from "../assets/img/Fernando.png";
 import Gabriela from "../assets/img/Gabriella.png";
 import Renata from "../assets/img/Renata.png";
 import UrsoMetade from "../assets/img/ursoMetade.png";
+import Mequias from "../assets/img/mequias-sampaio.png";
 
 export{
     Gracas,
@@ -82,4 +83,5 @@ export{
     Gabriela,
     Renata,
     UrsoMetade,
+    Mequias,
 };

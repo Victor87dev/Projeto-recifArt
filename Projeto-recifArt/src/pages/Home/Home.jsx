@@ -7,8 +7,6 @@ import { Video } from "../../components/video";
 import "./Home.css";
 
 import {
-  Gracas,
-  Derby,
   Seguranca,
   Sustentabilidade,
   Inspiracao,
@@ -70,9 +68,9 @@ const Home = () => {
               que simplesmente aprecia a beleza do <span>artesanato único</span>{" "}
               , o <span>Recifart</span> é o lugar para você.
             </p>
-            <button type="button" className="button-artesao top-fill">
+            <a href="/artesoes"><button type="button" className="button-artesao top-fill">
               ARTESÕES
-            </button>
+            </button></a>
           </section>
         </header>
         <main>
