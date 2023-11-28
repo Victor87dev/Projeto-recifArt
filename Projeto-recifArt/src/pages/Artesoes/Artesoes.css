@@ -47,22 +47,19 @@ body {
 
 
 .sessao-artesoes{
-    width: 65%;
+    width: 75%;
     height: 100%;
-    border: 1px solid red;
 }
 
-.produtos-grid{ 
-    margin-top: 50px;
+.produtos-grid-artesoes{ 
+    margin-top: 120px;
     padding-bottom: 90px;
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 50px;
-    grid-row-gap: 65px;
     justify-content: center;
     align-items: center;
-    height: 135vh;
-    border: 1px solid green;
+    height: 145vh;  
 }
 
 
