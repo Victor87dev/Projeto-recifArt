@@ -2,9 +2,12 @@ import React from "react";
 import "./CardArtesoes.css";
 
 const CardArtesoes = (props) => {
+
+   
+
   return (
     <>
-      <div className="card-artesoes">
+      <div className="card-artesoes reveal">
         <span className="animacao-artesoes"></span>
         <span className="animacao-artesoes"></span>
         <span className="animacao-artesoes"></span>

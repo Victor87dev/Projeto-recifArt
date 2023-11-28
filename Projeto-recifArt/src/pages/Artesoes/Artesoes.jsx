@@ -15,6 +15,9 @@ import {
 } from "../../components/image";
 
 const Artesoes = () => {
+
+    
+
   const cardsArtesoes = [
     {
       img: Mequias,
@@ -63,7 +66,7 @@ const Artesoes = () => {
         </header>
 
         <section className="sessao-artesoes">
-          <div className="produtos-grid-artesoes">
+          <div className="produtos-grid-artesoes reveal">
             {cardsArtesoes.map((card) => (
               <CardArtesoes
                 img={card.img}

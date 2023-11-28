@@ -74,7 +74,7 @@ const Home = () => {
           </section>
         </header>
         <main>
-          <section className="sessao-coleta">
+          <section className="sessao-coleta reveal">
             <h1>
               Pontos de <span>Coleta.</span>
             </h1>
@@ -93,7 +93,7 @@ const Home = () => {
             </div>
           </section>
 
-          <section className="sessao-coleta">
+          <section className="sessao-coleta reveal">
             <h1>
               Criatividade com <span className="cor"> Sabedoria</span>
             </h1>
@@ -108,7 +108,7 @@ const Home = () => {
             </div>
           </section>
 
-          <div id="art">
+          <div id="art" className="reveal">
             <div id="texto">
               <h1>
                 Nasce a Recifart, entrelaçando <span className="cor">arte</span>{" "}
@@ -132,7 +132,7 @@ const Home = () => {
               <img src={Art} alt="" />
             </div>
           </div>
-          <div id="parceiros">
+          <div id="parceiros" className="reveal">
             <div id="titulo">
               <h1>
                 Nossos <span className="cor">parceiros.</span>

@@ -91,7 +91,7 @@ const Sobre = () => {
           <Navbar />
             <h1>Sobre nós</h1>
         </header>
-        <div className="sobre-recifart">
+        <div className="sobre-recifart reveal">
           <p>
             Seja bem-vindo ao RecifArt, sua plataforma dedicada à valorização
             dos artesãos locais e à promoção de práticas sustentáveis em Recife.
@@ -100,7 +100,7 @@ const Sobre = () => {
           </p>
         </div>
 
-        <div className="missaobloco">
+        <div className="missaobloco reveal">
           <div className="texto-missao">
             <h1>Missão</h1>
             <p>
@@ -115,7 +115,7 @@ const Sobre = () => {
             <img src={Recife} alt="recifeantigo" />
             <img src={Artesao} alt="Artesão" />
           </div>
-     <div className="icones">
+     <div className="icones reveal">
           {cardsMissao.map((card) => (
                 <CardMissao
                   img={card.img}
@@ -127,7 +127,7 @@ const Sobre = () => {
       
         </div>
 
-        <div className="tituloequipe">
+        <div className="tituloequipe reveal">
           <h1>Nossa <span className="Azul">equipe</span></h1>
           <p>
             Na RecifArt, nossa força reside na diversidade e talento de nossa
@@ -138,7 +138,7 @@ const Sobre = () => {
           </p>
         </div>
 
-        <div className="equipe">
+        <div className="equipe reveal">
         {integrantes.map((integrantes) => (
                 <Integrantes
                   img={integrantes.img}

@@ -26,7 +26,7 @@ const Compra = () => {
           <Navbar />
           <h1>Finalizando Compra</h1>
         </header>
-        <section className="sessao-compra">
+        <section className="sessao-compra reveal">
           <div className="box-compra">
             {cardsCompra.map((card) => (
               <CardCompra
