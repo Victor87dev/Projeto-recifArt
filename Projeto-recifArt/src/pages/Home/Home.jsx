@@ -7,8 +7,6 @@ import { Video } from "../../components/video";
 import "./Home.css";
 
 import {
-  Gracas,
-  Derby,
   Seguranca,
   Sustentabilidade,
   Inspiracao,
@@ -70,13 +68,13 @@ const Home = () => {
               que simplesmente aprecia a beleza do <span>artesanato único</span>{" "}
               , o <span>Recifart</span> é o lugar para você.
             </p>
-            <button type="button" className="button-artesao top-fill">
+            <a href="/artesoes"><button type="button" className="button-artesao top-fill">
               ARTESÃOS
-            </button>
+            </button></a>
           </section>
         </header>
         <main>
-          <section className="sessao-coleta">
+          <section className="sessao-coleta reveal">
             <h1>
               Pontos de <span>Coleta.</span>
             </h1>
@@ -95,7 +93,7 @@ const Home = () => {
             </div>
           </section>
 
-          <section className="sessao-coleta">
+          <section className="sessao-coleta reveal">
             <h1>
               Criatividade com <span className="cor"> Sabedoria</span>
             </h1>
@@ -110,7 +108,7 @@ const Home = () => {
             </div>
           </section>
 
-          <div id="art">
+          <div id="art" className="reveal">
             <div id="texto">
               <h1>
                 Nasce a Recifart, entrelaçando <span className="cor">arte</span>{" "}
@@ -131,7 +129,7 @@ const Home = () => {
               <img src={Art} alt="" />
             </div>
           </div>
-          <div id="parceiros">
+          <div id="parceiros" className="reveal">
             <div id="titulo">
               <h1>
                 Nossos <span className="cor">parceiros.</span>
