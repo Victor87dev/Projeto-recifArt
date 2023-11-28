@@ -27,11 +27,11 @@
 }
 
 .icone {
-    background-color:rgba(0, 0, 0, 0.40);
+    background-color:#0f3fb9b0;
     width: 325px;
     height: 275px;
     padding: 10px;
-    border: 1px solid var(--B-S80, #0F3FB9);
+    border: 1px solid var(--B-S80, #ffffff);
     border-radius: 18px;
     gap: 12px;
     text-align: center;
