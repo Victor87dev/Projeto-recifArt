@@ -95,7 +95,7 @@ body {
     font-weight: 600;
 }
 
-.tituloequipe > h1 > span {
+.tituloequipe > h1 > .Azul {
    color: #2057E3 ;
 }
 
