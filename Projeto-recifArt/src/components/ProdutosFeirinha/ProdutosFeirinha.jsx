@@ -16,7 +16,7 @@ const ProdutosFeirinha = (props) => {
           <p>{props.nome}</p>
         </div>
 
-        <button type="button">Comprar</button>
+        <a href="./compra"><button type="button">Comprar</button></a>
       </div>
     </>
   );

@@ -3,6 +3,8 @@ import Home from '../pages/Home/Home';
 import Sobre from '../pages/Sobre/Sobre';
 import Feirinha from "../pages/Feirinha/Feirinha";
 import Blog from "../pages/Blog/Blog";
+import Compra from "../pages/Compra/Compra"
+import Artesoes from "../pages/artesoes/artesoes";
 const AppRoutes = () => {
     return(
         <Routes>
@@ -11,6 +13,8 @@ const AppRoutes = () => {
             <Route path="/sobrenos" element={<Sobre/>} />
             <Route path="/feirinha" element={<Feirinha/>} />
             <Route path="/blog" element={<Blog/>} />
+            <Route path="/compra" element={<Compra/>} />
+            <Route path="/artesoes" element={<Artesoes/>} />
         </Routes>
     )
 }

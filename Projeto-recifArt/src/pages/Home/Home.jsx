@@ -7,8 +7,6 @@ import { Video } from "../../components/video";
 import "./Home.css";
 
 import {
-  Gracas,
-  Derby,
   Seguranca,
   Sustentabilidade,
   Inspiracao,
@@ -70,13 +68,13 @@ const Home = () => {
               que simplesmente aprecia a beleza do <span>artesanato único</span>{" "}
               , o <span>Recifart</span> é o lugar para você.
             </p>
-            <button type="button" className="button-artesao top-fill">
-              ARTESÕES
-            </button>
+            <a href="/artesoes"><button type="button" className="button-artesao top-fill">
+              ARTESÃOS
+            </button></a>
           </section>
         </header>
         <main>
-          <section className="sessao-coleta">
+          <section className="sessao-coleta reveal">
             <h1>
               Pontos de <span>Coleta.</span>
             </h1>
@@ -95,7 +93,7 @@ const Home = () => {
             </div>
           </section>
 
-          <section className="sessao-coleta">
+          <section className="sessao-coleta reveal">
             <h1>
               Criatividade com <span className="cor"> Sabedoria</span>
             </h1>
@@ -111,7 +109,7 @@ const Home = () => {
             </div>
           </section>
 
-          <div id="art">
+          <div id="art" className="reveal">
             <div id="texto">
               <h1>
                 Nasce a Recifart, entrelaçando <span className="cor">arte</span>{" "}
@@ -127,26 +125,23 @@ const Home = () => {
                 a visibilidade dos artesãos e a demanda por práticas
                 sustentáveis.
               </p>
-              <div id="art-botao">
-                <button>Artesãos</button>
-              </div>
             </div>
             <div id="img">
               <img src={Art} alt="artesao" />
             </div>
           </div>
-          <div id="parceiros">
+          <div id="parceiros" className="reveal">
             <div id="titulo">
               <h1>
                 Nossos <span className="cor">parceiros.</span>
               </h1>
             </div>
             <div id="elementos">
-              <img src={Compose} alt="parceiro componse" />
-              <img src={Sci} alt="parceiro sci" />
-              <img src={Green} alt="parceiro green" />
-              <img src={Duck} alt="parceiro duck" />
-              <img src={Star} alt="parceiro star" />
+              <img src={Compose} alt="parceiro componse" className="empresa"/>
+              <img src={Sci} alt="parceiro sci" className="empresa"/>
+              <img src={Green} alt="parceiro green" className="empresa"/>
+              <img src={Duck} alt="parceiro duck" className="empresa"/>
+              <img src={Star} alt="parceiro star" className="empresa"/>
             </div>
           </div>
         </main>

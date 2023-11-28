@@ -251,7 +251,6 @@ h2 {
 #elementos {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 25px;
@@ -261,6 +260,12 @@ h2 {
 #elementos>img {
     width: 40%;
     max-width: 150px;
+    gap: 100px;
+   
+}
+.empresa {
+    width: 40%; 
+    max-width: 150px; 
 }
 
 /* -------- KEYFRAMES ---------*/

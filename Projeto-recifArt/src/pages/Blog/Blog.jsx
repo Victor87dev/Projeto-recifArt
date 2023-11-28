@@ -70,7 +70,7 @@ const Blog = () => {
 
             </header>
             <main>
-               <div className="barraDePesquisa">
+               <div className="barraDePesquisa reveal">
                   <input
                      type="text"
                      placeholder="Pesquisar..."
@@ -78,7 +78,7 @@ const Blog = () => {
                      className="inputPesquisa"
                   />
                </div>
-               <div className="card-noticia">
+               <div className="card-noticia reveal">
                {cardsNoticias.map((card) => (
                 <CardNoticia
                   img={card.img}
