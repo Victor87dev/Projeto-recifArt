@@ -14,6 +14,17 @@ body {
     overflow-x: hidden;
 }
 
+
+::-webkit-scrollbar{
+    width: 15px;
+    background: #111a24;
+}
+  
+::-webkit-scrollbar-thumb{
+    background: #1a28e6;
+    border-radius: 2px;
+}
+
 #container-artesoes{
     width: 100vw;
     height: 100%; 
@@ -60,6 +71,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 145vh;  
+}
+
+@media (max-width: 1250px){
+    .produtos-grid-artesoes{ 
+        display: flex;
+        flex-direction: column; 
+        height: 250vh;
+    }
 }
 
 
