@@ -35,12 +35,14 @@ const Navbar = () => {
             </NavLink>
           </ul>
           <div className={`buttons-header ${menuAberto ? "aberto" : ""} `}>
-            <button type="button" className="button-entrar">
+           <a href="/escolha"><button type="button" className="button-entrar">
               Entrar
             </button>
-            <button type="button" className="button-cadastrar">
+            </a>
+           <a href="/escolha"><button type="button" className="button-cadastrar">
               Cadastrar
             </button>
+            </a>
           </div>
         </div>
       </nav>
