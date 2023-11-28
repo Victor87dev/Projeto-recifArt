@@ -79,6 +79,11 @@ body {
         flex-direction: column; 
         height: 250vh;
     }
+
+    .header-artesoes .titulo-artesoes{
+        font-size: 60px;
+        letter-spacing: 1px;
+    }
 }
 
 

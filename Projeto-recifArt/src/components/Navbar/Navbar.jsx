@@ -17,9 +17,9 @@ const Navbar = () => {
         <div className="menu" onClick={() => {
           setMenuAberto(!menuAberto);
         }}>
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className="navAzul"></span>
+          <span className="navAzul"></span>
+          <span className="navAzul"></span>
         </div>
 
         <div className={`menu-conteudo ${menuAberto ? "aberto" : ""}`}>

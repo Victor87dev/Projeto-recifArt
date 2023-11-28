@@ -180,6 +180,20 @@ footer {
     .footer_media_email, .footer_media_socialmedia {
         width: 90vw;
     }
+    .footer_media_email{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .footer_media_socialmedia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 @media (max-width: 459px) {

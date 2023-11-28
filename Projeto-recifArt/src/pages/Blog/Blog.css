@@ -28,8 +28,10 @@ body {
     background-position: center;
     position: relative;
     width: 100%;
-    height: max-content;
+    height: 65vh;
     padding-bottom: 40px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .header-blog h1{
     color: #fff;
@@ -37,7 +39,7 @@ body {
     font-size: 65px;
     font-weight: 600;
     padding: 0 30px;
-    padding-top: 100px;
+    padding-top: 150px;
 }
 .header-blog p{
     color: #fff;
@@ -74,4 +76,5 @@ main {
     justify-content: center;
     align-items: center;
     margin: 25px;
+    width: 80%;
 }

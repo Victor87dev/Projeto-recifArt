@@ -78,7 +78,7 @@ const Home = () => {
             <h1>
               Pontos de <span>Coleta.</span>
             </h1>
-            <p>
+            <p className="descricao-coleta">
               Explore nossos pontos de coleta em três localidades-chave:{" "}
               <span>Boa viagem</span>, <span>Derby</span>, e nas{" "}
               <span>Graças</span>. Cada ponto é estrategicamente posicionado

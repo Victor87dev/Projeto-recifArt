@@ -29,6 +29,9 @@ body {
     background-position: center;
     position: relative;
     width: 100vw;
+    height: 65vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .header-sobre h1{
@@ -36,7 +39,7 @@ body {
     text-shadow:0px 3px 3px rgba(0, 0, 0, 0.25);
     font-size: 65px;
     font-weight: 600;
-    padding: 100px 0;
+    padding-top: 190px;
 }
 
 .sobre-recifart {
@@ -75,16 +78,20 @@ body {
 
 }
  .imagens {
-        padding: 50px 20px;
-        display: flex;
-        width: 80vw;
-        justify-content: center;
-        flex-wrap: wrap;
+    padding: 50px 20px;
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    
+    
 }
 
 .imagens img {
-    padding: 20px;
-    max-width: 400px;
+    padding: 10px;
+    max-width: 450px;
+    transition: 0.5s;
 }
 
 .tituloequipe{
@@ -105,7 +112,7 @@ body {
 }
 
 .tituloequipe p{
-    max-width: 768px;
+    max-width: 1000px;
     margin: 20px;
     font-size: 20px;
     font-weight: 700;

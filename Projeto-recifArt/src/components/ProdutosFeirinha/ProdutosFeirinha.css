@@ -8,25 +8,26 @@
     gap: 25px;
     height: max-content;
     padding-bottom: 30px;
-    width: 300px;
+    width: 375px;
 }
 
 .box-produtos>img {
-    width: 300px;
+    width: 100%;
 }
 
 .nome-preco {
-
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 18px;
     font-weight: 600;
     align-items: flex-start;
     width: 280px;
+    align-items: center;
+    gap: 30px;
 }
 
 .nome-preco span:nth-child(1) {
-    font-size: 22px;
+    font-size: 17px;
 }
 
 .perfil-nome {
@@ -63,6 +64,7 @@
     .nome-preco {
         font-size: 16px;
         width: 225px;
+        flex-direction: column;
     }
 
     .nome-preco span:nth-child(1) {

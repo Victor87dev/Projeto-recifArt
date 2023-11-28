@@ -125,7 +125,12 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin: 60px 10px;
+    margin: 200px 10px 60px 10px;
+    width: 70%;
+}
+
+.sessao-coleta .descricao-coleta{
+    width: 100%;
 }
 
 .box-coleta {
@@ -135,6 +140,7 @@ main {
     gap: 50px;
     height: 90%;
     flex-wrap: wrap;
+    margin-top: 60px;
 }
 
 .sessao-coleta>h1,
@@ -152,10 +158,10 @@ h2 {
     color: #2057E3;
 }
 
-.sessao-coleta>p {
+.sessao-coleta > p {
     font-size: 20px;
     font-weight: 700;
-    max-width: 732px;
+    max-width: 1000px;
 }
 
 .sessao-coleta>h1 {
@@ -236,16 +242,16 @@ h2 {
 }
 
 #parceiros {
-    margin-top: 120px;
+    margin: 250px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 120px;
 }
 
 #titulo h1 {
     margin-bottom: 40px;
     text-align: center;
+    font-size: 50px;
 }
 
 #elementos {
@@ -253,7 +259,7 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 25px;
+    gap: 150px;
 
 }
 
@@ -292,6 +298,22 @@ h2 {
     #img {
         right: 80px;
     }
+}
+
+
+@media (max-width: 950px) {
+   #elementos{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+   }
+
+   #parceiros h1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   }
+    
 }
 
 @media (max-width: 900px) {
@@ -360,6 +382,10 @@ h2 {
 
     #art-botao button {
         width: 100%;
+    }
+
+    #parceiros h1{
+        flex-direction: column;
     }
 }
 

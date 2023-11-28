@@ -33,6 +33,7 @@ body {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 100%;
+    height: 65vh;
 }
 
 .header-feirinha h1{
@@ -41,7 +42,7 @@ body {
     font-size: 65px;
     font-weight: 600;
     padding: 0px 30px;
-    padding-top: 100px;
+    padding-top: 180px;
 }
 
 .box-input{

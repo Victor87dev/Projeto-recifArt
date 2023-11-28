@@ -8,7 +8,7 @@ nav,
 
 .menu-conteudo {
     justify-content: space-between;
-    width: calc(100% - 600px);
+    width: calc(100% - 900px);
 }
 
 nav {
@@ -19,13 +19,20 @@ nav {
 nav,
 a {
     position: relative;
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     font-weight: 500;
     text-decoration: none;
     font-family: var(--primary-font);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.336);
+    transition: 0.6s;
 }
+
+nav a:hover {
+    font-size: 25px;
+    font-weight: 600;
+}
+
 
 nav a::before {
     content: '';
@@ -113,7 +120,7 @@ nav .menu {
     cursor: pointer;
 }
 
-nav .menu span {
+nav .menu .navAzul {
     height: 0.4rem;
     width: 100%;
     background-color: #204bb8;
