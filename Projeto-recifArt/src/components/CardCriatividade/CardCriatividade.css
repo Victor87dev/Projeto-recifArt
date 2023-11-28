@@ -12,6 +12,8 @@
     color: white;
     margin: 10px;
     padding: 25px;
+    max-width: 300px;
+    min-width: 300px;
 }
 
 .box-criatividade > div img {

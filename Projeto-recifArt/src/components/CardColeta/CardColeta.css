@@ -6,8 +6,9 @@
 .box-individual {
     box-shadow: rgb(0, 0, 0) 0px 0px 8px;
     border-radius: 6px;
-    height: 100%;
+    padding-bottom: 20px;
     transition: all ease .5s;
+    width: 272px;
 }
 
 .box-horarios>.horarios {

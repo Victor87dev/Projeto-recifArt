@@ -72,6 +72,7 @@ const Feirinha = () => {
           <Navbar />
           <h1>Conheça nossa Feirinha</h1>
         </header>
+        <main>
         <section className="sessao-feirinha reveal">
           <div className="box-input">
             <input
@@ -87,6 +88,7 @@ const Feirinha = () => {
             ))}
           </div>
         </section>
+        </main>
 
         <Footer />
       </div>

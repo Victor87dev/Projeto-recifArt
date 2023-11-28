@@ -1,10 +1,19 @@
-nav {
+nav,
+.menu-conteudo {
     display: flex;
     flex-direction: row;
-    width: 90%;
-    justify-content: space-around;
     align-items: center;
     margin-top: 20px;
+}
+
+.menu-conteudo {
+    justify-content: space-between;
+    width: calc(100% - 600px);
+}
+
+nav {
+    width: 100%;
+    justify-content: space-around;
 }
 
 nav,
@@ -36,26 +45,24 @@ nav a:hover::before {
 ul {
     display: flex;
     flex-direction: row;
-    gap: 70px;
     list-style-type: none;
-
-
+    text-wrap: nowrap;
 }
 
-ul>a>li {
+ul a {
+    margin: 0 35px;
+}
+
+ul>li {
     font-size: 22px;
     color: #fff;
     transition: .6s;
 }
 
-ul>a>li:hover {
+ul>li:hover {
     font-size: 24px;
     font-weight: 700;
     transition: .6s;
-}
-
-a {
-    text-decoration: none;
 }
 
 .buttons-header {
@@ -91,4 +98,105 @@ a {
     background-color: #204bb8;
     box-shadow: rgb(255, 255, 255) 0px 0px 6px;
     transition: .7s;
+}
+
+nav .menu {
+
+    position: absolute;
+    top: 1.3rem;
+    left: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+
+    cursor: pointer;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #204bb8;
+    border-radius: 0.2rem;
+}
+
+@media (max-width: 1300px) {
+    .menu-conteudo {
+        width: calc(100% - 530px);
+    }
+}
+
+@media (max-width: 1235px) {
+    .menu-conteudo {
+        width: calc(100% - 410px);
+    }
+
+    ul a {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 1135px) {
+    .menu-conteudo {
+        width: calc(100% - 390px);
+    }
+}
+
+@media (max-width: 1024px) {
+    ul a {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 955px) {
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .buttons-header {
+        display: none;
+    }
+
+    .menu-conteudo {
+        display: none;
+        background: #030D25;
+        width: 100%;
+        padding: 15px 30px;
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+    }
+
+    nav ul.aberto,
+    .buttons-header.aberto,
+    .menu-conteudo.aberto {
+        display: flex;
+    }
+
+    a {
+        padding: 10px 0;
+    }
+
+    .buttons-header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1.25rem;
+    }
+
 }

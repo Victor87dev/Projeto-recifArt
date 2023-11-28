@@ -1,30 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import { Logo } from "../image";
 import "./Navbar.css";
 
+import { Link, NavLink } from 'react-router-dom';
+
 const Navbar = () => {
+
+  const [menuAberto, setMenuAberto] = useState(false);
+
   return (
     <>
       <nav>
-        <a href="/home"><img src={Logo} alt="" /></a>
-        <ul>
-          <a href="/sobrenos">
-            <li>Sobre nós</li>
-          </a>
-          <a href="/blog">
-            <li>Blog</li>
-          </a>
-          <a href="/feirinha">
-            <li>Feirinha</li>
-          </a>
-        </ul>
-        <div className="buttons-header">
-          <button type="button" className="button-entrar">
-            Entrar
-          </button>
-          <button type="button" className="button-cadastrar">
-            Cadastrar
-          </button>
+        <Link to="/">
+          <img src={Logo} alt="" />
+        </Link>
+        <div className="menu" onClick={() => {
+          setMenuAberto(!menuAberto);
+        }}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div className={`menu-conteudo ${menuAberto ? "aberto" : ""}`}>
+          <ul className={menuAberto ? "aberto" : ""}>
+            <NavLink to="/sobrenos">
+              <li>Sobre nós</li>
+            </NavLink>
+            <NavLink to="/blog">
+              <li>Blog</li>
+            </NavLink>
+            <NavLink to="/feirinha">
+              <li>Feirinha</li>
+            </NavLink>
+          </ul>
+          <div className={`buttons-header ${menuAberto ? "aberto" : ""} `}>
+            <button type="button" className="button-entrar">
+              Entrar
+            </button>
+            <button type="button" className="button-cadastrar">
+              Cadastrar
+            </button>
+          </div>
         </div>
       </nav>
     </>

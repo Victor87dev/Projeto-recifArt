@@ -59,7 +59,7 @@ const Home = () => {
           <Navbar />
 
           <section className="sessao-header">
-            <video width="700" controls>
+            <video controls>
               <source src={Video} type="video/mp4" />
             </video>
             <p>
@@ -87,8 +87,8 @@ const Home = () => {
             </p>
 
             <div className="box-coleta">
-              {cardsColeta.map((card) => (
-                <CardColeta bairro={card.bairro} />
+              {cardsColeta.map((card, index) => (
+                <CardColeta key={index} bairro={card.bairro} />
               ))}
             </div>
           </section>
@@ -98,8 +98,9 @@ const Home = () => {
               Criatividade com <span className="cor"> Sabedoria</span>
             </h1>
             <div className="box-criatividade">
-              {cardsCriatividade.map((card) => (
+              {cardsCriatividade.map((card, index) => (
                 <CardCriatividade
+                  key={index}
                   img={card.img}
                   titulo={card.titulo}
                   descricao={card.descricao}
@@ -126,7 +127,7 @@ const Home = () => {
               </p>
             </div>
             <div id="img">
-              <img src={Art} alt="" />
+              <img src={Art} alt="artesao" />
             </div>
           </div>
           <div id="parceiros" className="reveal">
@@ -136,11 +137,11 @@ const Home = () => {
               </h1>
             </div>
             <div id="elementos">
-              <img src={Compose} alt="" className="empresa"/>
-              <img src={Sci} alt="" className="empresa"/>
-              <img src={Green} alt="" className="empresa"/>
-              <img src={Duck} alt="" className="empresa"/>
-              <img src={Star} alt="" className="empresa"/>
+              <img src={Compose} alt="parceiro componse" className="empresa"/>
+              <img src={Sci} alt="parceiro sci" className="empresa"/>
+              <img src={Green} alt="parceiro green" className="empresa"/>
+              <img src={Duck} alt="parceiro duck" className="empresa"/>
+              <img src={Star} alt="parceiro star" className="empresa"/>
             </div>
           </div>
         </main>
