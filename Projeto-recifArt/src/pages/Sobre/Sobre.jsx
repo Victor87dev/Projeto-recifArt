@@ -128,7 +128,7 @@ const Sobre = () => {
         </div>
 
         <div className="tituloequipe">
-          <h1>Nossa <span className="azul">equipe</span></h1>
+          <h1>Nossa <span>equipe</span></h1>
           <p>
             Na RecifArt, nossa força reside na diversidade e talento de nossa
             equipe apaixonada. Cada membro é uma peça fundamental na construção

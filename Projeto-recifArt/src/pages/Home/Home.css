@@ -246,13 +246,12 @@ h2 {
 #elementos{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 25px;
+    gap: 100px;
    
 }
-#elementos > img {
+.empresa {
     width: 40%; 
     max-width: 150px; 
 }

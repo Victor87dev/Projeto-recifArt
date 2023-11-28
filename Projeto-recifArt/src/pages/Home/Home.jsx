@@ -71,7 +71,7 @@ const Home = () => {
               , o <span>Recifart</span> é o lugar para você.
             </p>
             <button type="button" className="button-artesao top-fill">
-              ARTESÕES
+              ARTESÃOS
             </button>
           </section>
         </header>
@@ -126,9 +126,6 @@ const Home = () => {
                 a visibilidade dos artesãos e a demanda por práticas
                 sustentáveis.
               </p>
-              <div id="art-botao">
-                <button>Artesãos</button>
-              </div>
             </div>
             <div id="img">
               <img src={Art} alt="" />
@@ -141,11 +138,11 @@ const Home = () => {
               </h1>
             </div>
             <div id="elementos">
-              <img src={Compose} alt="" />
-              <img src={Sci} alt="" />
-              <img src={Green} alt="" />
-              <img src={Duck} alt="" />
-              <img src={Star} alt="" />
+              <img src={Compose} alt="" className="empresa"/>
+              <img src={Sci} alt="" className="empresa"/>
+              <img src={Green} alt="" className="empresa"/>
+              <img src={Duck} alt="" className="empresa"/>
+              <img src={Star} alt="" className="empresa"/>
             </div>
           </div>
         </main>
