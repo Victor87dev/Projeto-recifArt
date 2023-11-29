@@ -38,6 +38,7 @@ import Fabiana from "../assets/img/Fabiana.png";
 import Fernando from "../assets/img/Fernando.png";
 import Gabriela from "../assets/img/Gabriella.png";
 import Renata from "../assets/img/Renata.png";
+import whatsapp from "../assets/img/Group.png"
 
 export{
     Gracas,
@@ -80,4 +81,5 @@ export{
     Fernando,
     Gabriela,
     Renata,
+    whatsapp,
 };
