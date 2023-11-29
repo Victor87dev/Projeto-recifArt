@@ -40,6 +40,14 @@ import Gabriela from "../assets/img/Gabriella.png";
 import Renata from "../assets/img/Renata.png";
 import Renato1 from "../assets/img/Renato1.png"
 import whatsapp from "../assets/img/Group.png"
+import UrsoMetade from "../assets/img/ursoMetade.png";
+import Mequias from "../assets/img/mequias-sampaio.png";
+import Nicolai from "../assets/img/nicolai-figueroa.png";
+import Sarah from "../assets/img/sarah-maria.png";
+import Thamires from "../assets/img/thamires-reis.png";
+import Lucio from "../assets/img/lucio-flavio.png";
+import Mario from "../assets/img/mario-junior.png";
+import Lee from "../assets/img/lee-heung-min.png";
 
 export{
     Gracas,
@@ -84,4 +92,12 @@ export{
     Renata,
     whatsapp,
     Renato1,
+    UrsoMetade,
+    Mequias,
+    Nicolai,
+    Sarah,
+    Thamires,
+    Lucio,
+    Mario,
+    Lee,
 };

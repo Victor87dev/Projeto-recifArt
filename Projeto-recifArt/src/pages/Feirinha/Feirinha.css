@@ -39,14 +39,10 @@ body {
 .header-feirinha h1{
     color: #fff;
     text-shadow:0px 3px 3px rgba(0, 0, 0, 0.25);
-    font-size: 90px;
+    font-size: 65px;
     font-weight: 600;
-    padding-top: 165px;
-}
-
-.sessao-feirinha{
-    width: 65%;
-    height: 100%;
+    padding: 0px 30px;
+    padding-top: 180px;
 }
 
 .box-input{
@@ -71,9 +67,38 @@ body {
     grid-row-gap: 65px;
     justify-content: center;
     align-items: center;
-    height: 135vh;
 }
 
 .input-pesquisar::placeholder{
     font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .produtos-grid {
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 25px;
+    }
+    .produtos-grid {
+        grid-template-columns: auto auto;
+        grid-column-gap: 15px; 
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .produtos-grid {
+        grid-template-columns: auto auto;
+        grid-column-gap: 15px; 
+    }
+
+    .header-feirinha h1{
+        font-size: 40px;
+        padding-top: 70px;
+    }
+   
+}
+@media (max-width: 375px) {
+    .produtos-grid {
+        grid-column-gap: 15px; 
+    }
 }

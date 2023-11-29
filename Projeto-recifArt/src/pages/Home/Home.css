@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,12 +14,12 @@ body {
     overflow-x: hidden;
 }
 
-#container-home{
-    width: 100%;
+#container-home {
+    width: 100vw;
     height: 100%;
 }
 
-.header-home{
+.header-home {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,8 +29,8 @@ body {
     position: relative;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    padding-bottom: 30px;
 }
 
 .sessao-header {
@@ -44,6 +44,7 @@ body {
 }
 
 .sessao-header>video {
+    width: 700px;
     border-radius: 20px;
 }
 
@@ -52,11 +53,13 @@ body {
     font-size: 31px;
     font-family: 'Roboto', sans-serif;
     line-height: 45px;
+    padding: 0 30px;
 }
 
-.sessao-header>p>span, .cor {
+.sessao-header>p>span,
+.cor {
     color: #2057E3;
-    
+
 }
 
 .button-artesao {
@@ -122,8 +125,16 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    height: 590px;
-    margin: 150px;
+    margin: 200px 10px 60px 10px;
+    width: 70%;
+}
+
+.sessao-coleta .descricao-coleta{
+    width: 100%;
+}
+
+.sessao-header p span{
+    font-weight: 500;
 }
 
 .box-coleta {
@@ -132,7 +143,8 @@ main {
     justify-content: center;
     gap: 50px;
     height: 90%;
-    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 60px;
 }
 
 .sessao-coleta>h1,
@@ -150,9 +162,10 @@ h2 {
     color: #2057E3;
 }
 
-.sessao-coleta>p {
+.sessao-coleta > p {
     font-size: 20px;
     font-weight: 700;
+    max-width: 1000px;
 }
 
 .sessao-coleta>h1 {
@@ -160,7 +173,7 @@ h2 {
     font-weight: 1000;
 }
 
-.box-criatividade{
+.box-criatividade {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -184,8 +197,8 @@ h2 {
     color: white;
     margin: 25px;
     padding: 25px;
-    z-index: 1; 
-    
+    z-index: 1;
+
 }
 
 #texto h1 {
@@ -200,16 +213,15 @@ h2 {
 
 #img {
     position: absolute;
-    margin-left: 65%;
+    right: 110px;
 }
 
 #img img {
-    width: 80%;
-    margin-right: 50%;
-    border-radius: 8px; 
+    height: 490px;
+    border-radius: 8px;
     margin-top: 50px;
     animation: floatImage 4s ease-in-out infinite;
-    animation-delay: 3.1s; 
+    animation-delay: 3.1s;
 }
 
 #art-botao {
@@ -225,48 +237,184 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: .3s ease; 
+    transition: .3s ease;
 }
 
 #art-botao button:hover {
-    background: linear-gradient(91deg, #1C358C -6.25%, #1568B5 116.9%); 
+    background: linear-gradient(91deg, #1C358C -6.25%, #1568B5 116.9%);
     transform: scale(1.1);
 }
-#parceiros{
-    margin-top: 120px;
+
+#parceiros {
+    margin: 250px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 120px;
 }
-#titulo h1{
+
+#titulo h1 {
     margin-bottom: 40px;
     text-align: center;
+    font-size: 50px;
 }
-#elementos{
+
+#elementos {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 25px;
+    gap: 150px;
+
+}
+
+#elementos>img {
+    width: 40%;
+    max-width: 150px;
+    gap: 100px;
    
 }
-#elementos > img {
+.empresa {
     width: 40%; 
     max-width: 150px; 
 }
 
 /* -------- KEYFRAMES ---------*/
 
-@keyframes floatImage{
-    0%{
+@keyframes floatImage {
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-50px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .sessao-coleta>h1 {
+        font-size: 40px;
+    }
+
+    #img {
+        right: 80px;
+    }
+}
+
+
+@media (max-width: 950px) {
+   #elementos{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+   }
+
+   #parceiros h1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   }
+    
+}
+
+@media (max-width: 900px) {
+    #img {
+        right: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .sessao-header>video {
+        width: 480px;
+    }
+
+    #img img {
+        height: 400px;
+    }
+    .sessao-header>p {
+        font-size: 24px;  
+    }
+}
+
+@media (max-width: 767px) {
+    #img {
+        display: none;
+    }
+
+    #texto h1 {
+        margin-right: 0;
+    }
+
+    #texto p {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .sessao-header>video {
+        width: 320px;
+    }
+    .sessao-header>p {
+        font-size: 18px;  
+        font-weight: 600;
+    }
+    .button-artesao {
+        padding: 1.100em 1.800em;
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width: 425px) {
+    .sessao-coleta>h1 {
+        font-size: 30px;
+    }
+
+    .sessao-coleta>p {
+        font-size: 16px;
+    }
+
+    #texto {
+        padding: 0;
+    }
+
+    #texto h1 {
+        font-size: 30px;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    #texto p {
+        padding: 5px 0;
+    }
+
+    #art-botao {
+        margin: 0;
+        padding: 30px 0;
+    }
+
+    #art-botao button {
+        width: 100%;
+    }
+
+    #parceiros h1{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 320px) {
+    .sessao-header>video {
+        width: 290px;
+    }
+
+    #texto p {
+        padding: 5px 20;
+    }
+
+    #art-botao {
+        padding: 30px 20px;
     }
 }

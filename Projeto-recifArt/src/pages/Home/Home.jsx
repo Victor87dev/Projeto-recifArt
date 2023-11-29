@@ -7,8 +7,6 @@ import { Video } from "../../components/video";
 import "./Home.css";
 
 import {
-  Gracas,
-  Derby,
   Seguranca,
   Sustentabilidade,
   Inspiracao,
@@ -61,26 +59,26 @@ const Home = () => {
           <Navbar />
 
           <section className="sessao-header">
-            <video width="700" controls>
+            <video controls>
               <source src={Video} type="video/mp4" />
             </video>
             <p>
               Se você é um <span>artesão</span> em busca de visibilidade, uma{" "}
               <span>empresa</span> comprometida com a sustentabilidade ou alguém
               que simplesmente aprecia a beleza do <span>artesanato único</span>{" "}
-              , o <span>Recifart</span> é o lugar para você.
+              , o <span>RecifArt</span> é o lugar para você.
             </p>
-            <button type="button" className="button-artesao top-fill">
-              ARTESÕES
-            </button>
+            <a href="/artesoes"><button type="button" className="button-artesao top-fill">
+              ARTESÃOS
+            </button></a>
           </section>
         </header>
         <main>
-          <section className="sessao-coleta">
+          <section className="sessao-coleta reveal">
             <h1>
               Pontos de <span>Coleta.</span>
             </h1>
-            <p>
+            <p className="descricao-coleta">
               Explore nossos pontos de coleta em três localidades-chave:{" "}
               <span>Boa viagem</span>, <span>Derby</span>, e nas{" "}
               <span>Graças</span>. Cada ponto é estrategicamente posicionado
@@ -89,19 +87,20 @@ const Home = () => {
             </p>
 
             <div className="box-coleta">
-              {cardsColeta.map((card) => (
-                <CardColeta bairro={card.bairro} />
+              {cardsColeta.map((card, index) => (
+                <CardColeta key={index} bairro={card.bairro} />
               ))}
             </div>
           </section>
 
-          <section className="sessao-coleta">
+          <section className="sessao-coleta reveal">
             <h1>
               Criatividade com <span className="cor"> Sabedoria</span>
             </h1>
             <div className="box-criatividade">
-              {cardsCriatividade.map((card) => (
+              {cardsCriatividade.map((card, index) => (
                 <CardCriatividade
+                  key={index}
                   img={card.img}
                   titulo={card.titulo}
                   descricao={card.descricao}
@@ -110,7 +109,7 @@ const Home = () => {
             </div>
           </section>
 
-          <div id="art">
+          <div id="art" className="reveal">
             <div id="texto">
               <h1>
                 Nasce a Recifart, entrelaçando <span className="cor">arte</span>{" "}
@@ -126,26 +125,23 @@ const Home = () => {
                 a visibilidade dos artesãos e a demanda por práticas
                 sustentáveis.
               </p>
-              <div id="art-botao">
-                <button>Artesãos</button>
-              </div>
             </div>
             <div id="img">
-              <img src={Art} alt="" />
+              <img src={Art} alt="artesao" />
             </div>
           </div>
-          <div id="parceiros">
+          <div id="parceiros" className="reveal">
             <div id="titulo">
               <h1>
                 Nossos <span className="cor">parceiros.</span>
               </h1>
             </div>
             <div id="elementos">
-              <img src={Compose} alt="" />
-              <img src={Sci} alt="" />
-              <img src={Green} alt="" />
-              <img src={Duck} alt="" />
-              <img src={Star} alt="" />
+              <img src={Compose} alt="parceiro componse" className="empresa"/>
+              <img src={Sci} alt="parceiro sci" className="empresa"/>
+              <img src={Green} alt="parceiro green" className="empresa"/>
+              <img src={Duck} alt="parceiro duck" className="empresa"/>
+              <img src={Star} alt="parceiro star" className="empresa"/>
             </div>
           </div>
         </main>
