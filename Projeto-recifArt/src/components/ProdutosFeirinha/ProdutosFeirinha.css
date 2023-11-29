@@ -47,7 +47,9 @@
     cursor: pointer;
     transition: .4s;
 }
-
+.perfil-nome > a{
+    text-decoration: none;
+}
 .box-produtos button:hover {
     background-color: #0e2577;
 }

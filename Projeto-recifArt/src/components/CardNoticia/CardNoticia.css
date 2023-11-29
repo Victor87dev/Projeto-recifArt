@@ -17,6 +17,7 @@
 .texto-noticia > a{
     color: black;
     text-shadow: none;
+    text-decoration: none;
 }
 .texto-noticia h3{
     font-size: 20px;
