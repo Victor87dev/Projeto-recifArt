@@ -161,7 +161,7 @@ nav .menu .navAzul {
     }
 }
 
-@media (max-width: 955px) {
+@media (max-width: 1024px) {
     nav .menu {
         display: flex;
     }
