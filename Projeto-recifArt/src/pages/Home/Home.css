@@ -133,6 +133,10 @@ main {
     width: 100%;
 }
 
+.sessao-header p span{
+    font-weight: 500;
+}
+
 .box-coleta {
     display: flex;
     flex-direction: row;
@@ -330,6 +334,9 @@ h2 {
     #img img {
         height: 400px;
     }
+    .sessao-header>p {
+        font-size: 24px;  
+    }
 }
 
 @media (max-width: 767px) {
@@ -350,6 +357,15 @@ h2 {
     .sessao-header>video {
         width: 320px;
     }
+    .sessao-header>p {
+        font-size: 18px;  
+        font-weight: 600;
+    }
+    .button-artesao {
+        padding: 1.100em 1.800em;
+        font-size: 14px;
+    }
+
 }
 
 @media(max-width: 425px) {

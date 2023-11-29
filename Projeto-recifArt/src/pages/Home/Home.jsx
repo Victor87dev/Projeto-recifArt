@@ -66,7 +66,7 @@ const Home = () => {
               Se você é um <span>artesão</span> em busca de visibilidade, uma{" "}
               <span>empresa</span> comprometida com a sustentabilidade ou alguém
               que simplesmente aprecia a beleza do <span>artesanato único</span>{" "}
-              , o <span>Recifart</span> é o lugar para você.
+              , o <span>RecifArt</span> é o lugar para você.
             </p>
             <a href="/artesoes"><button type="button" className="button-artesao top-fill">
               ARTESÃOS

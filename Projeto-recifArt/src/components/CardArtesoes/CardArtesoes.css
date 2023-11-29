@@ -178,3 +178,29 @@
     }
 }
 
+@media (max-width: 400px){
+    .card-artesoes{
+        width: 330px;
+        height: 620px;
+    }
+
+    .card-artesoes img{
+        height: 230px;
+        
+    }
+    
+    .card-artesoes:hover img{
+        height: 280px;
+        
+    }
+
+
+    .card-artesoes:hover .container-artesoes h2{
+        font-size: 22px;
+    }
+
+    .card-artesoes:hover .container-artesoes p{
+        font-size: 14px;
+    }
+}
+

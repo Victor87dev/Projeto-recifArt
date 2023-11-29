@@ -166,4 +166,7 @@ body {
     .sobre-recifart p {
         font-size: 20px;
     }
+    .header-sobre{
+        height: 70vh;
+    }
 }

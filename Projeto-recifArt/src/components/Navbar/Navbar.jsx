@@ -24,25 +24,25 @@ const Navbar = () => {
 
         <div className={`menu-conteudo ${menuAberto ? "aberto" : ""}`}>
           <ul className={menuAberto ? "aberto" : ""}>
-            <NavLink to="/sobrenos">
+            <NavLink className="a-Azul" to="/sobrenos">
               <li>Sobre nós</li>
             </NavLink>
-            <NavLink to="/blog">
+            <NavLink className="a-Azul" to="/blog">
               <li>Blog</li>
             </NavLink>
-            <NavLink to="/feirinha">
+            <NavLink className="a-Azul" to="/feirinha">
               <li>Feirinha</li>
             </NavLink>
           </ul>
           <div className={`buttons-header ${menuAberto ? "aberto" : ""} `}>
-           <a href="/escolha"><button type="button" className="button-entrar">
+           <a href=""><button type="button" className="button-entrar">
               Entrar
             </button>
             </a>
-           <a href="/escolha"><button type="button" className="button-cadastrar">
+         <a href=""> <button type="button" className="button-cadastrar">
               Cadastrar
             </button>
-            </a>
+            </a> 
           </div>
         </div>
       </nav>
