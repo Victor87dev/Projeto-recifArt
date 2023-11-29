@@ -38,6 +38,7 @@ import Fabiana from "../assets/img/Fabiana.png";
 import Fernando from "../assets/img/Fernando.png";
 import Gabriela from "../assets/img/Gabriella.png";
 import Renata from "../assets/img/Renata.png";
+import Renato1 from "../assets/img/Renato1.png"
 import whatsapp from "../assets/img/Group.png"
 
 export{
@@ -82,4 +83,5 @@ export{
     Gabriela,
     Renata,
     whatsapp,
+    Renato1,
 };
