@@ -39,15 +39,15 @@ const Footer = () => {
               </li>
 
               <li>
-                <FaInstagram style={{ color: "purple" }} />
+                <a href=""><FaInstagram className="instagram" /></a>
                 <span>Instagram</span>
               </li>
               <li>
-                <FaTwitter style={{ color: "aquamarine" }} />
+                <a href=""><FaTwitter className="twitter" /></a>
                 <span>twitter</span>
               </li>
               <li>
-                <FaFacebook style={{ color: "blue" }} />
+                <a href=""><FaFacebook className="facebook" /></a>
                 <span>facebook</span>
               </li>
             </ul>

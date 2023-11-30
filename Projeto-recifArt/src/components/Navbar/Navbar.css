@@ -130,28 +130,22 @@ nav .menu .navAzul {
     border-radius: 0.2rem;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
     .menu-conteudo {
-        width: calc(100% - 530px);
+        width: calc(100% - 400px);
     }
     .buttons-header.aberto{
         align-items: center;
     }
 }
 
-@media (max-width: 1235px) {
+@media (max-width: 1150px) {
     .menu-conteudo {
-        width: calc(100% - 410px);
+        width: calc(100% - 250px);
     }
 
     ul a {
         margin: 0 20px;
-    }
-}
-
-@media (max-width: 1135px) {
-    .menu-conteudo {
-        width: calc(100% - 390px);
     }
 }
 
@@ -207,3 +201,4 @@ nav .menu .navAzul {
     }
 
 }
+

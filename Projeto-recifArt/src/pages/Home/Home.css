@@ -106,10 +106,6 @@ body {
     z-index: -1;
 }
 
-.top-fill:hover {
-    color: #000;
-}
-
 .top-fill:active {
     transform: scale(0.9);
 }

@@ -5,6 +5,8 @@
 }
 
 body {
+    width: 100%;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,22 +75,21 @@ body {
     font-size: 16px;
 }
 
-@media (max-width: 768px) {
-    .produtos-grid {
-        grid-template-columns: auto auto auto;
-        grid-column-gap: 25px;
-    }
-    .produtos-grid {
-        grid-template-columns: auto auto;
-        grid-column-gap: 15px; 
-    }
-    
+@media (max-width: 1500px){
+
 }
 
-@media (max-width: 425px) {
+
+@media (max-width: 1350px) {
     .produtos-grid {
         grid-template-columns: auto auto;
-        grid-column-gap: 15px; 
+    }
+}
+
+@media (max-width: 470px) {
+    .produtos-grid {
+        grid-template-columns: auto auto;
+        grid-column-gap: 10px; 
     }
 
     .header-feirinha h1{

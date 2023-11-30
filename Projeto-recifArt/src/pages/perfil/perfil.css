@@ -52,3 +52,24 @@ body {
     align-items: center;
     height: 75vh;
 }
+
+@media (max-width: 1200px){
+    .produto-grid{
+        grid-template-columns: auto auto;
+        height: 120vh;
+    }
+}
+
+@media (max-width: 1200px){
+    .produto-grid{
+        grid-template-columns: auto;
+        height: 170vh;
+    }
+}
+
+@media (max-width: 400px){
+    .produto-grid{
+        height: 130vh;
+    }
+    
+}

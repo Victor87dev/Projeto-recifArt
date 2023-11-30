@@ -21,19 +21,31 @@ font-size: 18px;
 font-weight: 600;
 }
 .caixa-produtos button{
-    padding: 8px 40px 8px 40px;
-    border-radius: 20px;
-    border: none;
-    background-color: #061033;
-    color: #fff;
-    font-family: var(--primary-font);
-    cursor: pointer;
-    transition: .4s;
-    }
+padding: 8px 40px 8px 40px;
+border-radius: 20px;
+border: none;
+background-color: #061033;
+color: #fff;
+font-family: var(--primary-font);
+cursor: pointer;
+transition: .4s;
+}
     
-    .caixa-produtos button:hover{
-    background-color: #0e2577;
+.caixa-produtos button:hover{
+background-color: #0e2577;
+}
+
+a{
+    color: black;
+}
+
+@media (max-width: 400px){
+    .caixa-produtos{
+        width: 260px;
+        height: 400px;
     }
-    a{
-        color: black;
+
+    .caixa-produtos img{
+        width: 100%;
     }
+}
