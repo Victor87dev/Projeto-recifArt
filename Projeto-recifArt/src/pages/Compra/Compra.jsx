@@ -4,16 +4,16 @@ import Footer from "../../components/Footer/Footer";
 import CardCompra from "../../components/CardCompra/CardCompra";
 import "./Compra.css";
 
-import { UrsoMetade, Renato} from "../../components/image";
+import { Ursos, Renato} from "../../components/image";
 
 const Compra = () => {
   const cardsCompra = [
     {
-      img: UrsoMetade,
+      img: Ursos,
       titulo: "Ursos sem Curso",
       material: "Lã de alta qualidade",
-      tamanho: "Aproximadamente 10 cm cada",
-      cores: "Diversas opções disponíveis.",
+      tamanho: "10 cm cada",
+      cores: "Todas disponíveis",
       preco: "R$9,99",
       perfil: Renato,
       nome: "Renato Peixoto",
