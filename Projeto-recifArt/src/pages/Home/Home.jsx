@@ -129,7 +129,7 @@ const Home = () => {
                   <Marker position={[-8.082382505857106, -34.89285446549145]}>
                     <Popup>
                      <strong>Econúcleo Vila Mangue</strong><br/>
-                     <FaRegClock />  Horario: 7h a 17h <br/>
+                     <FaRegClock />  Horario: 8h a 17h <br/>
                    <a href="https://maps.app.goo.gl/uEqbVkA4hjSSbcKWA" target="blank">Rota</a> 
                    <a href="" target="blank">Materiais</a>
                     </Popup>
