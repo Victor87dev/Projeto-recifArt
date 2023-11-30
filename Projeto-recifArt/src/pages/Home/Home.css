@@ -404,6 +404,10 @@ h2 {
     #parceiros h1{
         flex-direction: column;
     }
+    .leaflet-container{
+        height: 50vh;
+        width: 88vw;
+    }
 }
 
 @media (max-width: 320px) {
