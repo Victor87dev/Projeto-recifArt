@@ -12,7 +12,7 @@ const Perfil = () => {
       img: Renato1,
       nome : "Renato Peixoto",
       whatsapp: "www.google.com",
-      descricao: "Olá, sou Renato Augusto, um artesão apaixonado por tricô e criação manual. Meu mundo é repleto de fios, agulhas e a magia de transformar esses elementos em peças únicas e acolhedoras.",
+      descricao: "Olá, sou Renato Peixoto, um artesão apaixonado por tricô e criação manual. Meu mundo é repleto de fios, agulhas e a magia de transformar esses elementos em peças únicas e acolhedoras.",
     },
     
   ];

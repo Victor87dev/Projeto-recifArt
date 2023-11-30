@@ -1,9 +1,11 @@
 /* foto do artesão - nome - whatsapp */
 .artesao{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 25px;
+    text-align: center;
     justify-content: center;
-    
 }
 
 .artesao > a{
@@ -81,4 +83,77 @@
 }
 .botaocomprar > button a{
     color: white;
+}
+
+@media (max-width: 1100px){
+    .descricao{
+        height: 110px;
+    }
+}
+
+@media (max-width: 765px){
+    .descricao{
+        height: 180px;
+    }
+   
+}
+
+@media (max-width: 500px){
+    .artesao h3{
+        font-size: 22px;
+    }
+    .trabalhos h1{
+        font-size: 33px;  
+    }
+    .descricao{
+        height: 250px;
+    }
+
+   
+}
+
+@media (max-width: 400px){
+    .descricao{
+        height: 320px;
+    }
+
+    .artesao img{
+        height: 50px;
+    }
+
+    .artesao a img{
+        height: 33px;
+    }
+
+    .artesao h3{
+        font-size: 17px;
+    }
+
+    
+   
+}
+
+@media (max-width: 400px){
+    .descricao{
+        height: 380px;
+    }
+
+    .artesao img{
+        height: 50px;
+    }
+
+    .artesao a img{
+        height: 33px;
+    }
+
+    .artesao h3{
+        font-size: 17px;
+    }
+
+    .trabalhos h1{
+        font-size: 25px;  
+    }
+
+    
+   
 }

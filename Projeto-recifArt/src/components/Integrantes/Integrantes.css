@@ -34,6 +34,33 @@
     margin: 24px;
     margin-top: 60px;
     color: #fff;
+    transition: 0.5s;
+}
+
+.integrante a:hover .icons{
+    height: 33px;
+    width: 33px;
+}
+
+.integrante a:hover .linkedin{
+    padding: 4px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: rgb(0, 66, 165);
+}
+
+.integrante a:hover .github{
+    padding: 4px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+
+.integrante a:hover .instagram{
+    padding: 4px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: rgb(110, 23, 209);
 }
 
 @media (max-width: 1024px) {

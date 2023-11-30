@@ -75,7 +75,8 @@ body {
 .texto-missao p {
     color: #FFF;
     font-size: 20px;
-
+    font-weight: 600;
+    letter-spacing: 2.5px;
 }
  .imagens {
     padding: 50px 20px;

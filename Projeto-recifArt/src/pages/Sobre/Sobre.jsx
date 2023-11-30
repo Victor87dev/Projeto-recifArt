@@ -50,12 +50,12 @@ const Sobre = () => {
       Instagram: "https://www.instagram.com/joaov77_/",
     },
     {
-      img: Saulo,
-      nome: "Saulo França",
+      img: Leticia,
+      nome: "Leticia Moraes",
       area: "Desenvolvedor Front-End",
-      Likendin: "https://www.linkedin.com/in/saulo-fran%C3%A7a-57a96421a/",
-      github: "https://github.com/saulojlf",
-      Instagram: "https://www.instagram.com/saulotron93/",
+      Likendin: "http://linkedin.com/in/leticia-moraes-barbosa",
+      github: "https://github.com/Leticia1508",
+      Instagram: "https://instagram.com/leticia_moraes0",
     },
     {
       img: Paulo,
@@ -66,6 +66,15 @@ const Sobre = () => {
       Instagram: "https://www.instagram.com/paulojr_r/",
     },
     {
+      img: Saulo,
+      nome: "Saulo França",
+      area: "Desenvolvedor Front-End",
+      Likendin: "https://www.linkedin.com/in/saulo-fran%C3%A7a-57a96421a/",
+      github: "https://github.com/saulojlf",
+      Instagram: "https://www.instagram.com/saulotron93/",
+    },
+    
+    {
       img: Vinicius,
       nome: "Vinicius Rodrigues",
       area: "Desenvolvedor Front-End",
@@ -73,14 +82,7 @@ const Sobre = () => {
       github: "https://github.com/ViniciusCR7",
       Instagram: "https://www.instagram.com/viniciusrss_/",
     },
-    {
-      img: Leticia,
-      nome: "Leticia Moraes",
-      area: "Desenvolvedor Front-End",
-      Likendin: "http://linkedin.com/in/leticia-moraes-barbosa",
-      github: "https://github.com/Leticia1508",
-      Instagram: "https://instagram.com/leticia_moraes0",
-    },
+    
 
   ]
 
