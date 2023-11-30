@@ -128,7 +128,12 @@ main {
     margin: 200px 10px 60px 10px;
     width: 70%;
 }
-
+.leaflet-container {
+    width: 65vw;
+    height: 65vh;
+    border:  solid 2px #2057E3; 
+    border-radius: 15px;
+  }
 .sessao-coleta .descricao-coleta{
     width: 100%;
 }

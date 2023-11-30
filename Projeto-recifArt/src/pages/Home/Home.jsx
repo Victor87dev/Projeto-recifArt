@@ -1,9 +1,12 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import CardColeta from "../../components/CardColeta/CardColeta";
 import CardCriatividade from "../../components/CardCriatividade/CardCriatividade";
+import { MapContainer, TileLayer, useMap, Popup, Marker } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css';
+import { Icon } from "leaflet";
 import { Video } from "../../components/video";
+
 import "./Home.css";
 
 import {
@@ -19,17 +22,7 @@ import {
 } from "../../components/image";
 
 const Home = () => {
-  const cardsColeta = [
-    {
-      bairro: "Boa viagem",
-    },
-    {
-      bairro: "Pina",
-    },
-    {
-      bairro: "Candeias",
-    },
-  ];
+
 
   const cardsCriatividade = [
     {
@@ -85,12 +78,33 @@ const Home = () => {
               para proporcionar comodidade aos moradores e empresas locais
               interessados em adotar práticas sustentáveis.
             </p>
+            <section className="container-mapa">
+            <div id="mapa">
+              <MapContainer center={[-8.05687703365518, -34.88305617720092]} zoom={13} >
+                <TileLayer
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <Marker position={[-8.05687703365518, -34.88305617720092]}>
+                  <Popup>
+                    Pracinha de Boa Viagem <br />
+                   <a href="https://maps.app.goo.gl/B1hnUmiVXSCwYs1L6" target="blank">Rota</a> 
+                  </Popup>
+                  <Marker position={[-8.05606994702112, -34.8993640012484]}>
+                    <Popup>
+                      Praça do derby <br />
+                    </Popup>
+                  </Marker>
+                  <Marker position={[-8.110103055255895, -34.911199064574596]}>
+                    <Popup>
+                      Home center imbiribeira <br />
+                    </Popup>
+                  </Marker>
+                </Marker>
 
-            <div className="box-coleta">
-              {cardsColeta.map((card, index) => (
-                <CardColeta key={index} bairro={card.bairro} />
-              ))}
+              </MapContainer>
             </div>
+            </section>
           </section>
 
           <section className="sessao-coleta reveal">
@@ -137,11 +151,11 @@ const Home = () => {
               </h1>
             </div>
             <div id="elementos">
-              <img src={Compose} alt="parceiro componse" className="empresa"/>
-              <img src={Sci} alt="parceiro sci" className="empresa"/>
-              <img src={Green} alt="parceiro green" className="empresa"/>
-              <img src={Duck} alt="parceiro duck" className="empresa"/>
-              <img src={Star} alt="parceiro star" className="empresa"/>
+              <img src={Compose} alt="parceiro componse" className="empresa" />
+              <img src={Sci} alt="parceiro sci" className="empresa" />
+              <img src={Green} alt="parceiro green" className="empresa" />
+              <img src={Duck} alt="parceiro duck" className="empresa" />
+              <img src={Star} alt="parceiro star" className="empresa" />
             </div>
           </div>
         </main>
