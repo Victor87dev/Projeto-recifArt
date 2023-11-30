@@ -129,7 +129,7 @@ const Home = () => {
                   <Marker position={[-8.082382505857106, -34.89285446549145]}>
                     <Popup>
                      <strong>Econúcleo Vila Mangue</strong><br/>
-                     <FaRegClock />  Horario: 8h a 17h <br/>
+                     <FaRegClock />  Horário: 8h a 17h <br/>
                    <a href="https://maps.app.goo.gl/uEqbVkA4hjSSbcKWA" target="blank">Rota</a> 
                    <a href="" target="blank">Materiais</a>
                     </Popup>
@@ -137,7 +137,7 @@ const Home = () => {
                   <Marker position={[-8.115977668603954, -34.91550839691972]}>
                     <Popup>
                      <strong>Centro de Reciclagem do Recife</strong><br/>
-                     <FaRegClock />  Horario: 8h a 16h <br/>
+                     <FaRegClock />  Horário: 8h a 16h <br/>
                    <a href="https://maps.app.goo.gl/qAZnTFb5ogFBoKZ79" target="blank">Rota</a> 
                    <a href="" target="blank">Materiais</a>
                     </Popup>
@@ -145,7 +145,7 @@ const Home = () => {
                   <Marker position={[-8.090103024208506, -34.91921615175969]}>
                     <Popup>
                      <strong>Cooperativa de Catadores Profissionais do Recife</strong><br/>
-                     <FaRegClock />  Horario: 7h a 17h <br/>
+                     <FaRegClock />  Horário: 7h a 17h <br/>
                    <a href="https://maps.app.goo.gl/2QTxBkpjqpsEdgME7" target="blank">Rota</a> 
                    <a href="" target="blank">Materiais</a>
                     </Popup>
@@ -153,7 +153,7 @@ const Home = () => {
                   <Marker position={[-8.03100171513698, -34.94247237517158]}>
                     <Popup>
                      <strong>REEECicle - Inteligência em Reciclagem</strong><br/>
-                     <FaRegClock />  Horario: 8h a 17:30h <br/>
+                     <FaRegClock />  Horário: 8h a 17:30h <br/>
                    <a href="https://maps.app.goo.gl/WbLaw7Z43AKiiyiX6" target="blank">Rota</a> 
                    <a href="" target="blank">Materiais</a>
                     </Popup>
@@ -161,7 +161,7 @@ const Home = () => {
                   <Marker position={[-8.10865069739007, -34.953491374289136]}>
                     <Popup>
                      <strong>Ecoestação Cohab</strong><br/>
-                     <FaRegClock />  Horario: 7h a 17h <br/>
+                     <FaRegClock />  Horário: 7h a 17h <br/>
                    <a href="https://maps.app.goo.gl/L8Ectba4irEZaFR6A" target="blank">Rota</a> 
                    <a href="" target="blank">Materiais</a>
                     </Popup>
@@ -169,7 +169,7 @@ const Home = () => {
                   <Marker position={[-8.113301720086668, -34.953626498337634]}>
                     <Popup>
                      <strong>Ecoestação Ibura</strong><br/>
-                     <FaRegClock />  Horario: 7h a 17h <br/>
+                     <FaRegClock />  Horário: 7h a 17h <br/>
                    <a href="https://maps.app.goo.gl/qR4XsqnEZW82WDio7" target="blank">Rota</a> 
                    <a href="" target="blank">Materiais</a>
                     </Popup>
@@ -177,7 +177,7 @@ const Home = () => {
                   <Marker position={[-8.02014882584242, -34.87449181077548]}>
                     <Popup>
                      <strong>Ecoestação do Arruda</strong><br/>
-                     <FaRegClock />  Horario: 8h a 18h <br/>
+                     <FaRegClock />  Horário: 8h a 18h <br/>
                    <a href="https://maps.app.goo.gl/N8CBMwZq15JeR27N6" target="blank">Rota</a> 
                    <a href="" target="blank">Materiais</a>
                     </Popup>
@@ -185,7 +185,7 @@ const Home = () => {
                   <Marker position={[-8.07359718996039, -34.89748189373431]}>
                     <Popup>
                      <strong>E.B.A Gestão Ambiental Nordeste</strong><br/>
-                     <FaRegClock />  Horario: 8h a 17h <br/>
+                     <FaRegClock />  Horário: 8h a 17h <br/>
                    <a href="https://maps.app.goo.gl/naWnpKz786HdkYqN8" target="blank">Rota</a> 
                    <a href="" target="blank">Materiais</a>
                     </Popup>
