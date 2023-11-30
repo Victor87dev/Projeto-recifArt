@@ -129,7 +129,22 @@ main {
     height: 65vh;
     border:  solid 2px #2057E3; 
     border-radius: 15px;
+    font-size: 15px;
+    text-align: center;
   }
+.leaflet-popup a {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+.leaflet-popup{
+    text-align: center;
+}
+.leaflet-control-attribution{
+    display: none;
+}
 .sessao-coleta .descricao-coleta{
     width: 100%;
 }

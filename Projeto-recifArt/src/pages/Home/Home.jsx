@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import CardCriatividade from "../../components/CardCriatividade/CardCriatividade";
 import { MapContainer, TileLayer, useMap, Popup, Marker } from 'react-leaflet'
+import { FaRegClock } from "react-icons/fa";
 import 'leaflet/dist/leaflet.css';
 import { Icon } from "leaflet";
 import { Video } from "../../components/video";
@@ -19,6 +20,7 @@ import {
   Green,
   Duck,
   Star,
+  Logo,
 } from "../../components/image";
 
 const Home = () => {
@@ -82,22 +84,24 @@ const Home = () => {
             <div id="mapa">
               <MapContainer center={[-8.05687703365518, -34.88305617720092]} zoom={13} >
                 <TileLayer
-                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                  
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
                 <Marker position={[-8.05687703365518, -34.88305617720092]}>
                   <Popup>
-                    Pracinha de Boa Viagem <br />
+                   <strong>Pracinha de Boa Viagem</strong> <br />
+                   <FaRegClock />  Horario: 8h a 21h <br/>
                    <a href="https://maps.app.goo.gl/B1hnUmiVXSCwYs1L6" target="blank">Rota</a> 
+                   <a href="" target="blank">Materias</a>
                   </Popup>
                   <Marker position={[-8.05606994702112, -34.8993640012484]}>
                     <Popup>
-                      Praça do derby <br />
+                      <strong>Praça do Derby</strong> <br />
                     </Popup>
                   </Marker>
                   <Marker position={[-8.110103055255895, -34.911199064574596]}>
                     <Popup>
-                      Home center imbiribeira <br />
+                     <strong>Home Center Imbiribeira</strong><br/>
                     </Popup>
                   </Marker>
                 </Marker>
