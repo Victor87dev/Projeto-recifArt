@@ -80,7 +80,7 @@ function Cadastro() {
          validationSchema={validationRegister}
          
          >
-        <Form  >
+        <Form >
          
 
    <h1>Prazer em conhecê-lo!</h1>
