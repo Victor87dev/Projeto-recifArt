@@ -7,6 +7,15 @@ import Blog from "../pages/Blog/Blog";
 import Compra from "../pages/Compra/Compra"
 import Artesoes from "../pages/artesoes/artesoes";
 import Escolha from "../pages/Escolha/Escolha";
+import LoginUser from "../pages/login/login_usuario";
+import CadastroUser from "../pages/Cadastro/cadastro_usuario";
+import LoginEmp from "../pages/login/login_empresa";
+import CadastroEmp from "../pages/Cadastro/cadastro_empresa";
+import LoginArt from "../pages/login/login_artesao";
+import CadastroArt from "../pages/Cadastro/cadastro_artesao";
+
+
+
 const AppRoutes = () => {
     return(
         <Routes>
@@ -19,6 +28,12 @@ const AppRoutes = () => {
             <Route path="/compra" element={<Compra/>} />
             <Route path="/artesoes" element={<Artesoes/>} />
             <Route path="/escolha" element={<Escolha/>}/>
+            <Route path= "/login_usuario" element={<LoginUser/>}/>
+            <Route path= "/cadastro_usuario" element={<CadastroUser/>}/>
+            <Route path= "/login_empresa" element={<LoginEmp/>}/>
+            <Route path= "/cadastro_empresa" element={<CadastroEmp/>}/>
+            <Route path= "/login_artesao" element={<LoginArt/>}/>
+            <Route path= "/cadastro_artesao" element={<CadastroArt/>}/>
         </Routes>
     )
 }
