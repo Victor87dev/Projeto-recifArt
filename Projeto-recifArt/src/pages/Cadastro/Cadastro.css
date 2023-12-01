@@ -5,11 +5,27 @@
 }
 /*--secondary-font*/
 /* --primary-font */
-.container{
+.container-cadastro{
     display: flex;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(0deg, rgba(109, 114, 128, 0.00) -8.39%, rgba(13, 37, 80, 0.62) 69.37%, #0D2550 98.93%), url(../../assets/img/fundo-cadastro.svg) no-repeat;
+    background-size: cover;
 }
+.ladoEsquerdo{
 
-h1{
+    width: 100%;
+}
+form{
+
+    background-color: white;
+    width: 100%;
+    border-radius: 0px 26px 26px 0px;
+    height: 100%;
+
+}
+.ladoEsquerdo h1{
 
     color: var(--BW-S80, #1B1B1B);
 
@@ -22,9 +38,7 @@ line-height: normal;
 
 .ladoEsquerdo p{
    margin-left: 3%;
-    color: var(--BW-S80, #1B1B1B);
     font-family: var(--primary-font);
-font-size: 28px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -100,7 +114,7 @@ line-height: normal;
 
 }
 .parteinferiorCad {
-    margin: 5% 0 0 0;
+    margin: 1% 0 0 0;
     display: flex;
     flex-direction: column;
 
@@ -135,8 +149,18 @@ box-shadow: 1.32px 5.40px 5.40px 0px rgba(0, 0, 0, 0.25);
     background: #0C2F94;
 }
 .jatemconta{
-    margin: 4%;
+
     text-align: center;
+    text-decoration: none;
+}
+.jatemconta:hover{
+
+   color: #5d8bff;
+}
+
+.jatemconta span:hover{
+
+    color: #5d8bff;
 }
 
 .form-align{
@@ -145,18 +169,56 @@ box-shadow: 1.32px 5.40px 5.40px 0px rgba(0, 0, 0, 0.25);
     align-items: center;
 }
 
-label p{
+.name-cad p,.email-cad p,.cpf-cad p,.password-cad p,.ConfirmPassword-cad p{
  margin: 4% 0 2% 0 ;
 }
 .img-cad img{
     width: 200px;
     height: 60px;
     margin: 50px;
+    text-align: center;
+
+}
+
+form .ladoEsquerdo{
+    width: 100%;
+    background-color: white;
 }
 .ladoDireito{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    background: linear-gradient(0deg, rgba(109, 114, 128, 0.00) -8.39%, rgba(13, 37, 80, 0.62) 69.37%, #0D2550 98.93%), url(../../assets/img/fundo-cadastro.svg) no-repeat;
-    background-size: cover;
+    width: 60%;
 }
+.img-cad{
+
+    display: flex;
+    justify-content: center;
+}
+
+.ladoEsquerdo > a button{
+
+    width: 125px;
+    height: 53px;
+    border-radius: 15px;
+    border: 2px solid #000;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.00);
+    margin: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px; 
+    right: 68%;
+    transform: translateX(-220%);
+}
+
+.parteinferiorCad p{
+  margin: 0;
+    font-weight: 400;
+}
+.login-area {
+    color: var(--B-S80, #0F3FB9);
+  text-decoration: none;
+}
+.login-area:hover {
+    color: var(--B-S80, #7e9ff1);
+}
+

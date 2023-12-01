@@ -14,11 +14,9 @@ import LoginEmp from "../pages/login/login_empresa";
 import CadastroEmp from "../pages/Cadastro/cadastro_empresa";
 import LoginArt from "../pages/login/login_artesao";
 import CadastroArt from "../pages/Cadastro/cadastro_artesao";
-
-
-
 import Pagamento from "../pages/Pagamento/Pagamento";
 import Materiais from "../pages/Materiais/Materiais";
+
 const AppRoutes = () => {
     return(
         <Routes>
