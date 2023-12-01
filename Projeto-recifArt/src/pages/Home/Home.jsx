@@ -74,9 +74,9 @@ const Home = () => {
               Pontos de <span>Coleta.</span>
             </h1>
             <p className="descricao-coleta">
-              Explore nossos pontos de coleta em três localidades-chave:{" "}
-              <span>Boa viagem</span>, <span>Derby</span>, e nas{" "}
-              <span>Graças</span>. Cada ponto é estrategicamente posicionado
+              Explore nossos pontos de coleta em várias localidades-chave, como:{" "}
+              <span>Boa viagem</span>, <span>Joana Bezerra</span>,{" "}
+              <span>Vila Popular</span>, etc. Cada ponto é estrategicamente posicionado
               para proporcionar comodidade aos moradores e empresas locais
               interessados em adotar práticas sustentáveis.
             </p>
@@ -118,7 +118,7 @@ const Home = () => {
                    <a href="" target="blank">Materiais</a>
                     </Popup>
                   </Marker>
-                  <Marker position={[-8.070447687668052, -34.97144135198825]}>
+                  <Marker position={[-8.077768455704135, -34.971780741522416]}>
                     <Popup>
                      <strong>Ecoestação Totó</strong><br/>
                      <FaRegClock />  Horário: 7h a 16h <br/>
@@ -126,7 +126,7 @@ const Home = () => {
                    <a href="" target="blank">Materiais</a>
                     </Popup>
                   </Marker>
-                  <Marker position={[-8.082382505857106, -34.89285446549145]}>
+                  <Marker position={[-8.088753447641468, -34.89150888650784]}>
                     <Popup>
                      <strong>Econúcleo Vila Mangue</strong><br/>
                      <FaRegClock />  Horário: 8h a 17h <br/>
@@ -142,7 +142,7 @@ const Home = () => {
                    <a href="" target="blank">Materiais</a>
                     </Popup>
                   </Marker>
-                  <Marker position={[-8.090103024208506, -34.91921615175969]}>
+                  <Marker position={[-8.097753455463128, -34.91955675685612]}>
                     <Popup>
                      <strong>Cooperativa de Catadores Profissionais do Recife</strong><br/>
                      <FaRegClock />  Horário: 7h a 17h <br/>
@@ -174,7 +174,7 @@ const Home = () => {
                    <a href="" target="blank">Materiais</a>
                     </Popup>
                   </Marker>
-                  <Marker position={[-8.02014882584242, -34.87449181077548]}>
+                  <Marker position={[-8.02036858838945, -34.87449068728338]}>
                     <Popup>
                      <strong>Ecoestação do Arruda</strong><br/>
                      <FaRegClock />  Horário: 8h a 18h <br/>
