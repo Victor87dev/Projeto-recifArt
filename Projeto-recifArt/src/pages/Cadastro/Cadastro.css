@@ -222,6 +222,15 @@ form .ladoEsquerdo{
     color: var(--B-S80, #7e9ff1);
 }
 
-@media screen and (max-width: 1330px) {
-    
+@media screen and (max-width: 1337px) {
+    .ladoEsquerdo > a button {
+
+        top:-16px;
+        right: 60%
+    }
+    form{
+        justify-content: none;
+        padding: auto;
+    }
+
 }

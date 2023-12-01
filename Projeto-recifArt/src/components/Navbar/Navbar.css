@@ -139,6 +139,7 @@ nav .menu .navAzul {
     gap: 20px;
     
     align-items: center;
+    cursor: pointer;
   
 }
 .button-logout{
@@ -151,9 +152,11 @@ nav .menu .navAzul {
     background: rgb(255, 255, 255);
     width: 80px;
     border-radius: 20px;
+    cursor: pointer;
 }
 .button-logout:hover{
     background: rgb(133, 141, 255);
+    cursor: pointer;
 
 
 }
