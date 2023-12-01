@@ -48,6 +48,10 @@ import Thamires from "../assets/img/thamires-reis.png";
 import Lucio from "../assets/img/lucio-flavio.png";
 import Mario from "../assets/img/mario-junior.png";
 import Lee from "../assets/img/lee-heung-min.png";
+import Empresa from "../assets/img/empresa.svg";
+import Cliente from "../assets/img/cliente.svg";
+import Martelo from "../assets/img/artesaoico.svg";
+import Profile from "../assets/img/Profile.svg"
 import Cartoes from "../assets/img/card_img.png";
 import Cartoes2 from "../assets/img/cartoes2.png";
 export{
@@ -101,6 +105,10 @@ export{
     Lucio,
     Mario,
     Lee,
+    Empresa,
+    Cliente,
+    Martelo,
+    Profile,
     Cartoes,
     Cartoes2,
 };

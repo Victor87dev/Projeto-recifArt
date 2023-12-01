@@ -4,9 +4,29 @@ import Portfolio from "../../components/portfolio/portifolio";
 import Footer from "../../components/Footer/Footer";
 import ProdutoPortifolio from "../../components/produtoportifolio/ProdutoPortifolio";
 import { Renato1, Tamandua, Ursos, Porta } from "../../components/image";
-import "./perfil.css"
+import "./perfil.css";
+import { useEffect,useState } from 'react';
 
 const Perfil = () => {
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const checkLoggedInStatus = async () => {
+      const token = localStorage.getItem('token');
+      if (token) {
+        setIsLoggedIn(true);
+      }
+    };
+  
+    checkLoggedInStatus();
+  }, []);
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    localStorage.removeItem('token');
+  };
+
+
   const portifolio = [
     {
       img: Renato1,
@@ -34,7 +54,7 @@ const Perfil = () => {
       <>
         <div id="container-perfil">
           <header className="header-perfil">
-            <Navbar />
+          <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} setIsLoggedIn={setIsLoggedIn} />
             <h1>Portfólio</h1>
           </header>
           
