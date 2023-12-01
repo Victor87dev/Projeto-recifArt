@@ -48,7 +48,7 @@ const Materiais = () => {
 
                                     <div className="item" key={index}>
                                         <div className="image">
-                                            <img src={image} alt={nome} />
+                                            <img className="image-material" src={image} alt={nome} />
                                         </div>
                                         <div className="info">
                                             <span className="nome">{nome}</span>
