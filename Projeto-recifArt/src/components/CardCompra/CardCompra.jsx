@@ -32,7 +32,7 @@ const CardCompra = (props) => {
             className="input-compra"
           />
           <p className="p-preco">{props.preco}</p>
-          <button type="button">Pagamento</button>
+          <a className="btn-pagamento" href="/pagamento"><button type="button">Pagamento</button></a>
         </div>
       </div>
     </>

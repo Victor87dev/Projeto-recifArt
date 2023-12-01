@@ -48,6 +48,8 @@ import Thamires from "../assets/img/thamires-reis.png";
 import Lucio from "../assets/img/lucio-flavio.png";
 import Mario from "../assets/img/mario-junior.png";
 import Lee from "../assets/img/lee-heung-min.png";
+import Cartoes from "../assets/img/card_img.png";
+import Cartoes2 from "../assets/img/cartoes2.png";
 export{
     Gracas,
     Derby,
@@ -99,4 +101,6 @@ export{
     Lucio,
     Mario,
     Lee,
+    Cartoes,
+    Cartoes2,
 };

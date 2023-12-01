@@ -89,7 +89,7 @@
 }
 
 .box-informacoes-compra button{
-padding: 6px 15px 6px 15px;
+padding: 6px 25px 6px 25px;
 border-radius: 20px;
 border: none;
 background-color: #061033;
@@ -194,7 +194,7 @@ background-color: #0e2577;
     }
 
     .box-informacoes-compra button{
-        padding: 10px 40px 10px 40px;
+        padding: 10px 20px 10px 20px;
     }
  
 
@@ -232,7 +232,9 @@ background-color: #0e2577;
         height: 15vh;
         width: 200px;
         margin: 0;
-        margin-top: -25px;
+        margin-top: -30px;
+        gap: 50px;
+    
     }
 
 
@@ -244,7 +246,7 @@ background-color: #0e2577;
     }
 
     .box-informacoes-compra button{
-        margin-top: -30px;
+        margin-top: -50px;
     }
  
 }
