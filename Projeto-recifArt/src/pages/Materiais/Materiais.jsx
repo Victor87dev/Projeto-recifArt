@@ -63,8 +63,8 @@ const Materiais = () => {
                             })}
                         </div>
                         <div className="buttons-carousel">
-                            <button onClick={moverParaEsquerda}><IoIosArrowBack className="arrow-icon" /></button>
-                            <button onClick={moverParaDireita}><IoIosArrowForward className="arrow-icon" /></button>
+                            <button className="buttons-carousel-botao" onClick={moverParaEsquerda}><IoIosArrowBack className="arrow-icon" /></button>
+                            <button className="buttons-carousel-botao" onClick={moverParaDireita}><IoIosArrowForward className="arrow-icon" /></button>
                         </div>
                     </div>
                 </main>
