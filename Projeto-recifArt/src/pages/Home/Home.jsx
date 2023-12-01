@@ -7,6 +7,7 @@ import { FaRegClock } from "react-icons/fa";
 import 'leaflet/dist/leaflet.css';
 import { Icon } from "leaflet";
 import { Video } from "../../components/video";
+import { useEffect,useState } from 'react';
 
 import "./Home.css";
 
@@ -24,7 +25,23 @@ import {
 } from "../../components/image";
 
 const Home = () => {
+  
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  useEffect(() => {
+    const checkLoggedInStatus = async () => {
+      const token = localStorage.getItem('token');
+      if (token) {
+        setIsLoggedIn(true);
+      }
+    };
+  
+    checkLoggedInStatus();
+  }, []);
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    localStorage.removeItem('token');
+  };
 
   const cardsCriatividade = [
     {
@@ -51,7 +68,7 @@ const Home = () => {
     <>
       <div id="container-home">
         <header className="header-home">
-          <Navbar />
+          <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} setIsLoggedIn={setIsLoggedIn} />
 
           <section className="sessao-header">
             <video controls>

@@ -1,12 +1,28 @@
 import React, { useState } from "react";
-import { Logo } from "../image";
+import { Logo,Profile } from "../image";
 import "./Navbar.css";
-
 import { Link, NavLink } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ isLoggedIn, handleLogout ,setIsLoggedIn}) => {
 
   const [menuAberto, setMenuAberto] = useState(false);
+  const [showLogout, setShowLogout] = useState(false);
+
+  const decodeJwt = (token) => {
+    const base64Url = token.split('.')[1];
+    const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    const jsonPayload = decodeURIComponent(atob(base64).split('').map((c) => `%${(`00${c.charCodeAt(0).toString(16)}`).slice(-2)}`).join(''));
+  
+    return JSON.parse(jsonPayload);
+  };
+  const getUserNameFromToken = () => {
+    const token = localStorage.getItem("token"); 
+    if (token) {
+      const decodedToken = decodeJwt(token);
+      return decodedToken ? decodedToken.nome : null;
+    }
+    return null;
+  };
 
   return (
     <>
@@ -34,15 +50,39 @@ const Navbar = () => {
               <li>Feirinha</li>
             </NavLink>
           </ul>
+          
+          
           <div className={`buttons-header ${menuAberto ? "aberto" : ""} `}>
-           <a href="/escolha"><button type="button" className="button-entrar">
-              Entrar
-            </button>
-            </a>
-         <a href="/escolha"> <button type="button" className="button-cadastrar">
-              Cadastrar
-            </button>
-            </a> 
+          
+          {isLoggedIn ? (
+            <>
+            <div
+              className="optionsLogin"
+              onClick={() => setShowLogout(!showLogout)}
+            >
+              <img src={Profile}/> <p>{getUserNameFromToken()}</p> 
+            </div>
+            {showLogout && (
+              <button type="button" className="button-logout" onClick={() => {handleLogout();setIsLoggedIn(false);}}>
+                Sair
+              </button>
+            )}
+          </>
+        ) : (
+            
+            <>
+              <a href="/escolha">
+                <button type="button" className="button-entrar">
+                  Entrar
+                </button>
+              </a>
+              <a href="/escolha">
+                <button type="button" className="button-cadastrar">
+                  Cadastrar
+                </button>
+              </a>
+            </>
+          )}
           </div>
         </div>
       </nav>

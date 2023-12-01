@@ -50,7 +50,8 @@ import Mario from "../assets/img/mario-junior.png";
 import Lee from "../assets/img/lee-heung-min.png";
 import Empresa from "../assets/img/empresa.svg";
 import Cliente from "../assets/img/cliente.svg";
-import Martelo from "../assets/img/artesaoico.svg"
+import Martelo from "../assets/img/artesaoico.svg";
+import Profile from "../assets/img/Profile.svg"
 export{
     Gracas,
     Derby,
@@ -105,4 +106,5 @@ export{
     Empresa,
     Cliente,
     Martelo,
+    Profile,
 };
