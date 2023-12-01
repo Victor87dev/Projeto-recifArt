@@ -222,3 +222,6 @@ form .ladoEsquerdo{
     color: var(--B-S80, #7e9ff1);
 }
 
+@media screen and (max-width: 1330px) {
+    
+}

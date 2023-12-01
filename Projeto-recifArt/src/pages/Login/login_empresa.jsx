@@ -137,7 +137,7 @@ function login() {
 <button className='button' type='submit' src='#'>
   Entrar
 </button>
-<p>Não tem uma conta?<a href="cadastro_artesao" className='cadastrar'> Cadastra-se</a></p>
+<p>Não tem uma conta?<a href="cadastro_empresa" className='cadastrar'> Cadastra-se</a></p>
  </div>
         </Form>
  </Formik>
