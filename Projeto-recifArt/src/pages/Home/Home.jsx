@@ -31,7 +31,7 @@ const Home = () => {
       img: Inspiracao,
       titulo: "Inspiração",
       descricao:
-        "a inspiração não é exclusiva para os artistas; é para todos que buscam um universo de criatividade. Explore nossa galeria diversificada para descobrir projetos que transcendem fronteiras e estimulam a imaginação.",
+        "A inspiração não é exclusiva para os artistas; é para todos que buscam um universo de criatividade. Explore nossa galeria diversificada para descobrir projetos que transcendem fronteiras e estimulam a imaginação.",
     },
     {
       img: Seguranca,
