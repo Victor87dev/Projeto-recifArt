@@ -2,11 +2,14 @@ import {Formik,Form,Field,ErrorMessage} from 'formik';
 import * as yup from 'yup';
 import logo from "../../assets/img/LOGO.svg";
 import Axios from 'axios';
-
+import "./Cadastro.css"
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 
 function Cadastro() {
+ 
 
   const handleclickRegister=(values) => {
 
@@ -19,12 +22,22 @@ function Cadastro() {
 
 
     }).then((response) => {
-       
-    console.log(response)
-
+         console.log(response.data.msg); 
+    
+     
+        if (response.data.msg === 'Cadastrado com sucesso') {
+        alert('Cadastro realizado com sucesso!');
+      } else if (response.data.msg === 'Email já está em uso') {
+        alert('Email já está em uso. Tente outro.');
+      } else {
+        alert('Erro ao processar o cadastro. Por favor, tente novamente.');
+      }
+    })
+    .catch((error) => {
+      console.error('Erro na requisição:', error);
+      alert('Erro na requisição. Por favor, tente novamente.');
     })
   };
-
 
   const validationRegister = yup.object().shape({
     name: yup
@@ -49,26 +62,21 @@ function Cadastro() {
     .required('Este campo é obrigatorio')
 
       })
-
-
+    
   return (
-       
-     <div className="container" >
-     <div className='img'>
     
-     <img src={logo}></img>
-     </div>
+    
+
+    <div className="container" >
      
-    
 
-
-      <Formik initialValues={{}}
-        onSubmit={handleclickRegister}
-        validationSchema={validationRegister}
-        
-        >
-        <Form className='login form'>
-        <div className='login-form-group'>
+       <Formik initialValues={{}}
+         onSubmit={handleclickRegister}
+         validationSchema={validationRegister}
+         
+         >
+        <Form className='ladoEsquerdo' >
+     
    <h1>Prazer em conhecê-lo!</h1>
           
   
@@ -78,15 +86,15 @@ function Cadastro() {
     name='name'
     className='form-field'
     placeholder='Seu nome completo'
-  />
+    />
   <ErrorMessage
     component='span'
     name='name'
     className='form-error'
-  />
+    />
   </label>
   
-</div>
+
 
 <div className='login-form-group'>
   <label className='email'>
@@ -95,12 +103,12 @@ function Cadastro() {
     name='email'
     className='form-field'
     placeholder='Coloque seu E-mail'
-  />
+    />
   <ErrorMessage
     component='span'
     name='email'
     className='form-error'
-  />
+    />
   </label>
 </div>
 
@@ -109,15 +117,15 @@ function Cadastro() {
   <p>CPF</p>
   <Field
    type="number"
-    name='cpf'
-    className='form-field'
-    placeholder='Coloque seu CPF'
-  />
+   name='cpf'
+   className='form-field'
+   placeholder='Coloque seu CPF'
+   />
   <ErrorMessage
     component='span'
     name='cpf'
     className='form-error'
-  />
+    />
   </label>  
 </div>
 
@@ -125,16 +133,16 @@ function Cadastro() {
   <label className='password'>
   <p>Senha</p>
   <Field
-  
-    name='password'
-    className='form-field'
-    placeholder='Senha'
+  type="password"
+  name='password'
+  className='form-field'
+  placeholder='Senha'
   />
   <ErrorMessage
     component='span'
     name='password'
-    className='form error'
-  />
+    className='form-error'
+    />
   </label>
 
 </div>
@@ -143,30 +151,44 @@ function Cadastro() {
  <label className='ConfirmPassword'>
  <p>Confirme sua senha</p>
  <Field
+    type="password"
     name='ConfirmPassword'
     className='form-field'
     placeholder='Confirme sua senha'
-  />
+    />
   <ErrorMessage
     component='span'
     name='ConfirmPassword'
-    className='form error'
-  />
+    className='form-error'
+    />
 </label>
 </div>
+<div className="parteinferiorCad">
 
-<button className='button' type='submit' src='#'>
-Cadastrar
-</button>
- <a className='cadastrar'>Não tem uma conta?<span> Faça o login</span></a>
+<a href= '/login_usuario' type='submit' className='buttonCad' >
+
+
+ Cadastrar
+</a>
+ <a className='jatemConta'>já tem uma conta?<span> Faça o login</span></a>
+</div>
         </Form>
  </Formik>
 
 
+<div className="ladoDireito">
 
+<div className='img'>
+
+<img src={logo}></img>
+</div>
+</div>
     </div>
-  
-  );    
+
+
+
+);    
 }
+
 
 export default Cadastro;

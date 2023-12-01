@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*--secondary-font*/
+/* --primary-font */
+.container{
+    display: flex;
+}
+
+.ladoDireito{
+
+    background: url(../../assets/img/fundo-cadastro.svg)
+}
+h1{
+
+    color: var(--BW-S80, #1B1B1B);
+
+font-family: var(--primary-font);
+font-size: 50px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.ladoEsquerdo p{
+   margin-left: 3%;
+    color: var(--BW-S80, #1B1B1B);
+    font-family: var(--primary-font);
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.form-field{
+    border-radius: 50.31px;
+background: #D9D9D9;
+border: none;
+width: 100%;
+height: 50px;
+}
+
+.form-error{
+
+    color: red;    font-family: var(--secondary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 3%;
+  
+}
+.form-field{
+    padding: 0 3%;
+
+
+}
+.form-field::placeholder{
+ font-family: var(--secondary-font);
+ font-weight: 400;
+  font-size: 16px;
+
+}
+.parteinferiorCad {
+    margin: 5% 0 0 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.parteinferiorCad .buttonCad{
+    color: #FFF;
+
+    font-family: var(--primary-font);
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+    width: fit-content;
+     
+    margin: auto;
+ 
+    padding: 12px 70px;
+        
+
+
+    text-decoration: none;
+border-radius: 32px;
+background: #0F3FB9;
+
+box-shadow: 1.32px 5.40px 5.40px 0px rgba(0, 0, 0, 0.25);
+
+
+}
+.jatemConta{
+    color: #1B1B1B;
+    font-family: var(--primary-font);
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+    margin-top: 5% ;
+    text-align: center;
+}
+.jatemConta span{
+
+    color: var(--B-S80, #0F3FB9)
+}
