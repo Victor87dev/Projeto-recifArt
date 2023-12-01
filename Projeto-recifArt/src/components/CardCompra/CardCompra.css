@@ -13,49 +13,60 @@
 .azul{
     color: #0F3FB9;
     font-weight: 600;
-    font-size: 21px;
+    font-size: 18px;
 }
 
 .img-urso{
-   height: 100%;
-   width: 40%;
+   height: 40%;
+   width: 100%;
 }
 
 .box-informacoes{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 45px;
     text-align: center;
     margin-right: 40px;
-    width: 50%;
-    height: 85%;
+    height: 43vh;
+    width: 65%;
     align-items: center;
 }
 
 .img-perfil{
     height: 35px;
     width: 35px;
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
 .p-preco{
-    margin-top: -35px;
     font-size: 25px;
+    font-weight: 600;
 }
 
 .p-nome{
-    margin-top: -46px;
-    font-size: 25px;
+    margin-top: -40px;
+    font-size: 20px;
 }
 
 .titulo-compra{
-    font-size: 45px;
+    margin-top: 20px;
+    font-size: 25px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.336);
 }
 
+.box-informacoes-compra{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+    margin-left: 50px;
+}
+
 .input-compra{
-    width: 280px;
-    height: 160px;
+    width: 145px;
+    height: 40px;
     padding: 18px;
     border-radius: 20px;
     border: none;
@@ -70,144 +81,202 @@
 }
 
 .lista-compra li{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .box-informacoes p{
     font-weight: 600;
 }
 
-.box-informacoes button{
-padding: 15px 60px 15px 60px;
+.box-informacoes-compra button{
+padding: 6px 25px 6px 25px;
 border-radius: 20px;
 border: none;
 background-color: #061033;
 color: #fff;
 font-family: var(--primary-font);
 cursor: pointer;
-font-size: 20px;
-margin-top: -30px;
+font-size: 15px;
 transition: .4s;
 }
     
-.box-informacoes button:hover{
+.box-informacoes-compra button:hover{
 background-color: #0e2577;
+}
 
+.box-divisao{
+    display: flex;
+    flex-direction: row;
 }
 
 @media (max-width: 1500px){
-    .img-urso{
-        height: 40%;
-        width: 100%;
-    }
-    .titulo-compra{
+    .p-nome{
         font-size: 25px;
     }
-    .azul{
-        font-size: 18px;
-    }
-    .input-compra{
-        display: none;
-    }
-    .box-informacoes{
-        gap: 1px;
-        padding-left: 40px;
-    }
 
-    .box-informacoes button{
-        padding: 10px 30px 10px 30px;
-        border-radius: 20px;
-        border: none;
-        background-color: #061033;
-        color: #fff;
-        font-family: var(--primary-font);
-        cursor: pointer;
-        font-size: 20px;
-        margin-top: 50px;
-        transition: .4s;
-    }
     .p-preco{
-        margin-top: 20px;
+        font-size: 26px;
     }
-    .p-nome{
-        margin-top: 5px;
-        font-size: 20px;
-    }
-    .img-perfil{
-        margin-top: 50px;
-    }
-  
 
-
-    
-}
-
-@media (max-width: 1400px){
-    .img-urso{
-        height: 30%;
-        width: 100%;
-    }
     .titulo-compra{
-        font-size: 18px;
-        margin-top: -20px;
-    }
-    .azul{
-        font-size: 18px;
-    }
-    .input-compra{
-        display: none;
-    }
-    .box-informacoes{
-        margin-top: 50px;
-        gap: 1px;
-        padding-left: 60px;
+        margin-top: 30px;
+        font-size: 25px;
+     }
+
+     .lista-compra li{
+        font-size: 17px;
     }
 
-    .box-informacoes button{
-        padding: 5px 20px 5px 20px;
-    }
-    .p-preco{
+    .azul{
         font-size: 20px;
-        margin-top: 20px;
     }
-    .p-nome{
-        margin-top: 5px;
-        font-size: 18px;
+
+    .box-informacoes{
+        gap: 50px;
     }
-    .img-perfil{
-        margin-top: 50px;
+
+    .box-informacoes-compra{
+       gap: 80px;
     }
-    .lista-compra{
-        gap: 1px;
+
+    .input-compra{
+        width: 140px;
+        height: 30px;
+        padding: 12px;
+        border-radius: 20px;
         
     }
+
+    .box-informacoes-compra button{
+        padding: 10px 40px 10px 40px;
+    }
+ 
+
     
 }
 
+@media (max-width: 1450px){
+    .p-nome{
+        font-size: 25px;
+    }
 
+    .p-preco{
+        font-size: 26px;
+    }
 
-@media (max-width: 850px){
-    .lista-compra{
+    .titulo-compra{
+        margin-top: 30px;
+        font-size: 25px;
+     }
+
+     .lista-compra li{
+        font-size: 17px;
+    }
+
+    .azul{
+        font-size: 20px;
+    }
+
+    .box-informacoes{
+        gap: 50px;
+    }
+
+    .box-informacoes-compra{
+       gap: 80px;
+    }
+
+    .input-compra{
+        width: 130px;
+        height: 30px;
+        padding: 12px;
+        border-radius: 20px;
+        
+    }
+
+    .box-informacoes-compra button{
+        padding: 10px 20px 10px 20px;
+    }
+ 
+
+}
+
+@media (max-width: 670px){
+    .box-informacoes ol{
         display: none;
     }
+
+    .box-informacoes{    
+        height: 20vh;
+        margin: 0;
+        margin-bottom: 40px;
+        width: 300px;
+    }
+
+    .titulo-compra{
+       font-size: 25px;
+    }
+
+    .p-nome{
+        font-size: 23px;
+    }
+
+    .p-preco{
+        font-size: 26px;
+    }
+
+    .input-compra{
+        display: none;
+    }
+
+    .box-informacoes-compra{
+        height: 15vh;
+        width: 200px;
+        margin: 0;
+        margin-top: -30px;
+        gap: 50px;
+    
+    }
+
+
+    .box-divisao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-informacoes-compra button{
+        margin-top: -50px;
+    }
+ 
+}
+
+
+@media (max-width: 450px){
+    
     .box-informacoes{
-        padding-left: 60px;
+    
+        width: 250px;
+        margin-bottom: 100px;
+    }
+    .box-informacoes-compra{
+       
+        margin-bottom: 80px;
     }
     .titulo-compra{
-        font-size: 18px;
-        margin-top: -20px;
+        font-size: 26px;
     }
-    .box-informacoes button{
-        padding: 3px 15px 3px 15px;
+    .p-nome{
+        font-size: 22px;
     }
 
+    .box-informacoes-compra{
+        width: 150px;
+    }
+
+    .box-informacoes-compra button{
+        padding: 13px 25px 13px 25px;
+    }
 }
 
-@media (max-width: 500px){
-    .img-urso{
-        height: 30%;
-    }
-    .box-informacoes{
-        padding-left: 50px;
-    }
-}
+

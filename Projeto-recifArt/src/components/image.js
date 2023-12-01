@@ -52,6 +52,8 @@ import Empresa from "../assets/img/empresa.svg";
 import Cliente from "../assets/img/cliente.svg";
 import Martelo from "../assets/img/artesaoico.svg";
 import Profile from "../assets/img/Profile.svg"
+import Cartoes from "../assets/img/card_img.png";
+import Cartoes2 from "../assets/img/cartoes2.png";
 export{
     Gracas,
     Derby,
@@ -107,4 +109,6 @@ export{
     Cliente,
     Martelo,
     Profile,
+    Cartoes,
+    Cartoes2,
 };
