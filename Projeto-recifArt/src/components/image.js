@@ -48,9 +48,9 @@ import Thamires from "../assets/img/thamires-reis.png";
 import Lucio from "../assets/img/lucio-flavio.png";
 import Mario from "../assets/img/mario-junior.png";
 import Lee from "../assets/img/lee-heung-min.png";
-import Empresa from "../assets/img/empresa.png";
-import Cliente from "../assets/img/cliente.png";
-import Martelo from "../assets/img/artesaoico.png"
+import Empresa from "../assets/img/empresa.svg";
+import Cliente from "../assets/img/cliente.svg";
+import Martelo from "../assets/img/artesaoico.svg"
 export{
     Gracas,
     Derby,

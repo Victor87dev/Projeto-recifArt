@@ -60,6 +60,8 @@
 .tipo a {
     color: white;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
 .tipo img {
     margin-bottom: 15px;
