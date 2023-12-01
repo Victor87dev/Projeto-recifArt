@@ -4,6 +4,7 @@ nav,
     flex-direction: row;
     align-items: center;
     margin-top: 20px;
+    position: relative;
 }
 
 .menu-conteudo {
@@ -199,6 +200,9 @@ nav .menu .navAzul {
         width: 100%;
         padding: 15px 30px;
         flex-direction: column;
+        position: absolute;
+        top: 70px;
+        z-index: 10;
     }
 
     nav ul {
