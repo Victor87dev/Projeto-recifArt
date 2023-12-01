@@ -4,6 +4,7 @@ import * as yup from 'yup';
 import logo from "../../assets/img/LOGO.svg"
 import Axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import "./Login.css"
 
 
 
@@ -58,9 +59,9 @@ function login() {
 
   return (
        
-     <div className="container" >
-     <div className='img'>
-    
+     <div className="container-login" >
+     <div className='img-login'>
+      
      <img src={logo}></img>
      </div>
      
@@ -75,8 +76,6 @@ function login() {
         <Form className='login form'>
         <div className='login-form-group'>
    <h1>Bem Vindo de volta!</h1>
-          
-  
   <label className='email'>
   <p>E-mail</p>
   <Field

@@ -4,7 +4,7 @@ import * as yup from 'yup';
 import logo from "../../assets/img/LOGO.svg"
 import Axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-
+import "./Login.css"
 
 
 function login() {
@@ -60,8 +60,8 @@ function login() {
 
   return (
        
-     <div className="container" >
-     <div className='img'>
+     <div className="container-login" >
+     <div className='img-login'>
     
      <img src={logo}></img>
      </div>
