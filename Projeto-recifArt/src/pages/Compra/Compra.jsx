@@ -3,10 +3,29 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import CardCompra from "../../components/CardCompra/CardCompra";
 import "./Compra.css";
+import { useEffect,useState } from 'react';
 
 import { UrsoMetade, Renato} from "../../components/image";
 
 const Compra = () => {
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const checkLoggedInStatus = async () => {
+      const token = localStorage.getItem('token');
+      if (token) {
+        setIsLoggedIn(true);
+      }
+    };
+  
+    checkLoggedInStatus();
+  }, []);
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    localStorage.removeItem('token');
+  };
+
   const cardsCompra = [
     {
       img: UrsoMetade,
@@ -23,7 +42,7 @@ const Compra = () => {
     <>
       <div id="container-compra">
         <header className="header-compra">
-          <Navbar />
+        <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} setIsLoggedIn={setIsLoggedIn} />
           <h1>Finalizando Compra</h1>
         </header>
         <section className="sessao-compra reveal">
