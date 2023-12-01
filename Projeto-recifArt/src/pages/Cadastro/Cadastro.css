@@ -9,10 +9,6 @@
     display: flex;
 }
 
-.ladoDireito{
-
-    background: url(../../assets/img/fundo-cadastro.svg)
-}
 h1{
 
     color: var(--BW-S80, #1B1B1B);
@@ -23,6 +19,7 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 }
+
 .ladoEsquerdo p{
    margin-left: 3%;
     color: var(--BW-S80, #1B1B1B);
@@ -34,11 +31,50 @@ line-height: normal;
 }
 
 .form-field{
-    border-radius: 50.31px;
-background: #D9D9D9;
-border: none;
-width: 100%;
-height: 50px;
+    border-radius: 25px;
+    background: #D9D9D9;
+    width: 300px;
+    font-family: var(--primary-font);
+   height: 40px;
+   border: none;
+
+   padding-left: 20px;
+   padding-right: 40px;
+}
+
+
+.name-cad input{
+    
+    background-image: url(../../assets/img/nomeCad.svg);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+}
+.email-cad input{
+    background-image: url(../../assets/img/email.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+}
+.cpf-cad input{
+    background-image: url(../../assets/img/cpfCad.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+  
+    
+}
+.password-cad input{
+    background-image: url(../../assets/img/senha.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+}
+.ConfirmPassword-cad input{
+    background-image: url(../../assets/img/senha.svg);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center right 10px;
 }
 
 .form-error{
@@ -49,6 +85,7 @@ height: 50px;
     font-weight: 400;
     line-height: normal;
     margin-left: 3%;
+    display: block;
   
 }
 .form-field{
@@ -93,17 +130,33 @@ box-shadow: 1.32px 5.40px 5.40px 0px rgba(0, 0, 0, 0.25);
 
 
 }
-.jatemConta{
-    color: #1B1B1B;
-    font-family: var(--primary-font);
-font-size: 22px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-    margin-top: 5% ;
+.buttonCad:hover{
+
+    background: #0C2F94;
+}
+.jatemconta{
+    margin: 4%;
     text-align: center;
 }
-.jatemConta span{
 
-    color: var(--B-S80, #0F3FB9)
+.form-align{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label p{
+ margin: 4% 0 2% 0 ;
+}
+.img-cad img{
+    width: 200px;
+    height: 60px;
+    margin: 50px;
+}
+.ladoDireito{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(0deg, rgba(109, 114, 128, 0.00) -8.39%, rgba(13, 37, 80, 0.62) 69.37%, #0D2550 98.93%), url(../../assets/img/fundo-cadastro.svg) no-repeat;
+    background-size: cover;
 }

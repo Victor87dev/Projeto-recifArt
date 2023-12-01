@@ -3,13 +3,12 @@ import * as yup from 'yup';
 import logo from "../../assets/img/LOGO.svg";
 import Axios from 'axios';
 import "./Cadastro.css"
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
 
 function Cadastro() {
- 
+  const navigate = useNavigate();
 
   const handleclickRegister=(values) => {
 
@@ -27,6 +26,7 @@ function Cadastro() {
      
         if (response.data.msg === 'Cadastrado com sucesso') {
         alert('Cadastro realizado com sucesso!');
+        navigate('/login_usuario');
       } else if (response.data.msg === 'Email já está em uso') {
         alert('Email já está em uso. Tente outro.');
       } else {
@@ -79,8 +79,9 @@ function Cadastro() {
      
    <h1>Prazer em conhecê-lo!</h1>
           
-  
-  <label className='name'>
+  <div className="form-align">
+    
+  <label className='name-cad'>
   <p>Nome</p>
   <Field
     name='name'
@@ -97,7 +98,7 @@ function Cadastro() {
 
 
 <div className='login-form-group'>
-  <label className='email'>
+  <label className='email-cad'>
   <p>E-mail</p>
   <Field
     name='email'
@@ -113,7 +114,7 @@ function Cadastro() {
 </div>
 
 <div className='login-form-group'>
-  <label className='cpf'>
+  <label className='cpf-cad'>
   <p>CPF</p>
   <Field
    type="number"
@@ -130,7 +131,7 @@ function Cadastro() {
 </div>
 
 <div className='login-form-group'>
-  <label className='password'>
+  <label className='password-cad'>
   <p>Senha</p>
   <Field
   type="password"
@@ -148,7 +149,7 @@ function Cadastro() {
 </div>
 
 <div className='login-form-group'>
- <label className='ConfirmPassword'>
+ <label className='ConfirmPassword-cad'>
  <p>Confirme sua senha</p>
  <Field
     type="password"
@@ -163,14 +164,13 @@ function Cadastro() {
     />
 </label>
 </div>
+  </div>
 <div className="parteinferiorCad">
 
-<a href= '/login_usuario' type='submit' className='buttonCad' >
-
-
+<button className='button' type='submit' src='#'>
  Cadastrar
-</a>
- <a className='jatemConta'>já tem uma conta?<span> Faça o login</span></a>
+</button>
+ <a className='jatemconta'>já tem uma conta?<span> Faça o login</span></a>
 </div>
         </Form>
  </Formik>
@@ -178,7 +178,7 @@ function Cadastro() {
 
 <div className="ladoDireito">
 
-<div className='img'>
+<div className='img-cad'>
 
 <img src={logo}></img>
 </div>
