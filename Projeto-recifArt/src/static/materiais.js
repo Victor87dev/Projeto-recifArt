@@ -19,31 +19,31 @@ export const MATERIAIS = [
   {
     "nome": "Papel Reciclado",
     "quantidade": "500 folhas",
-    "descricao": "Papel proveniente de reciclagem de jornais e papelão, ideal para trabalhos artísticos e impressões leves.",
+    "descricao": "Papel proveniente de jornais e papelão, ideal para trabalhos artísticos.",
     "image": Papel
   },
   {
     "nome": "Vidro Reutilizado",
     "quantidade": "50 peças",
-    "descricao": "Frascos e garrafas de vidro reciclado, ótimos para artesanato decorativo, como luminárias e vasos.",
+    "descricao": "Frascos e garrafas de vidro reciclado, ótimos para artesanato decorativo.",
     "image": Vidro
   },
   {
     "nome": "Tecidos Reaproveitados",
     "quantidade": "20 metros",
-    "descricao": "Retalhos de tecidos de diversas cores e texturas, ideais para patchwork e confecção de itens têxteis.",
+    "descricao": "Retalhos de tecidos de diversas cores e texturas, ideais para patchwork.",
     "image": Tecido
   },
   {
     "nome": "Plástico Reciclável",
     "quantidade": "100 unidades",
-    "descricao": "Plástico PET reciclado, adequado para criar peças duráveis, como utensílios domésticos e objetos de decoração.",
+    "descricao": "Plástico PET reciclado, adequado para criar peças duráveis.",
     "image": Plastico
   },
   {
     "nome": "Metal Reciclado",
     "quantidade": "30 kg",
-    "descricao": "Peças metálicas recicladas, ideais para esculturas e elementos decorativos robustos.",
+    "descricao": "Peças metálicas recicladas, ideais para esculturas e elementos decorativos.",
     "image": Metal
   },
   {
@@ -55,19 +55,19 @@ export const MATERIAIS = [
   {
     "nome": "Tecido Jeans Reciclado",
     "quantidade": "25 metros",
-    "descricao": "Denim reciclado de peças antigas, ideal para criar bolsas, acessórios e itens de decoração.",
+    "descricao": "Denim reciclado de peças antigas, ideal para criar bolsas e acessórios.",
     "image": Jeans
   },
   {
     "nome": "Plástico Biodegradável",
     "quantidade": "50 unidades",
-    "descricao": "Materiais plásticos degradáveis, adequados para projetos ecologicamente conscientes.",
+    "descricao": "Materiais plásticos degradáveis, adequados para projetos conscientes.",
     "image": Sacola
   },
   {
     "nome": "Papel de Jornal",
     "quantidade": "300 folhas",
-    "descricao": "Papel proveniente de jornais antigos, excelente para criar papéis de embrulho e trabalhos artísticos exclusivos.",
+    "descricao": "Papel proveniente de jornais antigos, excelente para criar papéis de embrulho.",
     "image": Jornal
   },
   {
@@ -79,19 +79,19 @@ export const MATERIAIS = [
   {
     "nome": "Garrafas PET",
     "quantidade": "75 unidades",
-    "descricao": "Garrafas plásticas PET limpas e prontas para transformação em projetos criativos, como luminárias e esculturas.",
+    "descricao": "Garrafas plásticas PET limpas e prontas para transformação em projetos criativos.",
     "image": Garrafa
   },
   {
     "nome": "Cartões de Visita Upcycled",
     "quantidade": "200 unidades",
-    "descricao": "Cartões de visita reutilizados, ótimos para criar peças decorativas e álbuns de recordações.",
+    "descricao": "Cartões de visita reutilizados, ótimos para criar peças decorativas.",
     "image": Cartao
   },
   {
     "nome": "Couro Sintético Reciclado",
     "quantidade": "10 metros",
-    "descricao": "Couro sintético proveniente de reciclagem, ideal para projetos de moda e acessórios.",
+    "descricao": "Couro sintético proveniente de reciclagem, ideal para projetos de moda.",
     "image": Couro
   },
   {
@@ -103,7 +103,7 @@ export const MATERIAIS = [
   {
     "nome": "CDs e DVDs Obsoletos",
     "quantidade": "50 unidades",
-    "descricao": "Mídias óticas antigas reutilizadas para criar mosaicos, bijuterias e peças de arte moderna.",
+    "descricao": "Mídias óticas antigas reutilizadas para criar mosaicos e bijuterias.",
     "image": Cds
   }
 ]

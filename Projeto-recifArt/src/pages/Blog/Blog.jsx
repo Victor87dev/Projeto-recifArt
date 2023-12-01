@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import CardNoticia from "../../components/CardNoticia/CardNoticia";
 import Footer from "../../components/Footer/Footer";
-import "./Blog.css"
+import "./Blog.css";
+import { useEffect,useState } from 'react';
 
 import{
    Noticia01,
@@ -13,6 +14,23 @@ import{
    Noticia06,
 } from "../../components/image";
 const Blog = () => {
+   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+   useEffect(() => {
+     const checkLoggedInStatus = async () => {
+       const token = localStorage.getItem('token');
+       if (token) {
+         setIsLoggedIn(true);
+       }
+     };
+   
+     checkLoggedInStatus();
+   }, []);
+   const handleLogout = () => {
+     setIsLoggedIn(false);
+     localStorage.removeItem('token');
+   };
+ 
    const cardsNoticias = [
       {
          img: Noticia01 ,
@@ -63,7 +81,7 @@ const Blog = () => {
       <>
          <div id="container-blog">
             <header className="header-blog">
-               <Navbar />
+            <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} setIsLoggedIn={setIsLoggedIn} />
 
                <h1>Nosso Blog, Sua Jornada</h1>
                <p>Conectando, Inspirando e Educando para um Mundo Mais Sustentável e Criativo</p>

@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import CardArtesoes from "../../components/CardArtesoes/CardArtesoes";
 import "./Artesoes.css";
+import { useEffect,useState } from 'react';
 
 import {
   Mequias,
@@ -16,7 +17,23 @@ import {
 
 const Artesoes = () => {
 
-    
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const checkLoggedInStatus = async () => {
+      const token = localStorage.getItem('token');
+      if (token) {
+        setIsLoggedIn(true);
+      }
+    };
+  
+    checkLoggedInStatus();
+  }, []);
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    localStorage.removeItem('token');
+  };
+
 
   const cardsArtesoes = [
     {
@@ -61,7 +78,7 @@ const Artesoes = () => {
     <>
       <div id="container-artesoes">
         <header className="header-artesoes">
-          <Navbar />
+        <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} setIsLoggedIn={setIsLoggedIn} />
           <h1 className="titulo-artesoes">Artesãos</h1>
         </header>
 
