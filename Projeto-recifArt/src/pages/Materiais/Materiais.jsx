@@ -38,7 +38,7 @@ const Materiais = () => {
                     <h1>Materiais</h1>
                 </header>
                 <main className='materias-main'>
-                    <p className="materiais-detalhes">Ao escolher esses materiais, você não apenas cria, mas se torna um agente de mudança. Sua arte não é apenas uma manifestação visual, mas um eco consciente, uma contribuição tangível para um mundo mais sustentável e esteticamente rico</p>
+                    <p className="materiais-detalhes">Ao escolher esses materiais, você não apenas cria, mas se torna um agente de mudança. Sua arte não é apenas uma manifestação visual, mas um eco consciente, uma contribuição tangível para um mundo mais sustentável e esteticamente rico.</p>
                     <div className="container">
                         <div className="carousel" ref={carousel}>
 
@@ -48,7 +48,7 @@ const Materiais = () => {
 
                                     <div className="item" key={index}>
                                         <div className="image">
-                                            <img src={image} alt={nome} />
+                                            <img className="image-material" src={image} alt={nome} />
                                         </div>
                                         <div className="info">
                                             <span className="nome">{nome}</span>
