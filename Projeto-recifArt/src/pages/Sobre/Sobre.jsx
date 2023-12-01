@@ -16,6 +16,8 @@ import {
   Leticia,
   Saulo,
   Vinicius,
+  RecifArt,
+  RecifArt2,
 } from "../../components/image"
 import { FaGithub } from "react-icons/fa";
 const Sobre = () => {
@@ -93,14 +95,29 @@ const Sobre = () => {
           <Navbar />
           <h1>Sobre nós</h1>
         </header>
-        <div className="sobre-recifart reveal">
-          <p>
-            Seja bem-vindo ao RecifArt, sua plataforma dedicada à valorização
+        <div class="box-sobreMim reveal" id="sobreMim reveal">
+        <div class="home-img" >
+          
+          <div class="glowing-circle reveal">
+              <span></span>
+              <span></span>
+              <div class="image">
+                  <img src={RecifArt} alt=""/>
+              </div>
+          </div>
+        </div>
+
+        <div class="sobreMim reveal">
+          <h3>Quem somos ?</h3>
+          <p class="text2">Seja bem-vindo ao RecifArt, sua plataforma dedicada à valorização
             dos artesãos locais e à promoção de práticas sustentáveis em Recife.
             Somos mais que um site, somos uma comunidade comprometida com
-            o fortalecimento da economia local e a preservação do meio ambiente.
-          </p>
+            o fortalecimento da economia local e a preservação do meio ambiente.<br/> 
+            <br/>
+            Nosso grupo é constituído por, João Victor, Letícia, Paulo, Saulo e Vinicius, Nosso maior objetivo é sermos a ponte entre os artesãos, as empresas, os clientes e admiradores do artesanato, e tudo isso sendo possível com o RecifArt.</p>
+      
         </div>
+      </div>
 
         <div className="missaobloco reveal">
           <div className="texto-missao">
