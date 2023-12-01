@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-family: var(--primary-font);
+    overflow-x: hidden;
+}
+
+.header-materiais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/img/background-materiais.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100vw;
+    padding-bottom: 30px;
+}
+
+.header-materiais h1{
+    color: #fff;
+    text-shadow:0px 3px 3px rgba(0, 0, 0, 0.25);
+    font-size: 100px;
+    font-weight: 600;
+    padding-top: 165px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 50px;
+    
+}
+
+main .materiais-detalhes {
+    font-size: 26px;
+    font-weight: 600;
+    padding: 50px 15px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.container {
+    max-width: 85vw;
+    position: relative;
+}
+
+
+.container .carousel {
+    display: flex;
+    overflow-x:auto;
+    scroll-behavior: smooth;
+    
+}
+
+.container .carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.container .carousel .item {
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    width: 280px;
+    border-radius: 16px;
+    flex: none;
+    box-shadow: 0px 0px 8.3px 0px rgba(0, 0, 0, 0.45);
+}
+
+.container .carousel .item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .carousel .item .info {
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nome {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.quantidade {
+    font-weight: 300;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.descricao-info {
+    line-height: 1;
+    margin-top: 30px;
+    height: 50px;
+    display: -webkit-box;
+    max-width: 250px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.descricao-material {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.buttons-carousel button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.50);
+    position: absolute;
+    top: 41%;
+}
+
+.buttons-carousel button:nth-child(2) {
+    right: -10px;
+}
+
+@media (max-width: 768px) {
+    .header-materiais h1{
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 426px) {
+    .header-materiais h1{
+        font-size: 50px;
+    }
+}
