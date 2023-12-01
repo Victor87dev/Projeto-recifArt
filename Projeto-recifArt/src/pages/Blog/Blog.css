@@ -65,6 +65,8 @@ main {
     margin-right: 10px;
     padding: 10px;
     font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #000;
 }
 
 .card-noticia {
