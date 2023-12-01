@@ -128,8 +128,8 @@ function login() {
               />
         <> Manter login</>
    </label>
-</div>
 <a className='recuperarSenha'>Recuperar senha</a>
+</div>
 
 
 </div>
