@@ -177,7 +177,6 @@ box-shadow: 1.32px 5.40px 5.40px 0px rgba(0, 0, 0, 0.25);
     height: 60px;
     margin: 50px;
     text-align: center;
-
 }
 
 form .ladoEsquerdo{
@@ -233,4 +232,114 @@ form .ladoEsquerdo{
         padding: auto;
     }
 
+}
+
+@media (max-width: 1100px){
+    .container-cadastro h1{
+        font-size: 30px;
+    }
+
+    .ladoEsquerdo > a button{
+        right: 45%;
+        
+    }
+}
+
+@media (max-width: 770px){
+
+    .ladoEsquerdo > a button{
+        right: 35%;
+    }
+}
+
+@media (max-width: 670px){
+    .container-cadastro{
+        flex-direction: column;
+    }
+
+    .ladoEsquerdo{
+        height: 100vh;
+    }
+
+    .ladoDireito{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ladoEsquerdo a button{
+        width: 110px;
+    }
+
+    
+}
+
+@media (max-width: 590px){
+    .container-cadastro{
+        flex-direction: column;
+    }
+    
+    .ladoEsquerdo a button{
+       right: -5%;
+    } 
+    
+
+    .ladoDireito{
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 490px){
+    .container-cadastro h1{
+        font-size: 25px;
+        margin-top: 70px;
+    }
+     .ladoDireito{
+        height: 100%;
+        
+        
+     } 
+
+    .ladoEsquerdo a button{
+       right: -20%;
+    } 
+
+    
+}
+
+@media (max-width: 420px){
+    .container-cadastro h1{
+        font-size: 12px;
+       
+    }
+    .ladoEsquerdo a button{
+       right: -35%;
+       height: 30px;
+    }   
+    .container-cadastro h1{
+        font-size: 25px;
+        margin-top: 70px;
+    }
+   
+}
+
+@media (max-width: 370px){
+    
+
+    .ladoEsquerdo a button{
+       right: -37%;
+    } 
+  
+}
+
+@media (max-width: 340px){
+
+    .ladoEsquerdo a button{
+       right: -48%;
+    } 
+  
 }

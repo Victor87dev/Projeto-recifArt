@@ -68,7 +68,9 @@ function Cadastro() {
    
 
     <div className="container-cadastro" >
-         
+     
+
+       
        <div className="ladoEsquerdo">
 
         <a href="/escolhacad"> <button><svg xmlns="http://www.w3.org/2000/svg" width="25" height="16" viewBox="0 0 25 16" fill="none">
@@ -182,6 +184,7 @@ function Cadastro() {
  </Formik>
 
     </div>
+    
 
 <div className="ladoDireito">
 
