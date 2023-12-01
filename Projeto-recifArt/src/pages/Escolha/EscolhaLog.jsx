@@ -2,7 +2,7 @@ import React from "react";
 import "./Escolha.css"
 import { Cliente, Empresa, Martelo } from "../../components/image";
 
-const Escolha = () => {
+const EscolhaLog = () => {
     return (
         <> 
             <div className="container-escolha">
@@ -18,19 +18,19 @@ const Escolha = () => {
                   </div>
                   <div className="escolha-pessoa">
                     <div className="tipo">
-                        <a href="">
+                        <a href="/login_usuario">
                         <img src={Cliente} alt="" />
                      <h3>Cliente</h3>
                      </a>
                     </div>
                     <div className="tipo">
-                        <a href="">
+                        <a href="login_empresa">
                         <img src={Empresa} alt="" />
                      <h3>Empresa</h3>
                      </a>
                     </div>
                     <div className="tipo">
-                        <a href="">
+                        <a href="login_artesao">
                         <img src={Martelo} alt="" />
                      <h3>Artesão</h3>
                      </a>
@@ -46,4 +46,4 @@ const Escolha = () => {
 
 }
 
-export default Escolha
+export default EscolhaLog

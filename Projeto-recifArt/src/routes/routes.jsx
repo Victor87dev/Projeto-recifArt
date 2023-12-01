@@ -6,7 +6,8 @@ import Perfil from "../pages/perfil/perfil";
 import Blog from "../pages/Blog/Blog";
 import Compra from "../pages/Compra/Compra"
 import Artesoes from "../pages/artesoes/artesoes";
-import Escolha from "../pages/Escolha/Escolha";
+import EscolhaCad from "../pages/Escolha/EscolhaCad";
+import EscolhaLog from "../pages/Escolha/EscolhaLog";
 import LoginUser from "../pages/login/login_usuario";
 import CadastroUser from "../pages/Cadastro/cadastro_usuario";
 import LoginEmp from "../pages/login/login_empresa";
@@ -27,7 +28,8 @@ const AppRoutes = () => {
             <Route path="/perfil" element={<Perfil/>}/>
             <Route path="/compra" element={<Compra/>} />
             <Route path="/artesoes" element={<Artesoes/>} />
-            <Route path="/escolha" element={<Escolha/>}/>
+            <Route path="/escolhacad" element={<EscolhaCad/>}/>
+            <Route path="/escolhalog" element={<EscolhaLog/>}/>
             <Route path= "/login_usuario" element={<LoginUser/>}/>
             <Route path= "/cadastro_usuario" element={<CadastroUser/>}/>
             <Route path= "/login_empresa" element={<LoginEmp/>}/>

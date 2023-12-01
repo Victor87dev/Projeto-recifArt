@@ -71,12 +71,12 @@ const Navbar = ({ isLoggedIn, handleLogout ,setIsLoggedIn}) => {
         ) : (
             
             <>
-              <a href="/escolha">
+              <a href="/escolhalog">
                 <button type="button" className="button-entrar">
                   Entrar
                 </button>
               </a>
-              <a href="/escolha">
+              <a href="/escolhacad">
                 <button type="button" className="button-cadastrar">
                   Cadastrar
                 </button>
