@@ -120,16 +120,16 @@ function Cadastro() {
 
 <div className='login-form-group'>
   <label className='cpf-cad'>
-  <p>CPF</p>
+  <p>CNPJ</p>
   <Field
    type="number"
-   name='cpf'
+   name='cnpj'
    className='form-field'
-   placeholder='Coloque seu CPF'
+   placeholder='Coloque seu CNPJ'
    />
   <ErrorMessage
     component='span'
-    name='cpf'
+    name='cnpj'
     className='form-error'
     />
   </label>  
