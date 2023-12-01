@@ -37,7 +37,7 @@ const Materiais = () => {
                     <Navbar />
                     <h1>Materiais</h1>
                 </header>
-                <main>
+                <main className='materias-main'>
                     <p className="materiais-detalhes">Ao escolher esses materiais, você não apenas cria, mas se torna um agente de mudança. Sua arte não é apenas uma manifestação visual, mas um eco consciente, uma contribuição tangível para um mundo mais sustentável e esteticamente rico</p>
                     <div className="container">
                         <div className="carousel" ref={carousel}>
