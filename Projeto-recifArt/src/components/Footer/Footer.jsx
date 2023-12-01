@@ -16,7 +16,6 @@ const Footer = () => {
           <div className="footer_media_email">
             <div className="footer_media_email_label">
               <span>Contatos</span>
-              <span className="ponto_verde"></span>
             </div>
 
             <div className="contatos">
@@ -33,10 +32,6 @@ const Footer = () => {
               conectar.
             </p>
             <ul>
-              <li>
-                <span className="ponto_verde"></span>
-                <span>Social</span>
-              </li>
 
               <li>
                 <a href=""><FaInstagram className="instagram" /></a>

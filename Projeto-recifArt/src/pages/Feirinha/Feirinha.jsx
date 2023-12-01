@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import ProdutosFeirinha from "../../components/ProdutosFeirinha/ProdutosFeirinha";
 import "./Feirinha.css";
+import { useEffect,useState } from 'react';
 
 import {
    Tamandua,
@@ -20,6 +21,25 @@ import {
  } from "../../components/image";
 
 const Feirinha = () => {
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const checkLoggedInStatus = async () => {
+      const token = localStorage.getItem('token');
+      if (token) {
+        setIsLoggedIn(true);
+      }
+    };
+  
+    checkLoggedInStatus();
+  }, []);
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    localStorage.removeItem('token');
+  };
+
+
   const cardsProduto = [
     {
       img: Tamandua,
@@ -69,7 +89,7 @@ const Feirinha = () => {
     <>
       <div id="container-feirinha">
         <header className="header-feirinha">
-          <Navbar />
+        <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} setIsLoggedIn={setIsLoggedIn} />
           <h1>Conheça nossa Feirinha</h1>
         </header>
         <main>

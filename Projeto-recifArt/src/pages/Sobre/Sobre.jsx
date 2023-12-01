@@ -4,7 +4,7 @@ import CardMissao from "../../components/CardMissao/CardMissao";
 import Integrantes from "../../components/Integrantes/Integrantes";
 import Footer from "../../components/Footer/Footer";
 import "./Sobre.css";
-
+import { useEffect,useState } from 'react';
 import {
   Recife,
   Artesao,
@@ -21,6 +21,26 @@ import {
 } from "../../components/image"
 import { FaGithub } from "react-icons/fa";
 const Sobre = () => {
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const checkLoggedInStatus = async () => {
+      const token = localStorage.getItem('token');
+      if (token) {
+        setIsLoggedIn(true);
+      }
+    };
+  
+    checkLoggedInStatus();
+  }, []);
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    localStorage.removeItem('token');
+  };
+
+
+
 
   const cardsMissao = [
     {
@@ -92,7 +112,7 @@ const Sobre = () => {
     <>
       <div id="container-sobre">
         <header className="header-sobre">
-          <Navbar />
+        <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} setIsLoggedIn={setIsLoggedIn} />
           <h1>Sobre nós</h1>
         </header>
         <div class="box-sobreMim reveal" id="sobreMim reveal">
