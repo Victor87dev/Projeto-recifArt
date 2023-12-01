@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 55vw;
+    width: 100%;
     justify-content: center;
     background-color: white;
     border-radius: 25px 0px 0px 25px;
@@ -76,6 +76,7 @@
 }
 
 .email input {
+    width: 100%;
     border-radius: 25px;
     background: #D9D9D9;
     font-family: var(--primary-font);
@@ -97,6 +98,7 @@
     flex-direction: column;
 }
 .senha input{
+    width: 100%;
     border-radius: 25px;
     background: #D9D9D9;
     width: 300px;
@@ -114,7 +116,7 @@
     display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   font-weight: 500;
   margin-bottom: 25px;
 }
@@ -148,7 +150,80 @@
     cursor: pointer;
     margin: 25px;
 }
+.cadastrar{
+    color: #0F3FB9;
+    text-decoration: none;
+}
 
 .button:hover {
-    background: #0C2F94; /* Change background color on hover if needed */
+    background: #0C2F94; 
+}
+@media screen and (max-width: 1440px) {
+    .lado-esquerdo {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 912px) {
+    .lado-esquerdo > a button {
+        left: 60px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container-login {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-login {
+        width: 100%;
+    }
+
+    .lado-esquerdo {
+        width: 100%;
+        border-radius: 0; 
+    }
+    .lado-esquerdo > a button {
+        position: static; 
+        margin-top: 15px; 
+        transform: none;
+    }
+    .email input,
+    .senha input {
+        width: 100%; 
+    }
+
+    .flex-login {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 480px) {
+    .img-login img {
+        width: 120px; 
+        height: 36px; 
+        margin: 5px; 
+    }
+
+    .lado-esquerdo > a button {
+        width: 90%; 
+        max-width: 180px; 
+        height: 35px; 
+        font-size: 12px; 
+        margin: 5px; 
+    }
+    .lado-esquerdo{
+        height: 75vh;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .img-login img {
+        width: 100px; 
+        height: 30px; 
+        margin: 5px; 
+    }
+    .lado-esquerdo{
+        height: auto;
+     
+    }
 }
