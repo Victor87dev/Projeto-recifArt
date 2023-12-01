@@ -216,14 +216,4 @@
         width: 100%;
     }
 }
-@media screen and (max-width: 375px) {
-    .img-login img {
-        width: 100px; 
-        height: 30px; 
-        margin: 5px; 
-    }
-    .lado-esquerdo{
-        height: auto;
-     
-    }
-}
+
