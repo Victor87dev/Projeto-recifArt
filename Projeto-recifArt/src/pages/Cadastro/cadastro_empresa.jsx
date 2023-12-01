@@ -19,12 +19,21 @@ function Cadastro() {
 
 
     }).then((response) => {
-       
-    console.log(response)
-
+      
+     
+      if (response.data.msg === 'Cadastrado com sucesso') {
+        alert('Cadastro realizado com sucesso!');
+      } else if (response.data.msg === 'Email já está em uso') {
+        alert('Email já está em uso. Tente outro.');
+      } else {
+        alert('Erro ao processar o cadastro. Por favor, tente novamente.');
+      }
+    })
+    .catch((error) => {
+      console.error('Erro na requisição:', error);
+      alert('Erro na requisição. Por favor, tente novamente.');
     })
   };
-
 
   const validationRegister = yup.object().shape({
     name: yup
@@ -125,15 +134,15 @@ function Cadastro() {
   <label className='password'>
   <p>Senha</p>
   <Field
-  
+    type="password"
     name='password'
     className='form-field'
-    placeholder='Senha'
+    placeholder='Coloque sua senha'
   />
   <ErrorMessage
     component='span'
     name='password'
-    className='form error'
+    className='form-error'
   />
   </label>
 
@@ -143,6 +152,7 @@ function Cadastro() {
  <label className='ConfirmPassword'>
  <p>Confirme sua senha</p>
  <Field
+   type="password"
     name='ConfirmPassword'
     className='form-field'
     placeholder='Confirme sua senha'
@@ -150,15 +160,18 @@ function Cadastro() {
   <ErrorMessage
     component='span'
     name='ConfirmPassword'
-    className='form error'
+    className='form-error'
   />
 </label>
 </div>
 
+<a href='/login_empresa'>
+
 <button className='button' type='submit' src='#'>
-Cadastrar
+ Cadastrar
 </button>
- <a className='cadastrar'>Não tem uma conta?<span> Faça o login</span></a>
+</a>
+ <a className='cadastrar'>já tem uma conta?<span> Faça o login</span></a>
         </Form>
  </Formik>
 

@@ -144,7 +144,7 @@ function Cadastro() {
   <ErrorMessage
     component='span'
     name='password'
-    className='form error'
+    className='form-error'
   />
   </label>
 
@@ -162,7 +162,7 @@ function Cadastro() {
   <ErrorMessage
     component='span'
     name='ConfirmPassword'
-    className='form error'
+    className='form-error'
   />
 </label>
 </div>
@@ -172,7 +172,7 @@ function Cadastro() {
  Cadastrar
 </button>
 </a>
- <a className='cadastrar'>Não tem uma conta?<span> Faça o login</span></a>
+ <a className='cadastrar'>já tem uma conta?<span> Faça o login</span></a>
         </Form>
  </Formik>
 

@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 
 function login() {
 
+
   const navigate = useNavigate();
     
 
@@ -97,6 +98,7 @@ function login() {
   <label className='senha'>
   <p>Senha</p>
   <Field
+    type="password"
     name='password'
     className='form-field'
     placeholder='Senha'
