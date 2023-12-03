@@ -3,6 +3,10 @@ import * as yup from 'yup';
 import logo from "../../assets/img/LOGO.svg";
 import Axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import otherError from "../../components/otherError"
+import cadSucess from "../../components/utilCad"
+import cadEmailSucess from "../../components/utilCadEmail"
+
 
 
 
@@ -23,20 +27,19 @@ function Cadastro() {
       
      
       if (response.data.msg === 'Cadastrado com sucesso') {
-        alert('Cadastro realizado com sucesso!');
-        navigate('/login_empresa');
-      } else if (response.data.msg === 'Email já está em uso') {
-        alert('Email já está em uso. Tente outro.');
-      } else {
-        alert('Erro ao processar o cadastro. Por favor, tente novamente.');
-      }
-    })
-    .catch((error) => {
-      console.error('Erro na requisição:', error);
-      alert('Erro na requisição. Por favor, tente novamente.');
-    })
-  };
-
+        cadSucess()
+      navigate('/login_artesao');
+    } else if (response.data.msg === 'Email já está em uso') {
+      cadEmailSucess()
+    } else {
+      otherError()
+    }
+  })
+  .catch((error) => {
+    console.error('Erro na requisição:', error);
+    otherError()
+  })
+};
   const validationRegister = yup.object().shape({
     name: yup
     .string()
