@@ -7,7 +7,26 @@ import { MATERIAIS } from "../../static/materiais";
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
 
 const Materiais = () => {
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+    useEffect(() => {
+      const checkLoggedInStatus = async () => {
+        const token = localStorage.getItem('token');
+        if (token) {
+          setIsLoggedIn(true);
+        }
+      };
+    
+      checkLoggedInStatus();
+    }, []);
+    const handleLogout = () => {
+      setIsLoggedIn(false);
+      localStorage.removeItem('token');
+    };
+
+
+
+    
     const [materiais, setMaterias] = useState([]);
     const carousel = useRef(null);
 
@@ -34,7 +53,7 @@ const Materiais = () => {
         <>
             <div className='materiais'>
                 <header className='header-materiais'>
-                    <Navbar />
+                    <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} setIsLoggedIn={setIsLoggedIn} />
                     <h1>Materiais</h1>
                 </header>
                 <main className='materias-main'>

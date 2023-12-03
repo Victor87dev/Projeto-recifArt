@@ -3,14 +3,32 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import "./Pagamento.css";
 import { Cartoes, Cartoes2 } from "../../components/image";
+import { useEffect,useState } from 'react';
 
 const Pagamento = () => {
      
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const checkLoggedInStatus = async () => {
+      const token = localStorage.getItem('token');
+      if (token) {
+        setIsLoggedIn(true);
+      }
+    };
+  
+    checkLoggedInStatus();
+  }, []);
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    localStorage.removeItem('token');
+  };
+
   return (
     <>
       <div id="container-pagamento">
         <header className="header-pagamento">
-          <Navbar />
+          <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} setIsLoggedIn={setIsLoggedIn} />
           <h1>Pagamento</h1>
         </header>
         <div className="container-form-pagamento">

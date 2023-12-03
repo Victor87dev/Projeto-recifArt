@@ -16,6 +16,7 @@ import LoginArt from "../pages/login/login_artesao";
 import CadastroArt from "../pages/Cadastro/cadastro_artesao";
 import Pagamento from "../pages/Pagamento/Pagamento";
 import Materiais from "../pages/Materiais/Materiais";
+import Usuario from "../pages/usuario/usuario"
 
 const AppRoutes = () => {
     return(
@@ -38,6 +39,7 @@ const AppRoutes = () => {
             <Route path= "/cadastro_artesao" element={<CadastroArt/>}/>
             <Route path="/pagamento" element={<Pagamento/>} />
             <Route path="/materiais" element={<Materiais />} />
+            <Route path="/usuario" element={<Usuario/>} />
         </Routes>
     )
 }

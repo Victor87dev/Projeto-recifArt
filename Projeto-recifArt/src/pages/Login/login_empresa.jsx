@@ -4,7 +4,8 @@ import * as yup from 'yup';
 import logo from "../../assets/img/LOGO.svg"
 import Axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import "./Login.css"
+import "./Login.css";
+import passwordIncorrect from "../../components/util"
 
 
 function login() {
@@ -33,10 +34,9 @@ function login() {
     } catch (error) {
       if (error.isAxiosError && error.response.status === 401) {
         if (error.response.data.msg === 'Senha incorreta') {
-          alert('Senha incorreta. Por favor, verifique sua senha.');
-         
+          passwordIncorrect()
         } else if (error.response.data.msg === 'O email está incorreto') {
-          alert('O email está incorreto. Por favor, verifique seu email.');
+          passwordIncorrect()
          
         }
       } else {

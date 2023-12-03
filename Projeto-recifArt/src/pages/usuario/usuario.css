@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.perfil-usuario{
+margin: auto;
+  
+     text-align: center;
+}
+.perfil-usuario  img{
+background-color: black;
+width: 200px;
+height: 200px;
+}
+
+.container-usuario{
+
+    color: black;
+}
+.container-usuario input{
+
+   background-color: black;
+   color: white;
+}

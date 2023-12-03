@@ -7,15 +7,15 @@ const Navbar = ({ isLoggedIn, handleLogout ,setIsLoggedIn}) => {
 
   const [menuAberto, setMenuAberto] = useState(false);
   const [showLogout, setShowLogout] = useState(false);
-
+  
   const decodeJwt = (token) => {
     const base64Url = token.split('.')[1];
     const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
     const jsonPayload = decodeURIComponent(atob(base64).split('').map((c) => `%${(`00${c.charCodeAt(0).toString(16)}`).slice(-2)}`).join(''));
-  
+    
     return JSON.parse(jsonPayload);
   };
-  const getUserNameFromToken = () => {
+  const pegarNomePorToken = () => {
     const token = localStorage.getItem("token"); 
     if (token) {
       const decodedToken = decodeJwt(token);
@@ -23,6 +23,7 @@ const Navbar = ({ isLoggedIn, handleLogout ,setIsLoggedIn}) => {
     }
     return null;
   };
+
 
   return (
     <>
@@ -60,7 +61,7 @@ const Navbar = ({ isLoggedIn, handleLogout ,setIsLoggedIn}) => {
               className="optionsLogin"
               onClick={() => setShowLogout(!showLogout)}
             >
-              <img src={Profile}/> <p>{getUserNameFromToken()}</p> 
+              <img src={Profile}/> <p>{pegarNomePorToken()}</p> 
             </div>
             {showLogout && (
               <button type="button" className="button-logout" onClick={() => {handleLogout();setIsLoggedIn(false);}}>
