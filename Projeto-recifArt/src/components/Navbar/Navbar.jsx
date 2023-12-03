@@ -41,15 +41,17 @@ const Navbar = ({ isLoggedIn, handleLogout ,setIsLoggedIn}) => {
 
         <div className={`menu-conteudo ${menuAberto ? "aberto" : ""}`}>
           <ul className={menuAberto ? "aberto" : ""}>
-            <NavLink className="a-Azul" to="/sobrenos">
-              <li>Sobre nós</li>
-            </NavLink>
+
+            <NavLink className="a-Azul" to="/feirinha">
+              <li>Feirinha</li>
+            </NavLink>            
             <NavLink className="a-Azul" to="/blog">
               <li>Blog</li>
             </NavLink>
-            <NavLink className="a-Azul" to="/feirinha">
-              <li>Feirinha</li>
+            <NavLink className="a-Azul" to="/sobrenos">
+              <li>Sobre nós</li>
             </NavLink>
+
           </ul>
           
           

@@ -77,7 +77,7 @@
 
 .email input {
     width: 100%;
-    border-radius: 25px;
+    border-radius: 10px;
     background: #D9D9D9;
     font-family: var(--primary-font);
     width: 300px;
@@ -99,7 +99,7 @@
 }
 .senha input{
     width: 100%;
-    border-radius: 25px;
+    border-radius: 10px;
     background: #D9D9D9;
     width: 300px;
     font-family: var(--primary-font);
