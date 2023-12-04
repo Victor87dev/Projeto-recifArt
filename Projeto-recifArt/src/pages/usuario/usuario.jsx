@@ -66,6 +66,7 @@ const Usuario = () => {
       <div className="container-usuario">
      <header className="header-usuario">
       <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} setIsLoggedIn={setIsLoggedIn} />
+      <h1>Informações pesoais</h1>
       </header>
         <div className="perfil-usuario">
           <img src={Profile} />
