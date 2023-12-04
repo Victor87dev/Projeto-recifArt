@@ -3,23 +3,42 @@
     padding: 0px;
     box-sizing: border-box;
 }
-.perfil-usuario{
-margin: auto;
-  
-     text-align: center;
+#container-usuario{
+    height: 100%;
+    width: 100vw;
+    display: flex;
 }
 .perfil-usuario  img{
-background-color: black;
+    background-color: #1657B9;
 width: 200px;
 height: 200px;
 }
-
-.container-usuario{
-
-    color: black;
+.header-usuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -15.25%, #1657B9 127.98%), url(../../assets/img/perfilimg.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100vw;
+    height: 35vh;
 }
-.container-usuario input{
 
-   background-color: black;
+.perfil-usuario{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px;
+
+}
+.perfil-usuario input{
    color: white;
+   font-family: var(--primary-font);
+}
+.perfil-usuario label {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    margin: 25px;
 }
