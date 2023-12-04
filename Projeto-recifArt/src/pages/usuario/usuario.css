@@ -9,7 +9,7 @@
     display: flex;
 }
 .perfil-usuario  img{
-    background-color: #1657B9;
+
 width: 200px;
 height: 200px;
 }
@@ -28,14 +28,31 @@ height: 200px;
 .perfil-usuario{
     display: flex;
     text-align: center;
-    flex-direction: column;
+
     align-items: center;
     margin: 150px;
+    
+
+}
+
+form label{
+    font-size: 24px;
 
 }
 .perfil-usuario input{
-   color: white;
+   color: black;
    font-family: var(--primary-font);
+   text-align: center;
+       background: #D9D9D9;
+       border-radius: 6px;
+       width: 300px;
+       height: 35px;
+
+
+       font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 .perfil-usuario label {
     font-family: var(--primary-font);

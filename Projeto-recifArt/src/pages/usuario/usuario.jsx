@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import { Profile } from "../../components/image";
+import { perfil } from "../../components/image";
 import { useEffect, useState } from "react";
 import "./usuario.css";
 
@@ -68,7 +68,7 @@ const Usuario = () => {
       <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} setIsLoggedIn={setIsLoggedIn} />
       </header>
         <div className="perfil-usuario">
-          <img src={Profile} />
+          <img src={perfil} />
 
           <form>
             <label>Nome Completo:</label>
@@ -76,7 +76,7 @@ const Usuario = () => {
           </form>
 
           <form>
-            <label>CNPJ:</label>
+            <label>CPF/CNPJ</label>
             <input type="text" value={pegarCnpjorCpfPorToken()} readOnly />
           </form>
 
