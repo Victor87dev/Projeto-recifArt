@@ -4,7 +4,7 @@ import "./Navbar.css";
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = ({ isLoggedIn, handleLogout ,setIsLoggedIn}) => {
-
+ 
   const [menuAberto, setMenuAberto] = useState(false);
   const [showLogout, setShowLogout] = useState(false);
   
@@ -23,7 +23,6 @@ const Navbar = ({ isLoggedIn, handleLogout ,setIsLoggedIn}) => {
     }
     return null;
   };
-
 
   return (
     <>
@@ -57,18 +56,26 @@ const Navbar = ({ isLoggedIn, handleLogout ,setIsLoggedIn}) => {
           
           <div className={`buttons-header ${menuAberto ? "aberto" : ""} `}>
           
-          {isLoggedIn ? (
+          { isLoggedIn ? (
             <>
             <div
               className="optionsLogin"
               onClick={() => setShowLogout(!showLogout)}
+        
+          
             >
               <img src={Profile}/> <p>{pegarNomePorToken()}</p> 
             </div>
             {showLogout && (
+              <div className="showLogout">
+
+              <a className="button-profile" href="/usuario" >
+                Perfil
+              </a>
               <button type="button" className="button-logout" onClick={() => {handleLogout();setIsLoggedIn(false);}}>
                 Sair
               </button>
+              </div>
             )}
           </>
         ) : (

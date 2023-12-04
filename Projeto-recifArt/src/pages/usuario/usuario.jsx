@@ -47,7 +47,7 @@ const Usuario = () => {
     const token = localStorage.getItem("token");
     if (token) {
       const decodedToken = decodeJwt(token);
-      return decodedToken ? decodedToken.cnpj : null;
+      return decodedToken ? decodedToken.id : null;
     }
     return null;
   };
