@@ -15,19 +15,19 @@
     width: 100%;
 }
 
-.nome-preco {
+.nome-preco-feirinha {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 18px;
     font-weight: 600;
     align-items: flex-start;
     width: 280px;
-    align-items: center;
-    gap: 30px;
 }
 
-.nome-preco span:nth-child(1) {
-    font-size: 17px;
+.nome-preco-feirinha span:nth-child(1) {
+    font-size: 20px;
+    text-wrap: nowrap;
+    text-align: start;
 }
 
 .perfil-nome {
@@ -50,6 +50,11 @@
 .perfil-nome > a{
     text-decoration: none;
 }
+
+.box-produtos > img {
+    border-top-right-radius: 53px;
+    border-top-left-radius: 53px;
+}
 .box-produtos button:hover {
     background-color: #0e2577;
 }
@@ -63,14 +68,19 @@
         width: 250px;
     }
 
-    .nome-preco {
+    .nome-preco-feirinha {
         font-size: 16px;
         width: 225px;
         flex-direction: column;
     }
 
-    .nome-preco span:nth-child(1) {
+    .nome-preco-feirinha span:nth-child(1) {
         font-size: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: inline-block;
+        width: 200px;
     }
 
     .perfil-nome p {
@@ -87,7 +97,7 @@
         width: 200px;
     }
 
-    .nome-preco span:nth-child(1) {
+    .nome-preco-feirinha span:nth-child(1) {
         font-size: 18px;
         overflow: hidden;
         white-space: nowrap;
@@ -97,7 +107,7 @@
         text-align: start;
     }
 
-    .nome-preco {
+    .nome-preco-feirinha {
         width: 175px;
        
     }
@@ -112,13 +122,13 @@
     .box-produtos>img {
         width: 175px;
     }
-    .nome-preco {
+    .nome-preco-feirinha {
         font-size: 16px;
         width: 150px;
         padding: 0 0;
     }
 
-    .nome-preco span:nth-child(1) {
+    .nome-preco-feirinha span:nth-child(1) {
         font-size: 14px;
         width: 150px;
     }
@@ -143,13 +153,13 @@
     .box-produtos>img {
         width: 155px;
     }
-    .nome-preco {
+    .nome-preco-feirinha {
         font-size: 16px;
         width: 135px;
         padding: 0 0;
     }
 
-    .nome-preco span:nth-child(1) {
+    .nome-preco-feirinha span:nth-child(1) {
         font-size: 14px;
         width: 120px;
     }
@@ -175,13 +185,13 @@
     .box-produtos>img {
         width: 135px;
     }
-    .nome-preco {
+    .nome-preco-feirinha {
         font-size: 16px;
         width: 135px;
         padding: 0 8px;
     }
 
-    .nome-preco span:nth-child(1) {
+    .nome-preco-feirinha span:nth-child(1) {
         font-size: 14px;
         width: 120px;
     }

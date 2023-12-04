@@ -1,282 +1,304 @@
-.lista-compra{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: flex-start;
+.invisible {
+    display: none;
 }
 
-.ponto-preto{
-    padding: 8px;
+.card-compra {
+    display: flex;
+    height: calc(100vh - 150px);
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 2rem;
+    flex-direction: row;
+    position: relative;
+}
+
+.card-compra > .btn-voltar > .voltar{
     font-size: 20px;
+    margin: 0;
+    color:rgb(5, 5, 65);
 }
 
-.azul{
-    color: #0F3FB9;
-    font-weight: 600;
-    font-size: 18px;
+.card-compra > .btn-voltar {
+    display: flex;
+    text-decoration: none;
+    gap: 1rem;
+    position: absolute;
+    top: 10px;
 }
 
-.img-urso{
-   height: 40%;
-   width: 100%;
+.card-compra .hidden {
+    display: none;
 }
 
-.box-informacoes{
+.card-compra>.thumbnails {
     display: flex;
     flex-direction: column;
-    gap: 45px;
-    text-align: center;
-    margin-right: 40px;
-    height: 43vh;
-    width: 65%;
+    max-width: 400px;
+}
+
+.card-compra>.main-thumbnail {
+    border-radius: 10px;
+    width: 1100px;
+    cursor: pointer;
+}
+
+.card-compra .preview {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.card-compra .preview img {
+    width: 90px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-compra .preview img:hover {
+    opacity: 60%;
+}
+
+.card-compra .preview img.selected {
+    border: 2px solid #04143C;
+    /* trocar AQUI a cor @leticia*/
+    opacity: 50%;
+}
+
+.card-compra>.content {
+    margin-left: 3rem;
+}
+
+.card-compra>.content>.company {
+    color: #04143C;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card-compra>.content>.title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.card-compra>.content>.info {
+    color: rgb(5, 5, 65);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.card-compra>.content>.price {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.card-compra>.content>.price>.new-price {
+    display: flex;
     align-items: center;
 }
 
-.img-perfil{
-    height: 35px;
-    width: 35px;
-    margin-top: 10px;
+.card-compra>.content>.price>.new-price>p {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
-.p-preco{
-    font-size: 25px;
-    font-weight: 600;
+.card-compra>.content>.price>.new-price>span {
+    margin-left: 1rem;
+    background-color: #ffeee1;
+    padding: 0.3rem;
+    border-radius: 6px;
+    color: #04143C;
+    font-weight: 700;
 }
 
-.p-nome{
-    margin-top: -40px;
+.card-compra>.content>.price>.old-price {
+    color: rgb(5, 5, 107);
+    text-decoration: line-through;
+}
+
+.card-compra>.content>.buttons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.card-compra>.content>.buttons>.amount-btn {
+    background-color: #f1f0fa;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    width: 35%;
+    border-radius: 7px;
+    justify-content: space-between;
+}
+
+.card-compra>.content>.buttons>.amount-btn button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card-compra>.content>.buttons>.amount-btn .amount {
+    font-weight: 700;
+}
+
+.card-compra>.content>.buttons>.add_btn {
+    cursor: pointer;
+    width: 65%;
+    margin-left: 1rem;
+    background-color: #04143C;
+    color: #FFFFFF;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    font-family: inherit;
+    border-radius: 7px;
+    padding: 1rem;
+    text-decoration: none;
+
+}
+
+.card-compra>.content>.buttons>.add_btn:hover {
+    opacity: 70%;
+}
+
+.card-compra>.content>.buttons>.add_btn > .icons {
+    filter: brightness(5);
     font-size: 20px;
+    margin: 0;
 }
 
-.titulo-compra{
-    margin-top: 20px;
-    font-size: 25px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.336);
-}
-
-.box-informacoes-compra{
-    width: 30%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    text-align: center;
-    margin-left: 50px;
-}
-
-.input-compra{
-    width: 145px;
-    height: 40px;
-    padding: 18px;
-    border-radius: 20px;
-    border: none;
-    border: 1px solid #000;
-    outline: none;
-    margin-top: 90px;
-}
-
-.input-compra::placeholder{
-    font-size: 15px;
-    font-family: var(--primary-font);
-}
-
-.lista-compra li{
-    font-size: 16px;
-}
-
-.box-informacoes p{
-    font-weight: 600;
-}
-
-.box-informacoes-compra button{
-padding: 6px 25px 6px 25px;
-border-radius: 20px;
-border: none;
-background-color: #061033;
-color: #fff;
-font-family: var(--primary-font);
-cursor: pointer;
-font-size: 15px;
-transition: .4s;
-}
-    
-.box-informacoes-compra button:hover{
-background-color: #0e2577;
-}
-
-.box-divisao{
-    display: flex;
-    flex-direction: row;
-}
-
-@media (max-width: 1500px){
-    .p-nome{
-        font-size: 25px;
-    }
-
-    .p-preco{
-        font-size: 26px;
-    }
-
-    .titulo-compra{
-        margin-top: 30px;
-        font-size: 25px;
-     }
-
-     .lista-compra li{
-        font-size: 17px;
-    }
-
-    .azul{
-        font-size: 20px;
-    }
-
-    .box-informacoes{
-        gap: 50px;
-    }
-
-    .box-informacoes-compra{
-       gap: 80px;
-    }
-
-    .input-compra{
-        width: 140px;
-        height: 30px;
-        padding: 12px;
-        border-radius: 20px;
-        
-    }
-
-    .box-informacoes-compra button{
-        padding: 10px 40px 10px 40px;
-    }
- 
-
-    
-}
-
-@media (max-width: 1450px){
-    .p-nome{
-        font-size: 25px;
-    }
-
-    .p-preco{
-        font-size: 26px;
-    }
-
-    .titulo-compra{
-        margin-top: 30px;
-        font-size: 25px;
-     }
-
-     .lista-compra li{
-        font-size: 17px;
-    }
-
-    .azul{
-        font-size: 20px;
-    }
-
-    .box-informacoes{
-        gap: 50px;
-    }
-
-    .box-informacoes-compra{
-       gap: 80px;
-    }
-
-    .input-compra{
-        width: 130px;
-        height: 30px;
-        padding: 12px;
-        border-radius: 20px;
-        
-    }
-
-    .box-informacoes-compra button{
-        padding: 10px 20px 10px 20px;
-    }
- 
-
-}
-
-@media (max-width: 670px){
-    .box-informacoes ol{
-        display: none;
-    }
-
-    .box-informacoes{    
-        height: 20vh;
-        margin: 0;
-        margin-bottom: 40px;
-        width: 300px;
-    }
-
-    .titulo-compra{
-       font-size: 25px;
-    }
-
-    .p-nome{
-        font-size: 23px;
-    }
-
-    .p-preco{
-        font-size: 26px;
-    }
-
-    .input-compra{
-        display: none;
-    }
-
-    .box-informacoes-compra{
-        height: 15vh;
-        width: 200px;
-        margin: 0;
-        margin-top: -30px;
-        gap: 50px;
-    
-    }
-
-
-    .box-divisao{
-        display: flex;
+@media screen and (max-width: 768px) {
+    .card-compra>.content>.buttons {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        gap: 1rem;
     }
 
-    .box-informacoes-compra button{
-        margin-top: -50px;
-    }
- 
-}
-
-
-@media (max-width: 450px){
-    
-    .box-informacoes{
-    
-        width: 250px;
-        margin-bottom: 100px;
-    }
-    .box-informacoes-compra{
-       
-        margin-bottom: 80px;
-    }
-    .titulo-compra{
-        font-size: 26px;
-    }
-    .p-nome{
-        font-size: 22px;
+    .card-compra>.content>.buttons>.amount-btn {
+        width: 100%;
     }
 
-    .box-informacoes-compra{
-        width: 150px;
+    .card-compra>.content>.buttons>.add_btn {
+        width: 100%;
+        margin-left: 0;
     }
 
-    .box-informacoes-compra button{
-        padding: 13px 25px 13px 25px;
+    .card-compra>.content>.title {
+        font-size: 1.8rem;
     }
 }
 
+@media screen and (max-width: 700px) {
 
+    .card-compra > .btn-voltar {
+        z-index: 30;
+        position: absolute;
+        top: 300px;
+        left: 0;
+    }
+
+    .card-compra .hidden {
+        display: flex;
+    }
+
+    .card-compra .invisible-mob {
+        display: none;
+    }
+
+
+    .card-compra {
+        flex-direction: column;
+        align-items: center;
+        margin-inline: 0;
+        height: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .card-compra>.thumbnails {
+        height: 40%;
+        max-width: none;
+    }
+
+
+    .card-compra>.content {
+        margin: 2rem;
+        height: 50%;
+    }
+
+    .card-compra .preview {
+        display: none;
+    }
+
+    .card-compra>.thumbnails>.mobile-thumb {
+        position: relative;
+        display: flex;
+        overflow-x: hidden;
+        min-width: 95vw;
+        margin-top: -.5rem;
+        z-index: 3;
+    }
+
+    .card-compra>.thumbnails>.mobile-thumb img {
+        object-fit: cover;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .card-compra>.content>.title {
+        font-size: 2.2rem;
+    }
+
+    .card-compra>.content>.price {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .card-compra>.thumbnails>.mobile-thumb #next {
+        position: absolute;
+        right: 10%;
+        top: 50%;
+        border: none;
+        background-color: #FFFFFF;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .card-compra>.thumbnails>.mobile-thumb #previous {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        border: none;
+        background-color: #FFFFFF;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .card-compra>.thumbnails>.mobile-thumb #next img,
+    .card-compra>.thumbnails>.mobile-thumb #previous img {
+        width: 15px;
+    }
+    
+}

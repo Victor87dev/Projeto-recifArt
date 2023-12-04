@@ -6,7 +6,7 @@ const ProdutosFeirinha = (props) => {
     <>
       <div className="box-produtos">
         <img src={props.img} alt="Produto" />
-        <div className="nome-preco">
+        <div className="nome-preco-feirinha">
           <span>{props.produto}</span>
           <span>{props.preco}</span>
         </div>
