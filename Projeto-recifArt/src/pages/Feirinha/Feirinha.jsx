@@ -18,6 +18,7 @@ import {
    Fernando,
    Gabriela,
    Renata,
+   Tapeteretalho,
  } from "../../components/image";
 
 const Feirinha = () => {
@@ -47,6 +48,13 @@ const Feirinha = () => {
       preco: "R$39,99",
       perfil: Luiz,
       nome: "Luiz Alberto",
+    },
+    {
+      img: Tapeteretalho,
+      produto: "Tapete de Retalho Artesanal",
+      preco: "R$149,00",
+      perfil: Fabiana,
+      nome: "Fabiana Marques",
     },
     {
       img: Ursos,
