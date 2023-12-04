@@ -56,6 +56,7 @@ import Cartoes from "../assets/img/card_img.png";
 import Cartoes2 from "../assets/img/cartoes2.png";
 import RecifArt from "../assets/img/recifArt.jpeg";
 import RecifArt2 from "../assets/img/recifArt2.png";
+import Tapeteretalho from "../assets/img/detalhe-compra/tapeteretalho.jpg";
 export{
     Gracas,
     Derby,
@@ -115,4 +116,5 @@ export{
     Cartoes2,
     RecifArt,
     RecifArt2,
+    Tapeteretalho
 };

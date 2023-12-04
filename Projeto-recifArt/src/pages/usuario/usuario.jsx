@@ -63,8 +63,10 @@ const Usuario = () => {
 
   return (
     <>
-      <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} setIsLoggedIn={setIsLoggedIn} />
       <div className="container-usuario">
+     <header className="header-usuario">
+      <Navbar isLoggedIn={isLoggedIn} handleLogout={handleLogout} setIsLoggedIn={setIsLoggedIn} />
+      </header>
         <div className="perfil-usuario">
           <img src={Profile} />
 
@@ -84,6 +86,7 @@ const Usuario = () => {
           </form>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };
