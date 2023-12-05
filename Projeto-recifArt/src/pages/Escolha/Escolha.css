@@ -66,3 +66,20 @@
 .tipo img {
     margin-bottom: 15px;
 }
+
+@media (max-width: 1170px){
+    .escolha-pessoa{
+        flex-direction: column;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 500px){
+    .escolha h1{
+        font-size: 50px;
+    }
+    .tipo{
+        width: 200px;
+        height: 200px;
+    }
+}
