@@ -28,7 +28,7 @@ function Cadastro() {
      
       if (response.data.msg === 'Cadastrado com sucesso') {
         cadSucess()
-      navigate('/login_artesao');
+      navigate('/login_empresa');
     } else if (response.data.msg === 'Email já está em uso') {
       cadEmailSucess()
     } else {
