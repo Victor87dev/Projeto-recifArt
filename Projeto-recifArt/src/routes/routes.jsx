@@ -5,8 +5,10 @@ import Feirinha from "../pages/Feirinha/Feirinha";
 import Perfil from "../pages/perfil/perfil";
 import Blog from "../pages/Blog/Blog";
 import Compra from "../pages/Compra/Compra"
+import Artesoes from "../pages/artesoes/Artesoes";
 import EscolhaCad from "../pages/Escolha/EscolhaCad";
 import EscolhaLog from "../pages/Escolha/EscolhaLog";
+import LoginUser from "../pages/login/login_usuario";
 import CadastroUser from "../pages/Cadastro/cadastro_usuario";
 import LoginEmp from "../pages/login/login_empresa";
 import CadastroEmp from "../pages/Cadastro/cadastro_empresa";
@@ -14,7 +16,7 @@ import LoginArt from "../pages/login/login_artesao";
 import CadastroArt from "../pages/Cadastro/cadastro_artesao";
 import Pagamento from "../pages/Pagamento/Pagamento";
 import Materiais from "../pages/Materiais/Materiais";
-import Usuario from "../pages/usuario/usuario"
+import Usuario from "../pages/usuario/usuario";
 
 const AppRoutes = () => {
     return(
@@ -26,8 +28,10 @@ const AppRoutes = () => {
             <Route path="/blog" element={<Blog/>} />
             <Route path="/perfil" element={<Perfil/>}/>
             <Route path="/compra" element={<Compra/>} />
+            <Route path="/artesoes" element={<Artesoes/>} />
             <Route path="/escolhacad" element={<EscolhaCad/>}/>
             <Route path="/escolhalog" element={<EscolhaLog/>}/>
+            <Route path="/login_usuario" element={<LoginUser/>}/>
             <Route path="/cadastro_usuario" element={<CadastroUser/>}/>
             <Route path="/login_empresa" element={<LoginEmp/>}/>
             <Route path="/cadastro_empresa" element={<CadastroEmp/>}/>
